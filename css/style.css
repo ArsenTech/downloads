@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Sora,Arial;
+}
+.loader-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#353b48;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:99999
+}
+.loader{
+  border:16px solid #80ce8780;
+  border-top:16px solid #22b455;
+  border-radius:50%;
+  width:120px;
+  height:120px;
+  animation:spin 2s linear infinite;
+  -webkit-animation:spin 2s linear infinite
+}
+@keyframes spin{
+  0%{
+      transform:rotate(0deg)
+  }
+  100%{
+      transform:rotate(360deg)
+  }
+}
+.loader-hidden{
+  animation:fadeOut 1s;
+  -webkit-animation:fadeOut 1s;
+  animation-fill-mode:forwards
+}
+@keyframes fadeOut{
+  100%{
+      opacity:0;
+      visibility:hidden
+  }
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #22b455, #1dd1a1);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.container h1 span{
+  display: block;
+  background: #204829;
+  padding: 0 10px;
+}
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  overflow: hidden;
+  width: 50px;
+}
+.menu span{
+  height: 3px;
+  display: block;
+  margin: 6px;
+}
+.menu-icon{
+  color: white;
+  font-size: 36px;
+}
+@media screen and (max-width: 320px){
+  .container h1{
+    font-size: 40px;
+  }
+}

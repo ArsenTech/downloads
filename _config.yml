@@ -1,0 +1,12 @@
+compress_html:
+    comments: all 
+    
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE
+  - README.md
+  - CODE_OF_CONDUCT.md
+  
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
