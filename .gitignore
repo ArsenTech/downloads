@@ -27,9 +27,10 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.firebase/
 *.iso
 *.zip
 *.rar
 *.7z
 LICENSE
+firebase-init.js
+.firebase/

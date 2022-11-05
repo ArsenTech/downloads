@@ -2,62 +2,300 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-    <meta name="description" content="Downloads Page of ArsenTech's Official Website">
-    <meta name="author" content="ArsenTech">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#22b455">
-    <link rel="stylesheet" media="screen" href="css/style.css">
-    <link rel="icon" href="files/favicon.ico">
-    <link rel="apple-touch-icon" href="files/apple-touch.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Downloads - ArsenTech's Website</title>
+     <meta name="description" content="Downloads from ArsenTech">
+     <meta name="author" content="ArsenTech">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#22b455">
+     <link rel="stylesheet" media="screen" href="css/style.css">
+     <link rel="icon" href="files/favicon.ico">
+     <link rel="apple-touch-icon" href="files/apple-touch.png">
+     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+     <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com/">
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+     <title>Downloads | ArsenTech's Website</title>
 </head>
 <body>
      <div class="loader-wrapper"><div class="loader"></div></div>
-     <div class="container">
-          <div class="menu">
-               <a href="https://arsentech.github.io"><span class="iconify menu-icon" data-icon="ant-design:home-filled" data-inline="false"></span></a>
-          </div>
-          <h1><span>Coming</span>Soon...</h1>
-     </div>
-     <script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>  
-     <script defer type="text/javascript" src="js/script.js"></script>
-     <script>window.addEventListener("load", function(){ const loader=document.querySelector(".loader-wrapper"); loader.className +=" loader-hidden"});</script>
-     <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="CSS/lightbox.min.css">
-          <div>
-               <style type="text/css">
-                    #site-header,
-                    #site-main,
-                    #site-footer,
-                    #error,
-                    .loader-wrapper,
-                    .container {
-                         display: none;
-                    }
-                    body {
-                         min-height: 100vh;
-                         text-align: center;
-                         background: linear-gradient(#22b455, #1dd1a1);
-                         background-repeat: no-repeat
-                    }
-                    h1 {
-                         color: #d9534f;
-                         margin: 10px;
-                    }
-                    .err {
-                         width: 100%;
-                         position: absolute;
-                         top: 50%;
-                    }
-               </style>
-          </div>
-          <div class="err">
-               <h1>There was an error</h1>
-               <p>Sorry, but your browser doesn't support Javascript, Please enable JavaScript in your browser for best
-                    experience for website.</p>
-          </div>
-     </noscript>
+     <header id="site-header"><nav class="navbar"><div class="inner-width"><a href="https://arsentech.github.io/" class="logo">&nbsp;</a><button class="menu-toggler"><span></span><span></span><span></span></button><div class="navbar-menu"><a href="#home">Home</a><a href="#downloads">Files to Download</a><a href="#wallpapers">Wallpapers</a><a href="#feedback">Feedback</a><a href="#faq">FAQs</a></div></div></nav></header>
+     <main id="site-main">
+          <section id="home"><div class="inner-width"><div class="content"><h1>Here You Can Download </h1><h2>Scroll Down And Choose What You Want :-)</h2></div></div></section>
+          <section id="downloads">
+               <div class="inner-width">
+                    <h2 class="section-title">Downloads</h2>
+                    <ul class="card-filter">
+                         <li class="list active" data-filter="all">All</li>
+                         <li class="list" data-filter="windows">Windows Versions</li>
+                         <li class="list" data-filter="softwares">Softwares</li>
+                         <li class="list" data-filter="internet-explorer">Internet Explorer Versions</li>
+                         <li class="list" data-filter="ms-dos">MS-DOS Versions</li>
+                         <li class="list" data-filter="updates">Updates</li>
+                    </ul>
+                    <div class="card-container" id="downloadsCards"></div>
+               </div>
+          </section>
+          <section id="wallpapers" class="dark">
+               <div class="inner-width">
+                    <h2 class="section-title">Wallpapers</h2>
+                    <div class="tab-card">
+                         <div class="tab-card-body">
+                              <div class="tab-header">
+                                   <button class="tab-link active"><span class="icon"><iconify-icon icon="emojione-monotone:digit-one"></iconify-icon></span><span class="text">Wallpaper #1</span></button>
+                                   <button class="tab-link"><span class="icon"><iconify-icon icon="emojione-monotone:digit-two"></iconify-icon></span><span class="text">Wallpaper #2</span></button>
+                                   <button class="tab-link"><span class="icon"><iconify-icon icon="emojione-monotone:digit-three"></iconify-icon></span><span class="text">Wallpaper #3</span></button>
+                                   <button class="tab-link"><span class="icon"><iconify-icon icon="emojione-monotone:digit-four"></iconify-icon></span><span class="text">Wallpaper #4</span></button>
+                                   <button class="tab-link"><span class="icon"><iconify-icon icon="emojione-monotone:digit-five"></iconify-icon></span><span class="text">Wallpaper #5</span></button>
+                              </div>
+                              <div class="tab-content">
+                                   <div class="tab active">
+                                        <h3>Wallpaper 1</h3>
+                                        <picture><source media="(max-width: 425px)" srcset="./files/wallpaperImg/coding1-Responsive.webp" width="300" height="226"><source media="(min-width: 426px)" srcset="./files/wallpaperImg/coding1.webp"><img src="./files/wallpaperImg/coding1.webp" alt="coding wallpaper" loading="lazy" ></picture>
+                                        <div class="infoAndOptions">
+                                             <div class="left">
+                                                  <form class="download-options">
+                                                       <select name="download-option" class="download-select" id="download-option1">
+                                                            <option disabled selected class="defaultOpt">-- Select Wallpaper Size --</option>
+                                                            <optgroup label="Desktop">
+                                                                 <option value="3440x1440">3440 x 1440</option>
+                                                                 <option value="2560x1440">2560 x 1440</option>
+                                                                 <option value="1920x1200">1920 x 1200</option>
+                                                                 <option value="1920x1080">1920 x 1080</option>
+                                                                 <option value="1600x1200">1600 x 1200</option>
+                                                                 <option value="1440x900">1440 x 900</option>
+                                                                 <option value="1366x768">1366 x 768</option>
+                                                                 <option value="1280x800">1280 x 800</option>
+                                                                 <option value="1280x720">1280 x 720</option>
+                                                                 <option value="1152x864">1152 x 864</option>
+                                                                 <option value="1024x768">1024 x 768</option>
+                                                                 <option value="800x600">800 x 600</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mobile">
+                                                                 <option value="android">800 x 1200</option>                                                       
+                                                                 <option value="phone">1080 x 1920</option>
+                                                                 <option value="iphone">1125 x 2436</option>
+                                                            </optgroup>
+                                                       </select>
+                                                       <button class="downloadBtn">Download</button>
+                                                  </form>
+                                             </div>
+                                             <div class="right"><p>Size of Selected File: <span id="fileSize"></span></p></div>
+                                        </div>
+                                   </div>
+                                   <div class="tab">
+                                        <h3>Wallpaper 2</h3>
+                                        <picture><source media="(max-width: 425px)" srcset="./files/wallpaperImg/coding2-Responsive.webp"width="300"height="271"><source media="(min-width: 426px)" srcset="./files/wallpaperImg/coding2.webp"><img src="./files/wallpaperImg/coding2.webp"  alt="coding wallpaper" loading="lazy" ></picture>
+                                        <div class="infoAndOptions">
+                                             <div class="left">
+                                                  <form class="download-options">
+                                                       <select name="download-option" class="download-select" id="download-option2">
+                                                            <option disabled selected class="defaultOpt">-- Select Wallpaper Size --</option>
+                                                            <optgroup label="Desktop">
+                                                                 <option value="3440x1440">3440 x 1440</option>
+                                                                 <option value="2560x1440">2560 x 1440</option>
+                                                                 <option value="1920x1200">1920 x 1200</option>
+                                                                 <option value="1920x1080">1920 x 1080</option>
+                                                                 <option value="1600x1200">1600 x 1200</option>
+                                                                 <option value="1440x900">1440 x 900</option>
+                                                                 <option value="1366x768">1366 x 768</option>
+                                                                 <option value="1280x800">1280 x 800</option>
+                                                                 <option value="1280x720">1280 x 720</option>
+                                                                 <option value="1152x864">1152 x 864</option>
+                                                                 <option value="1024x768">1024 x 768</option>
+                                                                 <option value="800x600">800 x 600</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mobile">
+                                                                 <option value="android">800 x 1200</option>                                                       
+                                                                 <option value="phone">1080 x 1920</option>
+                                                                 <option value="iphone">1125 x 2436</option>
+                                                            </optgroup>
+                                                       </select>
+                                                       <button class="downloadBtn">Download</button>
+                                                  </form>
+                                             </div>
+                                             <div class="right"><p>Size of Selected File: <span id="fileSize"></span></p></div>
+                                        </div>
+                                   </div>
+                                   <div class="tab">
+                                        <h3>Wallpaper 3</h3>
+                                        <picture><source media="(max-width: 425px)" srcset="./files/wallpaperImg/coding3-Responsive.webp"width="300"height="114"><source media="(min-width: 426px)" srcset="./files/wallpaperImg/coding3.webp"><img src="./files/wallpaperImg/coding3.webp" alt="coding wallpaper" loading="lazy"></picture>
+                                        <div class="infoAndOptions">
+                                             <div class="left">
+                                                  <form class="download-options">
+                                                       <select name="download-option" class="download-select" id="download-option3">
+                                                            <option disabled selected class="defaultOpt">-- Select Wallpaper Size --</option>
+                                                            <optgroup label="Desktop">
+                                                                 <option value="3440x1440">3440 x 1440</option>
+                                                                 <option value="2560x1440">2560 x 1440</option>
+                                                                 <option value="1920x1200">1920 x 1200</option>
+                                                                 <option value="1920x1080">1920 x 1080</option>
+                                                                 <option value="1600x1200">1600 x 1200</option>
+                                                                 <option value="1440x900">1440 x 900</option>
+                                                                 <option value="1366x768">1366 x 768</option>
+                                                                 <option value="1280x800">1280 x 800</option>
+                                                                 <option value="1280x720">1280 x 720</option>
+                                                                 <option value="1152x864">1152 x 864</option>
+                                                                 <option value="1024x768">1024 x 768</option>
+                                                                 <option value="800x600">800 x 600</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mobile">
+                                                                 <option value="android">800 x 1200</option>                                                       
+                                                                 <option value="phone">1080 x 1920</option>
+                                                                 <option value="iphone">1125 x 2436</option>
+                                                            </optgroup>
+                                                       </select>
+                                                       <button class="downloadBtn">Download</button>
+                                                  </form>
+                                             </div>
+                                             <div class="right"><p>Size of Selected File: <span id="fileSize"></span></p></div>
+                                        </div>
+                                   </div>
+                                   <div class="tab">
+                                        <h3>Wallpaper 4</h3>
+                                        <picture><source media="(max-width: 425px)" srcset="./files/wallpaperImg/coding4-Responsive.webp"width="300"height="179"><source media="(min-width: 426px)" srcset="./files/wallpaperImg/coding4.webp"><img src="./files/wallpaperImg/coding4.webp"  alt="coding wallpaper" loading="lazy"></picture>
+                                        <div class="infoAndOptions">
+                                             <div class="left">
+                                                  <form class="download-options">
+                                                       <select name="download-option" class="download-select" id="download-option4">                          
+                                                            <option disabled selected class="defaultOpt">-- Select Wallpaper Size --</option>
+                                                            <optgroup label="Desktop">
+                                                                 <option value="3440x1440">3440 x 1440</option>
+                                                                 <option value="2560x1440">2560 x 1440</option>
+                                                                 <option value="1920x1200">1920 x 1200</option>
+                                                                 <option value="1920x1080">1920 x 1080</option>
+                                                                 <option value="1600x1200">1600 x 1200</option>
+                                                                 <option value="1440x900">1440 x 900</option>
+                                                                 <option value="1366x768">1366 x 768</option>
+                                                                 <option value="1280x800">1280 x 800</option>
+                                                                 <option value="1280x720">1280 x 720</option>
+                                                                 <option value="1152x864">1152 x 864</option>
+                                                                 <option value="1024x768">1024 x 768</option>
+                                                                 <option value="800x600">800 x 600</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mobile">
+                                                                 <option value="android">800 x 1200</option>                                                       
+                                                                 <option value="phone">1080 x 1920</option>
+                                                                 <option value="iphone">1125 x 2436</option>
+                                                            </optgroup>
+                                                       </select>
+                                                       <button class="downloadBtn">Download</button>
+                                                  </form>
+                                             </div>
+                                             <div class="right"><p>Size of Selected File: <span id="fileSize"></span></p></div>
+                                        </div>
+                                   </div>
+                                   <div class="tab">
+                                        <h3>Wallpaper 5</h3>
+                                        <picture><source media="(max-width: 425px)" srcset="./files/wallpaperImg/coding5-Responsive.webp"width="300"height="142"><source media="(min-width: 426px)" srcset="./files/wallpaperImg/coding5.webp"><img src="./files/wallpaperImg/coding5.webp" alt="coding wallpaper" loading="lazy"></picture>
+                                        <div class="infoAndOptions">
+                                             <div class="left">
+                                                  <form class="download-options">
+                                                       <select name="download-option" class="download-select" id="download-option5">
+                                                            <option disabled selected class="defaultOpt">-- Select Wallpaper Size --</option>
+                                                            <optgroup label="Desktop">
+                                                                 <option value="3440x1440">3440 x 1440</option>
+                                                                 <option value="2560x1440">2560 x 1440</option>
+                                                                 <option value="1920x1200">1920 x 1200</option>
+                                                                 <option value="1920x1080">1920 x 1080</option>
+                                                                 <option value="1600x1200">1600 x 1200</option>
+                                                                 <option value="1440x900">1440 x 900</option>
+                                                                 <option value="1366x768">1366 x 768</option>
+                                                                 <option value="1280x800">1280 x 800</option>
+                                                                 <option value="1280x720">1280 x 720</option>
+                                                                 <option value="1152x864">1152 x 864</option>
+                                                                 <option value="1024x768">1024 x 768</option>
+                                                                 <option value="800x600">800 x 600</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mobile">
+                                                                 <option value="android">800 x 1200</option>                                                       
+                                                                 <option value="phone">1080 x 1920</option>
+                                                                 <option value="iphone">1125 x 2436</option>
+                                                            </optgroup>
+                                                       </select>
+                                                       <button class="downloadBtn">Download</button>
+                                                  </form>
+                                             </div>
+                                             <div class="right"><p>Size of Selected File: <span id="fileSize"></span></p></div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="feedback">
+               <div class="inner-width">
+                    <h2 class="section-title">Drop us a Feedback</h2>
+                    <form method="POST" class="contact-form">
+                         <div class="rating">
+                              <input type="number" name="rating" id="rating" hidden>
+                              <span class="star" style="--i: 0"><iconify-icon icon="bi:star"></iconify-icon></span>
+                              <span class="star" style="--i: 1"><iconify-icon icon="bi:star"></iconify-icon></span>
+                              <span class="star" style="--i: 2"><iconify-icon icon="bi:star"></iconify-icon></span>
+                              <span class="star" style="--i: 3"><iconify-icon icon="bi:star"></iconify-icon></span>
+                              <span class="star" style="--i: 4"><iconify-icon icon="bi:star"></iconify-icon></span>
+                         </div>
+                         <p class="ratingError"></p>
+                         <div class="half-container"><input type="text" name="name" class="nameZone" placeholder="Your Full Name" required><input type="email" name="_replyto" class="emailZone" placeholder="Your Email (Optional)"></div>
+                         <textarea name="message" class="messageZone" placeholder="Your Opinion" required></textarea>
+                         <input type="submit" name="btn" value="Send Feedback" class="btn">
+                    </form>
+               </div>
+          </section>
+          <section id="faq" class="dark">
+               <div class="inner-width">
+                    <h2 class="section-title">FAQs</h2>
+                    <div class="faq">
+                         <div class="accordion">
+                              <div class="accordion-item" id="q1">
+                                   <a class="accordion-link" href="#q1">
+                                        What's This?
+                                        <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon>
+                                        <iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon>
+                                   </a>
+                                   <div class="answer"><p>Downloads collection from ArsenTech. This Contains Virus-Free Softwares selected carefully by ArsenTech. It Includes Windows, Softwares, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily. Think of it like a convenience store. We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.</p></div>
+                              </div>
+                              <div class="accordion-item" id="q2">
+                                   <a class="accordion-link" href="#q2">
+                                        I'm the Copyright owner of these file(s) and I Want to Take These File(s) down!
+                                        <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon>
+                                        <iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon>
+                                   </a>
+                                   <div class="answer"><p>You can send an email to arsentech5002@gmail.com. Then We'll look into your request and respond it as soon as possible :-)</p></div>
+                              </div>
+                              <div class="accordion-item" id="q3">
+                                   <a class="accordion-link" href="#q3">
+                                        Are the software provided here cracked or modified in any form?
+                                        <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon>
+                                        <iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon>
+                                   </a>
+                                   <div class="answer"><p>No. We Won't provide cracks, the user must activate it with their own provided licenses. They're Original Copies of the softwares.</p></div>
+                              </div>
+                              <div class="accordion-item" id="q4">
+                                   <a class="accordion-link" href="#q4">
+                                        Downloads are too slow. What's the problem?
+                                        <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon>
+                                        <iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon>
+                                   </a>
+                                   <div class="answer"><p>It Depends on your ISP, such as location, plan, and other limitations. Or Your Internet connection is Slow</p></div>
+                              </div>
+                              <div class="accordion-item" id="q5">
+                                   <a class="accordion-link" href="#q5">
+                                        Who made the Wallpapers?
+                                        <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon>
+                                        <iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon>
+                                   </a>
+                                   <div class="answer"><p>These Desktop Wallpapers are made by ArsenTech</p></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer id="site-footer"><div class="inner-width"><div class="copyright"><p>© <span id="yearCount"></span> | Developed by <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg/about">ArsenTech</a></p></div><div class="sm"><a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank" rel="noopener"><iconify-icon icon="ant-design:youtube-filled" data-inline="false"></iconify-icon></a><a href="https://www.reddit.com/user/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="dashicons:reddit" data-inline="false"></iconify-icon></a><a href="https://codepen.io/ArsenJS" target="_blank" rel="noopener"><iconify-icon icon="bx:bxl-codepen" data-inline="false"></iconify-icon></a><a href="https://github.com/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="ant-design:github-outlined" data-inline="false"></iconify-icon></a></div></div></footer>
+     <script defer src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+     <script defer type="module" src="js/firebase.js"></script>
+     <script defer type="module" src="js/script.js"></script>
+     <script defer type="module" src="js/data.js"></script>
+     <script>window.addEventListener("load", ()=>{ const loader=document.querySelector(".loader-wrapper"); loader.className +=" loader-hidden"});</script>
+     <noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="CSS/lightbox.min.css"><div><style type="text/css">#site-header, #site-main, #site-footer, #error, .loader-wrapper, .container{ display: none;} body{ min-height: 100vh; text-align: center; background: linear-gradient(#22b455, #1dd1a1); background-repeat: no-repeat} h1{ color: #d9534f; margin: 10px;} .err{ width: 100%; position: absolute; top: 50%;} </style></div><div class="err"><h1>There was an error</h1><p>Sorry, but your browser doesn't support Javascript, Please enable JavaScript in your browser for best experience for website.</p></div></noscript>
 </body>
 </html>
