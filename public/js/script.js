@@ -30,19 +30,7 @@ function downloadFile(file){
        document.body.removeChild(link)
      }).catch((error) => console.error(error));
 }
-const downloadWallpaper = (file) => {
-     getDownloadURL(ref(storage, file))
-     .then(url => {
-          const fileName = url.substring(url.lastIndexOf("%2F")+3, url.indexOf("?"))
-          const a = document.createElement("a");
-          a.setAttribute("href", url);
-          a.setAttribute("download", fileName);
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-     })
-     .catch((error) => console.error(error));
-}
+const downloadWallpaper = (file) => getDownloadURL(ref(storage, file)).then(url => window.open(url)).catch((error) => console.error(error));
 function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
 function getFileInfo(file, index){
      const fileInfoRef = ref(storage, file);
@@ -84,7 +72,6 @@ function displayCards(cards, cardList){
 };
 function handleSubmit(e, i){e.preventDefault();const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];const selected = document.querySelectorAll(ids.map(id => `#${id}`).join(", "));const filePath = `wallpapers/coding${i}/${selected[i].value}.png`;downloadWallpaper(filePath);e.target.reset();}
 function handleChange(e, i){const filePath = `wallpapers/coding${i}/${e.target.value}.png`;getWallpaperInfo(filePath, i)}
-
 const downloadBtns = document.querySelectorAll(".card-btn"),cards = document.querySelectorAll(".grid-item"),list = document.querySelectorAll(".list");
 cards.forEach(card => {const files = card.dataset.filePath,i = card.dataset.index;getFileInfo(files,i)})
 list.forEach(el => {
