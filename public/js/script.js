@@ -1,7 +1,6 @@
 import {ref, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
 import {storage} from "./firebase.js"
 import { downloads } from "./data.js";
-
 const navbar = document.querySelector( ".navbar" ),
       toggler = document.querySelector( ".menu-toggler" ),
       navMenu = document.querySelector( ".navbar-menu" ),
@@ -13,7 +12,6 @@ const navbar = document.querySelector( ".navbar" ),
       ratingValue = document.getElementById("rating"),
       ratingError = document.querySelector(".ratingError"),
       contactForm = document.querySelector(".contact-form");
-
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 displayCards(downloads, downloadsContainer);
 window.addEventListener("scroll", () => window.scrollY > 20 ? navbar.classList.add( "sticky" ) : navbar.classList.remove( "sticky" )) ;
