@@ -13,11 +13,13 @@ const navbar = document.querySelector( ".navbar" ),
       ratingError = document.querySelector(".ratingError"),
       contactForm = document.querySelector(".contact-form");
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
+lazyJS("js/firebase.js")
 displayCards(downloads, downloadsContainer);
 window.addEventListener("scroll", () => window.scrollY > 20 ? navbar.classList.add( "sticky" ) : navbar.classList.remove( "sticky" )) ;
 toggler.addEventListener("click",  () => {toggler.classList.toggle( "active" );navMenu.classList.toggle( "active" )});
 document.getElementById("yearCount").innerHTML=(new Date).getFullYear();
 function lazyCss(e) {const t = document.createElement("link");t.href = e, t.rel = "stylesheet", t.type = "text/css", document.getElementsByTagName("head")[0].appendChild(t)};
+function lazyJS(e){const t = document.createElement("script");t.src = e, t.defer = true, t.type="module", document.body.appendChild(t)}
 function downloadFile(file){
      getDownloadURL(ref(storage, file)).then(url => {
        const link = document.createElement("a");
