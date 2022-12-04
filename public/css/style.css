@@ -70,6 +70,9 @@ section.dark .section-title::after {border: 4px solid #353b48}
 .tab-card .tab-content .tab .download-options .download-select optgroup,.tab-card .tab-content .tab .download-options .download-select .defaultOpt:disabled{background-color: #f1f1f1;color: #020204;}
 .tab-card .tab-content .tab .download-options .downloadBtn{padding: 12px 20px;border: 2px solid #204829;outline: none;border-radius: 10px;cursor: pointer;background: none;color: #204829;transition: .3s ease-in-out all;margin: 5px 0;}
 .tab-card .tab-content .tab .download-options .downloadBtn:hover{color: white;background-color: #204829;}
+.formore{margin: 15px 0;color: white;}
+.formore a{color:#92e5a1;transition:.3s linear;}
+.formore a:hover{color:#82ce81}
 .accordion-item{background-color: #283042;border-radius: .4rem;margin-bottom: 1rem;padding: 1rem;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
 .accordion-link{font-size: 1.6rem;color: rgba(255,255,255,.8);background-color: #283042;width: 100%;display: flex;justify-content: space-between;align-items: center;padding: 1rem 0;}
 .accordion-link iconify-icon{color: #92e5a1;padding: .5rem;}
