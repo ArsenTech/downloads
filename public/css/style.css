@@ -104,45 +104,10 @@ section.dark .section-title::after {border: 4px solid #353b48}
 .sm a{color:#fff;font-size:26px;margin:0 10px;transition:.3s linear;}
 .sm a:hover{color:#a2ffb3}
 @media screen and (max-width: 1024px) {.card-container {grid-template-columns: repeat(2,auto);grid-gap: 3rem;}}
-@media screen and (max-width:980px) {
-    .menu-toggler {display: block}
-    .navbar-menu {position: fixed;height: 100vh;width: 100%;background-color: #353b48;top: 0;right: -100%;max-width: 400px;padding: 80px 50px;transition: .3s linear;}
-    .navbar-menu a {display: block;font-size: 30px;margin: 30px 0;}
-    .sticky .navbar-menu {background-color: #f1f1f1}
-    .sticky .menu-toggler.span {background-color: #020204}
-    .navbar-menu.active {right: 0}
-    .menu-toggler.active span:nth-child(1) {transform: rotate(-45deg);top: 4px;}
-    .menu-toggler.active span:nth-child(2) {opacity: 0}
-    .menu-toggler.active span:nth-child(3) {transform: rotate(45deg);bottom: 14px;}
-}
-@media screen and (max-width: 575px){
-    .tab-card .tab-card-body .tab-header .tab-link .icon{display: block;}
-    .tab-card .tab-card-body .tab-header .tab-link .text{display: none;}
-}
+@media screen and (max-width:980px){.menu-toggler{display:block}.navbar-menu{position:fixed;height:100vh;width:100%;background-color:#353b48;top:0;right:-100%;max-width:400px;padding:80px 50px;transition:.3s linear;}.navbar-menu a{display:block;font-size:30px;margin:30px 0;}.sticky .navbar-menu{background-color:#f1f1f1}.sticky .menu-toggler.span{background-color:#020204}.navbar-menu.active{right:0}.menu-toggler.active span:nth-child(1){transform:rotate(-45deg);top:4px;}.menu-toggler.active span:nth-child(2){opacity:0}.menu-toggler.active span:nth-child(3){transform:rotate(45deg);bottom:14px;}}
+@media screen and (max-width:575px){.tab-card .tab-card-body .tab-header .tab-link .icon{display:block;}.tab-card .tab-card-body .tab-header .tab-link .text{display:none;}}
 @media screen and (max-width: 540px){.card-container {grid-template-columns: auto;grid-gap: 2rem;}}
-@media screen and (max-width: 425px){
-    .accordion-link{font-size: 1.4rem;}
-    .answer p{font-size: 0.85rem;padding: 0.5rem 2rem;}
-    .tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size: 10px;padding: 5px 10px;}
-    .tab-card .tab-content .tab h3{font-size: 15px;}
-    .accordion-item:target .answer{max-height: fit-content;}
-    .half-container{flex-direction: column;}
-    .emailZone,.nameZone {max-width: 100%}
-    .infoAndOptions{flex-direction: column;justify-content: center;}
-}
-@media screen and (max-width: 280px){
-    #home .content h1{font-size: 25px;}
-    #home .content h2{font-size: 15px;}
-    .tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size: 9px;padding: 2px;}
-}
-@media (hover) {
-    .card-content {transform: translateY(55%);transition: transform .5s ease;}
-    .card:hover .card-content,
-    .card:focus-within .card-content {transform: translateY(0);transition-delay: .3s;}
-    .card:hover .card-content>*:not(.card-title),
-    .card:focus-within .card-content>*:not(.card-title) {opacity: 1;transition-delay: .3s;}
-    .card:focus-within .card-content {transition-duration: 0s;}
-    .card-content>*:not(.card-title) {opacity: 0;transition: opacity .8s linear;}
-    .card-title::after {transform: scaleX(0);}
-}
+@media screen and (max-width:425px){.accordion-link{font-size:1.4rem;}.answer p{font-size:.85rem;padding:.5rem 2rem;}.tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size:10px;padding:5px 10px;}.tab-card .tab-content .tab h3{font-size:15px;}.accordion-item:target .answer{max-height:fit-content;}.half-container{flex-direction:column;}.emailZone,.nameZone{max-width:100%}.infoAndOptions{flex-direction:column;justify-content:center;}}
+@media screen and (max-width:280px){#home .content h1{font-size:25px;}#home .content h2{font-size:15px;}.tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size:9px;padding:2px;}}
+@media (hover){.card-content{transform:translateY(55%);transition:transform .5s ease;}.card:hover .card-content,.card:focus-within .card-content{transform:translateY(0);transition-delay:.3s;}.card:hover .card-content>*:not(.card-title),.card:focus-within .card-content>*:not(.card-title){opacity:1;transition-delay:.3s;}.card:focus-within .card-content{transition-duration:0s;}.card-content>*:not(.card-title){opacity:0;transition:opacity .8s linear;}.card-title::after{transform:scaleX(0);}}
 @media (prefers-reduced-motion: reduce) {*,*::after,*::before {animation-duration: 0.01ms !important;animation-iteration-count: 1 !important;transition: 0.01ms !important;scroll-behavior: auto !important;transition-delay: 0 !important;}}

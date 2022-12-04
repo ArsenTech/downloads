@@ -8,9 +8,4 @@ body {font-family: Sora, Arial;}
 .errbtn:hover,.error-button:hover {background: #80ce87;color: #020204;}
 .error-text {margin-bottom: 20px;}
 .errbtn {border: none;}
-@media screen and (max-width:600px) {
-     body {overflow-x: hidden;}
-     #error {width: 103%;height: 98vh;}
-     .error-title {font-size: 25px;}
-     .error-text {font-size: 15px;}
-}
+@media screen and (max-width:600px){body{overflow-x:hidden;}#error{width:103%;height:98vh;}.error-title{font-size:25px;}.error-text{font-size:15px;}}
