@@ -65,7 +65,7 @@ section.dark .section-title::after {border: 4px solid #353b48}
 .tab-card .tab-content .tab.active{display: block;}
 .tab-card .tab-content .tab p{font-size: 14px;color: #353b48;line-height: 1.5;letter-spacing: .65px;}
 .tab-card .tab-content .tab h3{margin: 12px 0;font-size: 20px;}
-.tab-card .tab-content .tab img{width: 100%;}
+.tab-card .tab-content .tab img{width: 100%;height: 100%;}
 .tab-card .tab-content .tab .download-options .download-select{padding: 12px 20px;background: #204829;border: none;outline: none;border-radius: 10px;color: white;cursor: pointer;}
 .tab-card .tab-content .tab .download-options .download-select optgroup,.tab-card .tab-content .tab .download-options .download-select .defaultOpt:disabled{background-color: #f1f1f1;color: #020204;}
 .tab-card .tab-content .tab .download-options .downloadBtn{padding: 12px 20px;border: 2px solid #204829;outline: none;border-radius: 10px;cursor: pointer;background: none;color: #204829;transition: .3s ease-in-out all;margin: 5px 0;}
