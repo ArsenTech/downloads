@@ -5,9 +5,16 @@ html {scroll-behavior: smooth}
 ::-webkit-scrollbar-track {border: 7px solid #353b48;box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,.5);}
 ::-webkit-scrollbar-thumb {background: linear-gradient(45deg,#22b455,#1dd1a1);}
 ::selection {color: #204829;background-color: #92e5a1;}
-.loader-wrapper {width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: #353b48;display: flex;justify-content: center;align-items: center;z-index: 99999;}
-.loader {border: 16px solid #80ce8780;border-top: 16px solid #22b455;border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;-webkit-animation: spin 2s linear infinite;}
-@keyframes spin {0% {transform: rotate(0deg)}100% {transform: rotate(360deg)}}
+.loader-wrapper{width: 100%;height: 100vh;background-color: #353b48;display: flex;justify-content: center;align-items: center;position: fixed;z-index: 99999;}
+.loader{width: 30px;height: 150px;background: linear-gradient(45deg, #22b455, #1dd1a1);border-radius: 50px;margin: 10px;animation: loader 0.8s ease infinite;}
+.loader:nth-child(2){animation-delay: 0.1s;}
+.loader:nth-child(3){animation-delay: 0.2s;}
+.loader:nth-child(4){animation-delay: 0.3s;}
+.loader:nth-child(5){animation-delay: 0.4s;}
+.loader:nth-child(6){animation-delay: 0.5s;}
+.loader:nth-child(7){animation-delay: 0.6s;}
+.loader:nth-child(8){animation-delay: 0.7s;}
+@keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
 .loader-hidden {animation: fadeOut 1s;-webkit-animation: fadeOut 1s;animation-fill-mode: forwards;}
 @keyframes fadeOut {100% {opacity: 0;visibility: hidden;}}
 .navbar {position: fixed;background: 0 0;width: 100%;padding: 30px 0;top: 0;z-index: 999;transition: .3s linear;}
