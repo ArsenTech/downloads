@@ -8,6 +8,9 @@ Pingdom Website Speed Test Score: ![b](https://user-images.githubusercontent.com
 GTMetrix Score: ![A](https://user-images.githubusercontent.com/62609185/103670287-d27a9300-4f92-11eb-94dd-c46532b8f921.PNG) (Performance: **99%**, Structure: **96%**)
 ## Info
 This Page Has Downloads of Softwares, Windows Versions, DOS and Much More. You can Download Files from my collection (that collection isn't massive)
+## Versions:
+- 1.0: Initial Release
+- 2.0: **New Look**
 ## Follow
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
 <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
