@@ -34,13 +34,16 @@
                          <span></span>
                          <span></span>
                     </button>
-                    <div class="navbar-menu">
+                    <div class="navbar-menu" id="navLinks">
                          <a href="#home">Home</a>
                          <a href="#downloads">Files to Download</a>
                          <a href="#wallpapers">Wallpapers</a>
                          <a href="#feedback">Feedback</a>
                          <a href="#faq">FAQs</a>
                     </div>
+                    <span id="icon">
+                         <img src="files/light.svg" width="30" height="30" alt="mode">
+                     </span>
                </div>
           </nav>
      </header>
@@ -67,7 +70,7 @@
                     <div class="card-container" id="downloadsCards"></div>
                </div>
           </section>
-          <section id="wallpapers" class="dark">
+          <section id="wallpapers" class="alt">
                <div class="inner-width">
                     <h2 class="section-title">Wallpapers</h2>
                     <div class="tab-card">
@@ -120,14 +123,14 @@
                     </form>
                </div>
           </section>
-          <section id="faq" class="dark">
+          <section id="faq" class="alt">
                <div class="inner-width">
                     <h2 class="section-title">FAQs</h2>
                     <div class="faq">
                          <div class="accordion">
                               <div class="accordion-item" id="q1">
                                    <a class="accordion-link" href="#q1">What's This? <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon><iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon></a>
-                                   <div class="answer"><p>Downloads collection from ArsenTech. This Contains Virus-Free Softwares selected carefully by ArsenTech. It Includes Windows, Softwares, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily. Think of it like a convenience store. We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.</p></div>
+                                   <div class="answer"><p>Downloads collection from ArsenTech. This Contains Virus-Free Softwares selected carefully by ArsenTech. It Includes Windows, Softwares, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily. We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.</p></div>
                               </div>
                               <div class="accordion-item" id="q2">
                                    <a class="accordion-link" href="#q2">I'm the Copyright owner of these file(s) and I Want to Take These File(s) down! <iconify-icon class="add-icon" icon="carbon:add"></iconify-icon><iconify-icon class="remove-icon" icon="akar-icons:minus"></iconify-icon></a>
@@ -150,7 +153,21 @@
                </div>
           </section>
      </main>
-     <footer id="site-footer"><div class="inner-width"><div class="copyright"><p>© <span id="yearCount"></span> | Developed by <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg/about">ArsenTech</a></p></div><div class="sm"><a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank" rel="noopener"><iconify-icon icon="ant-design:youtube-filled" data-inline="false"></iconify-icon></a><a href="https://www.reddit.com/user/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="dashicons:reddit" data-inline="false"></iconify-icon></a><a href="https://codepen.io/ArsenJS" target="_blank" rel="noopener"><iconify-icon icon="bx:bxl-codepen" data-inline="false"></iconify-icon></a><a href="https://github.com/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="ant-design:github-outlined" data-inline="false"></iconify-icon></a><a href="https://www.deviantart.com/arsen2005" target="_blank" rel="noopener"><iconify-icon icon="mdi:deviantart" data-inline="false"></iconify-icon></a></div></div></footer>
+     <footer id="site-footer">
+          <div class="inner-width">
+               <div class="copyright">
+                    <p>&copy; <span id="yearCount"></span> | Developed by <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg/about">ArsenTech</a></p>
+               </div>
+               <div class="sm">
+                    <a href="https://www.youtube.com/@ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="ant-design:youtube-filled" data-inline="false"></iconify-icon></a>
+                    <a href="https://www.reddit.com/user/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="dashicons:reddit" data-inline="false"></iconify-icon></a>
+                    <a href="https://codepen.io/ArsenJS" target="_blank" rel="noopener"><iconify-icon icon="bx:bxl-codepen" data-inline="false"></iconify-icon></a>
+                    <a href="https://github.com/ArsenTech" target="_blank" rel="noopener"><iconify-icon icon="ant-design:github-outlined" data-inline="false"></iconify-icon></a>
+                    <a href="https://www.deviantart.com/arsen2005" target="_blank" rel="noopener"><iconify-icon icon="mdi:deviantart" data-inline="false"></iconify-icon></a>
+                    <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank" rel="noopener"><iconify-icon icon="simple-icons:scratch" data-inline="false"></iconify-icon></a>
+               </div>
+          </div>
+     </footer>
      <script defer src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
      <script defer type="module" src="js/script.js"></script>
      <script defer type="module" src="js/data.js"></script>

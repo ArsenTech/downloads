@@ -11,15 +11,47 @@ const navbar = document.querySelector( ".navbar" ),
       allStar = document.querySelectorAll(".rating .star"),
       ratingValue = document.getElementById("rating"),
       ratingError = document.querySelector(".ratingError"),
-      contactForm = document.querySelector(".contact-form");
+      contactForm = document.querySelector(".contact-form"),
+      getMode = localStorage.getItem("arsentech-theme"),
+      modeToggler = document.querySelector("#icon"),
+      navLinks = document.querySelectorAll("#navLinks a");
+if(getMode && getMode === "dark") {
+     document.body.classList.add("dark");
+     modeToggler.querySelector("img").src = "files/dark.svg";
+}
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
+lazyCss("css/dark-mode.css");
 lazyJS("js/firebase.js")
 displayCards(downloads, downloadsContainer);
 window.addEventListener("scroll", () => window.scrollY > 20 ? navbar.classList.add( "sticky" ) : navbar.classList.remove( "sticky" )) ;
-toggler.addEventListener("click",  () => {toggler.classList.toggle( "active" );navMenu.classList.toggle( "active" )});
+toggler.addEventListener("click",toggleActive);
+modeToggler.addEventListener("click", toggleMode);
 document.getElementById("yearCount").innerHTML=(new Date).getFullYear();
-function lazyCss(e) {const t = document.createElement("link");t.href = e, t.rel = "stylesheet", t.type = "text/css", document.getElementsByTagName("head")[0].appendChild(t)};
-function lazyJS(e){const t = document.createElement("script");t.src = e, t.defer = true, t.type="module", document.body.appendChild(t)}
+function lazyCss(e) {
+     const t = document.createElement("link");
+     t.href = e, t.rel = "stylesheet", t.type = "text/css", document.getElementsByTagName("head")[0].appendChild(t)};
+function lazyJS(e){
+     const t = document.createElement("script");
+     t.src = e, t.defer = true, t.type="module", document.body.appendChild(t)
+}
+function toggleActive(){
+     toggler.classList.toggle("active"); 
+     navMenu.classList.toggle("active");
+}
+function toggleMode(){
+     document.body.classList.toggle("dark");
+     if(!document.body.classList.contains("dark")){
+          modeToggler.querySelector("img").src = "files/light.svg";
+          localStorage.setItem("arsentech-theme", "light");
+     } else {
+          modeToggler.querySelector("img").src = "files/dark.svg";
+          localStorage.setItem("arsentech-theme", "dark");
+     }
+}
+function closeMenu(){
+     toggler.classList.remove("active"); 
+     navMenu.classList.remove("active");
+}
 function downloadFile(file){
      getDownloadURL(ref(storage, file)).then(url => {
        const link = document.createElement("a");
@@ -73,39 +105,44 @@ function displayCards(cards, cardList){
 function handleSubmit(e, i){e.preventDefault();const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];const selected = document.querySelectorAll(ids.map(id => `#${id}`).join(", "));const filePath = `wallpapers/coding${i}/${selected[i].value}.png`;downloadWallpaper(filePath);e.target.reset();}
 function handleChange(e, i){const filePath = `wallpapers/coding${i}/${e.target.value}.png`;getWallpaperInfo(filePath, i)}
 const downloadBtns = document.querySelectorAll(".card-btn"),cards = document.querySelectorAll(".grid-item"),list = document.querySelectorAll(".list");
-cards.forEach(card => {const files = card.dataset.filePath,i = card.dataset.index;getFileInfo(files,i)})
-list.forEach(el => {
-     el.addEventListener("click", ()=>{
+cards.forEach(card => {
+     const files = card.dataset.filePath,i = card.dataset.index;
+     getFileInfo(files,i)
+})
+list.forEach(el => el.addEventListener("click", ()=>{
      for(let i=0; i<list.length; i++) list[i].classList.remove("active")
      el.classList.add("active");
      const dataFilter = el.dataset.filter;
      cards.forEach(card => {
           card.classList.remove("active");card.classList.add("hide");
           if(card.dataset.item == dataFilter || dataFilter == "all") {card.classList.remove("hide");card.classList.add("active");};
-          });
      });
+}));
+downloadBtns.forEach(el => {
+     const filePath = el.dataset.filePath;
+     el.addEventListener("click", ()=> downloadFile(filePath))
 });
-downloadBtns.forEach(el => {const filePath = el.dataset.filePath;el.addEventListener("click", ()=> downloadFile(filePath))})
-tabHeaderBtns.forEach((tab, index)=>{
-     tab.addEventListener("click", ()=>{
-          tabs.forEach(content => content.classList.remove("active"));
-          tabHeaderBtns.forEach(tab => tab.classList.remove("active"));
-          tabs[index].classList.add("active");
-          tabHeaderBtns[index].classList.add("active");
-     });
+tabHeaderBtns.forEach((tab, index)=>tab.addEventListener("click", ()=>{
+     tabs.forEach(content => content.classList.remove("active"));
+     tabHeaderBtns.forEach(tab => tab.classList.remove("active"));
+     tabs[index].classList.add("active");
+     tabHeaderBtns[index].classList.add("active");
+}));
+downloadOptions.forEach((el, index) => {
+     const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];
+     const opt = document.querySelectorAll(ids.map(id => `#${id}`).join(", "));
+     opt[index].addEventListener("change", (e) => handleChange(e, index));
+     el.addEventListener("submit", (e)=> handleSubmit(e, index));
 });
-downloadOptions.forEach((el, index) => {const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];const opt = document.querySelectorAll(ids.map(id => `#${id}`).join(", "));opt[index].addEventListener("change", (e) => handleChange(e, index));el.addEventListener("submit", (e)=> handleSubmit(e, index));});
-allStar.forEach((elem, idx)=>{
-     elem.addEventListener("click", ()=> {
-          let click = 0;
-          ratingValue.value = idx+1
-          allStar.forEach(el => {el.querySelector("iconify-icon").setAttribute("icon", "bi:star");el.classList.remove("active");});
-          for (let i = 0; i < allStar.length; i++) {
-               if(i <= idx){allStar[i].querySelector("iconify-icon").setAttribute("icon", "bi:star-fill");allStar[i].classList.add("active");} 
-               else {allStar[i].style.setProperty("--i", click);click++;};
-          };
-     });
-});
+allStar.forEach((elem, idx)=>elem.addEventListener("click", ()=> {
+     let click = 0;
+     ratingValue.value = idx+1
+     allStar.forEach(el => {el.querySelector("iconify-icon").setAttribute("icon", "bi:star");el.classList.remove("active");});
+     for (let i = 0; i < allStar.length; i++) {
+          if(i <= idx){allStar[i].querySelector("iconify-icon").setAttribute("icon", "bi:star-fill");allStar[i].classList.add("active");} 
+          else {allStar[i].style.setProperty("--i", click);click++;};
+     };
+}));
 contactForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      let isValid = false;
@@ -113,3 +150,4 @@ contactForm.addEventListener("submit", (e)=> {
      else{ratingError.innerHTML = "";isValid = true;};
      if(isValid){contactForm.action = "https://formspree.io/f/mvodlpyz";contactForm.submit();e.target.reset()}
 });
+navLinks.forEach(link=>link.addEventListener("click", closeMenu))
