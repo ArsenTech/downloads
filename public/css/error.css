@@ -1,11 +1,18 @@
 * {margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;}
 body {font-family: Sora, Arial;}
 ::selection {color: #204829;background-color: #92e5a1;}
-#error {min-height: 100vh;background: linear-gradient(to left, #22b455, #1dd1a1);}
+#error {height: 100vh;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.jpg) no-repeat center;background-attachment: fixed;background-size: cover;}
 .error-container {width: 100%;position: absolute;top: 50%;transform: translateY(-50%);text-align: center;color: #f5f5f5;}
 .error-number {font-size: 160px;margin: 0;font-weight: 900;letter-spacing: 20px;color: #f1f1f1;}
-.errbtn,.error-button {text-decoration: none;background: #2b6638;color: #f5f5f5;padding: 12px 24px;border-radius: 25px;font-size: 14px;text-transform: uppercase;transition: .3s linear;}
-.errbtn:hover,.error-button:hover {background: #80ce87;color: #020204;}
+.errbtn,.error-button {display: inline-block;margin: 15px 30px;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
+.errbtn:hover,.error-button:hover {background-color: #204829;color: #fff;}
 .error-text {margin-bottom: 20px;}
 .errbtn {border: none;}
-@media screen and (max-width:600px){body{overflow-x:hidden;}#error{width:103%;height:98vh;}.error-title{font-size:25px;}.error-text{font-size:15px;}}
+@media screen and (max-width:600px){
+     *{text-align: center;}
+     body{overflow-x:hidden;}
+     .error-container{padding: 10px;}
+     .error-title{font-size:25px;}
+     .error-text{font-size:15px;}
+}
+@media screen and (max-width:400px){.error-number{font-size: 100px;}}
