@@ -27,7 +27,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-*.iso
 *.zip
 *.rar
 *.7z
