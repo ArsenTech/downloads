@@ -16,7 +16,7 @@
 .dark section.alt {background-color: #2f343f;}
 .dark section.alt .section-title::after{border-color: #2f343f;}
 .dark .card-filter{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;margin-bottom: 24px;}
-.dark .card-filter .list{list-style: none;background: #1dd1a1;padding: 12px 20px;margin: 5px;letter-spacing: 1px;cursor: pointer;color: white;transition: .2s ease-in-out all;}
+.dark .card-filter .list{list-style: none;background: #1dd1a1;padding: 12px 20px;margin: 5px;letter-spacing: 1px;cursor: pointer;color: #353b48;transition: .2s ease-in-out all;}
 .dark .card-filter .list.active{background: #0d5a45;color: #1dd1a1;}
 .dark .contact-form input, .dark .contact-form textarea {background-color: #f1f1f1;color: #2f343f;}
 .dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}
