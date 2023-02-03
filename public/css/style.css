@@ -25,7 +25,7 @@ html {scroll-behavior: smooth}
 .menu-toggler span {display: block;height: 3px;background-color: #fff;margin: 6px 0;position: relative;transition: .3s ease;}
 .navbar-menu a {color: #fff;font-size: 15px;font-weight: 500;margin-left: 30px;transition: .3s ease;}
 .navbar-menu a:hover {color: #1dd1a1 !important;}
-#icon{width: 30px;margin-left: 30px;transition: .3s ease;filter: invert(1);cursor: pointer;}
+#icon{width: 30px;transition: .3s ease;filter: invert(1);cursor: pointer;}
 #icon img{width: 100%;}
 .sticky {background: #f1f1f1;padding: 18px 0;}
 .sticky .logo {background-image: url(../files/arsentech-light.svg);}
@@ -35,10 +35,13 @@ html {scroll-behavior: smooth}
 .sticky #icon{filter: invert(0);}
 #home {height: 100vh;min-height: 500px;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.jpg) no-repeat center;background-attachment: fixed;background-size: cover;transition: 1s all;}
 #home .inner-width {display: flex;align-items: center;justify-content: center;height: 100%;text-align: center;}
-#home .content {width: 100%;color: #fff;}
-#home .content h1 {font-size: 50px;margin-bottom: 60px;}
-#home .content h1::after {content: "Windows Versions";animation: text 5s linear infinite;}
-@keyframes text {25% {content: "Softwares"}50% {content: "Tools"}75% {content: "More Stuff"}}
+#home .content{display: inline-flex;flex-direction: column;align-items: center;justify-content: center;}
+#home .content .txt{position: relative;color: #25ecb7;font-size: 50px;font-weight: 600;}
+#home .content .txt.first{color: white;}
+#home .content .txt.second::after{content: "Windows Versions";animation: text 5s linear infinite;}
+@keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
+#home .button {display: inline-block;margin: 15px 0;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
+#home .button:hover {background-color: #204829;color: #fff;}
 section {padding: 100px 0;background: #fff;}
 .section-title {text-align: center;margin-bottom: 80px;position: relative;font-size: 26px;padding-bottom: 20px;color: #222;}
 .section-title::before {content: "";position: absolute;width: 80px;height: 3px;background: #222;bottom: 0;left: calc(50% - 40px);}
@@ -50,7 +53,7 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
 .card-filter .list.active{background: #1dd1a1;color: #353b48;}
 .grid-item.hide{display: none;}
 .card-container {display: grid;line-height: 1.6;grid-gap: 6rem;grid-template-columns: repeat(3,auto);place-items: center;place-content: center;}
-.card {width: 295px;color: var(--clr-neutral-100);background-size: cover;padding: 10rem 0 0;max-width: 35ch;border-radius: 1rem;overflow: hidden;transition: transform .3s ease-in-out;}
+.card {width: 280px;color: var(--clr-neutral-100);background-size: cover;padding: 10rem 0 0;max-width: 35ch;border-radius: 1rem;overflow: hidden;transition: transform .3s ease-in-out;}
 .card:hover,.card:focus-within {transform: scale(1.05);}
 .card-content {padding: 1.3rem;background: linear-gradient(hsla(0,0%,0%,0),rgba(0,0,0,0.6) 20%,hsl(0,0%,0%,1));}
 .card-title {position: relative;width: max-content;font-size: 20px;}
@@ -132,6 +135,7 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
 }
 @media screen and (max-width: 540px){.card-container {grid-template-columns: auto;grid-gap: 2rem;}}
 @media screen and (max-width:425px){
+     #home .content .txt{font-size:36px;}
      .accordion-link{font-size:1.4rem;}
      .answer p{font-size:.85rem;padding:.5rem 2rem;}
      .tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size:10px;padding:5px 10px;}
@@ -141,8 +145,8 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
      .emailZone,.nameZone{max-width:100%}.infoAndOptions{flex-direction:column;justify-content:center;}
 }
 @media screen and (max-width:280px){
-     #home .content h1{font-size:25px;}
-     #home .content h2{font-size:15px;}
+     #home .content .txt{font-size:25px;}
+     .inner-width{padding: 0 25px;}
      .tab-card .tab-content .tab .download-options .download-select,.tab-card .tab-content .tab .download-options .downloadBtn{font-size:9px;padding:2px;}
 }
 @media (hover){
