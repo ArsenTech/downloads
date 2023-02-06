@@ -13,10 +13,12 @@ const navbar = document.querySelector( ".navbar" ),
       contactForm = document.querySelector(".contact-form"),
       getMode = localStorage.getItem("arsentech-theme"),
       modeToggler = document.querySelector("#icon"),
-      navLinks = document.querySelectorAll("#navLinks a");
+      navLinks = document.querySelectorAll("#navLinks a"),
+      frmSearch = document.querySelector(".search-container"),
+      cancelSearchBtn = document.querySelector("#cancel-search");
 if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/dark.svg";}
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
-lazyCss("css/dark-mode.css");lazyJS("js/firebase.js");displayCards(downloads, downloadsContainer);
+lazyCss("css/dark-mode.css");lazyJS("js/firebase.js");displayCards(downloads,downloadsContainer)
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add( "sticky" ):navbar.classList.remove( "sticky" ));
 toggler.addEventListener("click",toggleActive);modeToggler.addEventListener("click", toggleMode);
 document.getElementById("yearCount").innerHTML=new Date().getFullYear();
@@ -49,7 +51,8 @@ downloadBtns.forEach(el => {const filePath = el.dataset.filePath;el.addEventList
 tabHeaderBtns.forEach((tab, index)=>tab.addEventListener("click", ()=>{
      tabs.forEach(content => content.classList.remove("active"));
      tabHeaderBtns.forEach(tab => tab.classList.remove("active"));
-     tabs[index].classList.add("active");tabHeaderBtns[index].classList.add("active");
+     tabs[index].classList.add("active");
+     tabHeaderBtns[index].classList.add("active");
 }));
 downloadOptions.forEach((el, index) => {
      const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];
@@ -72,4 +75,16 @@ contactForm.addEventListener("submit", (e)=> {
      if(ratingValue.value == 0){ratingError.innerHTML = "Required";isValid = false;}else{ratingError.innerHTML = "";isValid = true;}
      if(isValid){contactForm.action = "https://formspree.io/f/mvodlpyz";contactForm.submit();e.target.reset()}
 });
-navLinks.forEach(link=>link.addEventListener("click", closeMenu))
+navLinks.forEach(link=>link.addEventListener("click", closeMenu));
+frmSearch.addEventListener("submit", (e)=>{
+     e.preventDefault();
+     let searchInput = document.querySelector("#search-input").value;
+     cards.forEach((el,i)=>{
+          if(el.querySelector(".card-title").innerText.toLowerCase().includes(searchInput.toLowerCase())){cards[i].classList.remove("hide");cards[i].classList.add("active");} 
+          else {cards[i].classList.remove("active");cards[i].classList.add("hide");}
+     })
+})
+cancelSearchBtn.addEventListener("click", ()=>{
+     document.querySelector("#search-input").value = "";
+     cards.forEach((_,i)=>{cards[i].classList.remove("hide");cards[i].classList.add("active")})
+})

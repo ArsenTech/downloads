@@ -18,7 +18,8 @@
 .dark .card-filter{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;margin-bottom: 24px;}
 .dark .card-filter .list{list-style: none;background: #1dd1a1;padding: 12px 20px;margin: 5px;letter-spacing: 1px;cursor: pointer;color: #353b48;transition: .2s ease-in-out all;}
 .dark .card-filter .list.active{background: #0d5a45;color: #f1f1f1;}
-.dark .contact-form input, .dark .contact-form textarea {background-color: #f1f1f1;color: #2f343f;}
+.dark .contact-form input, .dark .contact-form textarea, .dark  #search-input {background-color: #f1f1f1;color: #2f343f;}
+.dark .contact-form input::placeholder,.dark .contact-form textarea::placeholder, .dark #search-input::placeholder{color: #666;}
 .dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}
 .dark .contact-form .btn:hover {background: #1dd1a1;color: #353b48;}
 .dark .accordion-item{background-color: #283042;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
@@ -39,6 +40,8 @@
 .dark .formore{color: #f1f1f1;}
 .dark .formore a{color:#1dd1a1;}
 .dark .formore a:hover{color:#22b455;}
+.dark .search-container .search-btn{background: #1dd1a1;color: #353b48;}
+.dark .search-container .cancel-btn{color: #f1f1f1;}
 @media screen and (max-width:980px){
      .dark .navbar-menu{background-color:#2f343f;}
      .dark .sticky .navbar-menu{background-color:#353b48;}
