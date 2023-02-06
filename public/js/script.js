@@ -1,5 +1,5 @@
-import { downloads } from "./data.js";
-import { displayCards, lazyJS, lazyCss, downloadFile, downloadWallpaper, getFileInfo, getWallpaperInfo } from "./functions.js";
+import {downloads} from "./data.js";
+import {displayCards,lazyJS,lazyCss,downloadFile,downloadWallpaper,getFileInfo,getWallpaperInfo} from "./functions.js";
 const navbar = document.querySelector( ".navbar" ),
       toggler = document.querySelector( ".menu-toggler" ),
       navMenu = document.querySelector( ".navbar-menu" ),
@@ -14,15 +14,12 @@ const navbar = document.querySelector( ".navbar" ),
       getMode = localStorage.getItem("arsentech-theme"),
       modeToggler = document.querySelector("#icon"),
       navLinks = document.querySelectorAll("#navLinks a");
-if(getMode && getMode === "dark") {
-     document.body.classList.add("dark");
-     modeToggler.querySelector("img").src = "files/dark.svg";
-}
+if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/dark.svg";}
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 lazyCss("css/dark-mode.css");lazyJS("js/firebase.js");displayCards(downloads, downloadsContainer);
-window.addEventListener("scroll", ()=>window.scrollY > 20 ? navbar.classList.add( "sticky" ) : navbar.classList.remove( "sticky" ));
+window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add( "sticky" ):navbar.classList.remove( "sticky" ));
 toggler.addEventListener("click",toggleActive);modeToggler.addEventListener("click", toggleMode);
-document.getElementById("yearCount").innerHTML=(new Date).getFullYear();
+document.getElementById("yearCount").innerHTML=new Date().getFullYear();
 function toggleActive(){toggler.classList.toggle("active"); navMenu.classList.toggle("active");}
 function toggleMode(){
      document.body.classList.toggle("dark");
@@ -32,30 +29,27 @@ function toggleMode(){
 function closeMenu(){toggler.classList.remove("active"); navMenu.classList.remove("active");}
 function handleSubmit(e, i){
      e.preventDefault();
-     const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];
-     const selected = document.querySelectorAll(ids.map(id => `#${id}`).join(", "));
-     const filePath = `wallpapers/coding${i}/${selected[i].value}.png`;
-     downloadWallpaper(filePath);
-     e.target.reset();
+     const ids=["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];
+     const selected=document.querySelectorAll(ids.map(id=>`#${id}`).join(", "));
+     const filePath=`wallpapers/coding${i}/${selected[i].value}.png`;
+     downloadWallpaper(filePath);e.target.reset();
 }
 function handleChange(e, i){const filePath = `wallpapers/coding${i}/${e.target.value}.png`;getWallpaperInfo(filePath, i)}
-const downloadBtns = document.querySelectorAll(".card-btn"),cards = document.querySelectorAll(".grid-item"),list = document.querySelectorAll(".list");
-cards.forEach(card => {const files = card.dataset.filePath,i = card.dataset.index;getFileInfo(files,i);})
-list.forEach(el => el.addEventListener("click", ()=>{
-     for(let i=0; i<list.length; i++) list[i].classList.remove("active")
-     el.classList.add("active");
-     const dataFilter = el.dataset.filter;
+const downloadBtns=document.querySelectorAll(".card-btn"),cards = document.querySelectorAll(".grid-item"),list = document.querySelectorAll(".list");
+cards.forEach(card=>{const files = card.dataset.filePath,i = card.dataset.index;getFileInfo(files,i);})
+list.forEach(el=>el.addEventListener("click", ()=>{
+     for(let i=0; i<list.length; i++) list[i].classList.remove("active");
+     el.classList.add("active");const dataFilter = el.dataset.filter;
      cards.forEach(card => {
           card.classList.remove("active");card.classList.add("hide");
-          if(card.dataset.item == dataFilter || dataFilter == "all") {card.classList.remove("hide");card.classList.add("active");};
+          if(card.dataset.item==dataFilter||dataFilter=="all"){card.classList.remove("hide");card.classList.add("active");}
      });
 }));
 downloadBtns.forEach(el => {const filePath = el.dataset.filePath;el.addEventListener("click", ()=> downloadFile(filePath))});
 tabHeaderBtns.forEach((tab, index)=>tab.addEventListener("click", ()=>{
      tabs.forEach(content => content.classList.remove("active"));
      tabHeaderBtns.forEach(tab => tab.classList.remove("active"));
-     tabs[index].classList.add("active");
-     tabHeaderBtns[index].classList.add("active");
+     tabs[index].classList.add("active");tabHeaderBtns[index].classList.add("active");
 }));
 downloadOptions.forEach((el, index) => {
      const ids = ["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];
@@ -69,13 +63,13 @@ allStar.forEach((elem, idx)=>elem.addEventListener("click", ()=> {
      allStar.forEach(el => {el.querySelector("iconify-icon").setAttribute("icon", "bi:star");el.classList.remove("active");});
      for (let i = 0; i < allStar.length; i++) {
           if(i <= idx){allStar[i].querySelector("iconify-icon").setAttribute("icon", "bi:star-fill");allStar[i].classList.add("active");} 
-          else {allStar[i].style.setProperty("--i", click);click++;};
-     };
+          else {allStar[i].style.setProperty("--i", click);click++;}
+     }
 }));
 contactForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      let isValid = false;
-     if(ratingValue.value == 0){ratingError.innerHTML = "Required";isValid = false;}else{ratingError.innerHTML = "";isValid = true;};
+     if(ratingValue.value == 0){ratingError.innerHTML = "Required";isValid = false;}else{ratingError.innerHTML = "";isValid = true;}
      if(isValid){contactForm.action = "https://formspree.io/f/mvodlpyz";contactForm.submit();e.target.reset()}
 });
 navLinks.forEach(link=>link.addEventListener("click", closeMenu))

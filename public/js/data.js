@@ -179,4 +179,4 @@ export const downloads = [
           filePath: "updates/windows-xp-sp2.exe",
           category: "updates",
      },
-]
+];
