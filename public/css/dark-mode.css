@@ -40,7 +40,9 @@
 .dark .formore{color: #f1f1f1;}
 .dark .formore a{color:#1dd1a1;}
 .dark .formore a:hover{color:#22b455;}
-.dark .search-container .search-btn{background: #1dd1a1;color: #353b48;}
+.dark .search-container .search-btn{background: #1dd1a1;}
+.dark .search-container .search-btn img{filter: invert(0);}
+.dark .search-container .cancel-btn img{filter: invert(1);}
 .dark .search-container .cancel-btn{color: #f1f1f1;}
 @media screen and (max-width:980px){
      .dark .navbar-menu{background-color:#2f343f;}

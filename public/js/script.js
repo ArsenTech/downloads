@@ -16,7 +16,7 @@ const navbar = document.querySelector( ".navbar" ),
       navLinks = document.querySelectorAll("#navLinks a"),
       frmSearch = document.querySelector(".search-container"),
       cancelSearchBtn = document.querySelector("#cancel-search");
-if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/dark.svg";}
+if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";}
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 lazyCss("css/dark-mode.css");lazyJS("js/firebase.js");displayCards(downloads,downloadsContainer)
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add( "sticky" ):navbar.classList.remove( "sticky" ));
@@ -25,8 +25,8 @@ document.getElementById("yearCount").innerHTML=new Date().getFullYear();
 function toggleActive(){toggler.classList.toggle("active"); navMenu.classList.toggle("active");}
 function toggleMode(){
      document.body.classList.toggle("dark");
-     if(!document.body.classList.contains("dark")){modeToggler.querySelector("img").src = "files/light.svg";localStorage.setItem("arsentech-theme", "light");} 
-     else {modeToggler.querySelector("img").src = "files/dark.svg";localStorage.setItem("arsentech-theme", "dark");}
+     if(!document.body.classList.contains("dark")){modeToggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");} 
+     else {modeToggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");}
 }
 function closeMenu(){toggler.classList.remove("active"); navMenu.classList.remove("active");}
 function handleSubmit(e, i){
@@ -63,9 +63,9 @@ downloadOptions.forEach((el, index) => {
 allStar.forEach((elem, idx)=>elem.addEventListener("click", ()=> {
      let click = 0;
      ratingValue.value = idx+1
-     allStar.forEach(el => {el.querySelector("iconify-icon").setAttribute("icon", "bi:star");el.classList.remove("active");});
+     allStar.forEach(el => {el.querySelector("img").src="files/icons/star.svg";el.classList.remove("active");});
      for (let i = 0; i < allStar.length; i++) {
-          if(i <= idx){allStar[i].querySelector("iconify-icon").setAttribute("icon", "bi:star-fill");allStar[i].classList.add("active");} 
+          if(i <= idx){allStar[i].querySelector("img").src="files/icons/star-fill.svg";allStar[i].classList.add("active");} 
           else {allStar[i].style.setProperty("--i", click);click++;}
      }
 }));
