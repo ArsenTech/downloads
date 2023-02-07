@@ -11,7 +11,7 @@ function displayCards(cards, cardList){
                           Size: <span id="size"></span><br>
                           Date Modified: <span id="updated"></span>
                          </p>
-                         <button class="card-btn" data-file-path="${card.filePath}">Download</button>
+                         <button class="card-btn" data-file-path="${card.filePath}"><img src="files/icons/download.svg" alt="download" width="30" height="30">Download</button>
                     </div>
                </div>
           </div>
@@ -25,17 +25,16 @@ function formatBytes(t,B=2){
      return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`
 }
 function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";t.type="text/css";document.getElementsByTagName("head")[0].appendChild(t);}
-function lazyJS(e){const t=document.createElement("script");t.src=e;t.defer=true;t.type="module";document.body.appendChild(t);}
-function downloadFile(file){getDownloadURL(ref(storage,file)).then(url=>{const link=document.createElement("a");link.href=url;link.download="";link.click();}).catch((err)=>console.error(err));}
+function lazyJS(e){const t=document.createElement("script");t.src=e;t.async=true;t.type="module";document.body.appendChild(t);}
+function downloadFile(file,icon){icon.src = 'files/icons/downloading.svg';getDownloadURL(ref(storage,file)).then(url=>{const link=document.createElement("a");link.href=url;link.download="";link.click();icon.src = 'files/icons/download-done.svg';setTimeout(()=>icon.src='files/icons/download.svg',2000);}).catch((err)=>console.error(err));}
 const downloadWallpaper=(file)=>getDownloadURL(ref(storage,file)).then(url=>window.open(url)).catch((err) => console.error(err));
 function getFileInfo(file,index){
      const fileRef=ref(storage,file);
-     getMetadata(fileRef).then(data=>{
-          const sizeDisplay=document.querySelectorAll("#size"),
-          dateDisplay=document.querySelectorAll("#updated");
-          sizeDisplay[index].innerHTML=formatBytes(data.size);
-          dateDisplay[index].innerHTML=data.updated.slice(0,10);
-     }).catch((err)=>console.error(err));
+     getMetadata(fileRef).then(data=>{const sizeDisplay=document.querySelectorAll("#size"),dateDisplay=document.querySelectorAll("#updated");sizeDisplay[index].innerHTML=formatBytes(data.size);dateDisplay[index].innerHTML=data.updated.slice(0,10);}).catch((err)=>console.error(err));
 }
 function getWallpaperInfo(f,i){const fileInfoRef = ref(storage, f);getMetadata(fileInfoRef).then(data => {const wallpaperSizeDisplay = document.querySelectorAll("#fileSize");wallpaperSizeDisplay[i].innerHTML = formatBytes(data.size);}).catch((error) => console.error(error));}
-export {displayCards,lazyCss,lazyJS,downloadFile,downloadWallpaper,getFileInfo,getWallpaperInfo}
+function handleSubmit(e, i){
+     e.preventDefault();const ids=["download-option1", "download-option2", "download-option3", "download-option4", "download-option5"];const selected=document.querySelectorAll(ids.map(id=>`#${id}`).join(", "));const filePath=`wallpapers/coding${i}/${selected[i].value}.png`;downloadWallpaper(filePath);e.target.reset();
+}
+function handleChange(e, i){const filePath = `wallpapers/coding${i}/${e.target.value}.png`;getWallpaperInfo(filePath, i)}
+export {displayCards,lazyCss,lazyJS,downloadFile,downloadWallpaper,getFileInfo,getWallpaperInfo,handleChange,handleSubmit}
