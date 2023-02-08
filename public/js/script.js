@@ -34,10 +34,7 @@ cards.forEach(card=>{const files = card.dataset.filePath,i = card.dataset.index;
 list.forEach(el=>el.addEventListener("click", ()=>{
      for(let i=0; i<list.length; i++) list[i].classList.remove("active");
      el.classList.add("active");const dataFilter = el.dataset.filter;
-     cards.forEach(card => {
-          card.classList.remove("active");card.classList.add("hide");
-          if(card.dataset.item==dataFilter||dataFilter=="all"){card.classList.remove("hide");card.classList.add("active");}
-     });
+     cards.forEach(card => {card.classList.remove("active");card.classList.add("hide");if(card.dataset.item==dataFilter||dataFilter=="all"){card.classList.remove("hide");card.classList.add("active");}});
 }));
 downloadBtns.forEach(el => {const filePath = el.dataset.filePath;const image = el.querySelector("img");el.addEventListener("click", ()=>downloadFile(filePath, image))});
 tabHeaderBtns.forEach((tab, index)=>tab.addEventListener("click", ()=>{
@@ -51,10 +48,7 @@ downloadOptions.forEach((el, index) => {
 allStar.forEach((elem, idx)=>elem.addEventListener("click", ()=> {
      let click = 0;ratingValue.value = idx+1;
      allStar.forEach(el => {el.querySelector("img").src="files/icons/star.svg";el.classList.remove("active");});
-     for (let i = 0; i < allStar.length; i++) {
-          if(i <= idx){allStar[i].querySelector("img").src="files/icons/star-fill.svg";allStar[i].classList.add("active");} 
-          else {allStar[i].style.setProperty("--i", click);click++;}
-     }
+     for (let i = 0; i < allStar.length; i++) {if(i <= idx){allStar[i].querySelector("img").src="files/icons/star-fill.svg";allStar[i].classList.add("active");} else {allStar[i].style.setProperty("--i", click);click++;}}
 }));
 contactForm.addEventListener("submit", (e)=> {
      e.preventDefault();let isValid = false;
