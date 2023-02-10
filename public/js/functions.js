@@ -1,8 +1,7 @@
 import {ref, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
 import {storage} from "./firebase.js";
 function displayCards(cards, cardList){
-     cardList.innerHTML = cards.map((card, i)=>{
-          return `<div class="grid-item" data-item="${card.category}" data-index="${i}" data-file-path="${card.filePath}">
+     cardList.innerHTML = cards.map((card, i)=>{return `<div class="grid-item" data-item="${card.category}" data-index="${i}" data-file-path="${card.filePath}">
                <div class="card" style="${card.style}">
                     <div class="card-content">
                              <h2 class="card-title">${card.title}</h2>
@@ -15,10 +14,7 @@ function displayCards(cards, cardList){
                </div>
           </div>`}).join("");
 }
-function formatBytes(t,B=2){
-     if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));
-     return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`
-}
+function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
 function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";t.type="text/css";document.getElementsByTagName("head")[0].appendChild(t);}
 function lazyJS(e){const t=document.createElement("script");t.src=e;t.async=true;t.type="module";document.body.appendChild(t);}
 function downloadFile(file,icon){icon.src = 'files/icons/downloading.svg';getDownloadURL(ref(storage,file)).then(url=>{const link=document.createElement("a");link.href=url;link.download="";link.click();icon.src = 'files/icons/download-done.svg';setTimeout(()=>icon.src='files/icons/download.svg',2000);}).catch((err)=>console.error(err));}

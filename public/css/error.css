@@ -5,7 +5,7 @@ body {font-family: Sora, Arial;}
 .error-container {width: 100%;position: absolute;top: 50%;transform: translateY(-50%);text-align: center;color: #f5f5f5;}
 .error-number {font-size: 160px;margin: 0;font-weight: 900;letter-spacing: 20px;color: #f1f1f1;}
 .errbtn,.error-button {display: inline-block;margin: 15px 30px;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
-.errbtn:hover,.error-button:hover {background-color: #204829;color: #fff;}
+.errbtn:hover,.error-button:hover {background-color: #204829;color: #fafafa;}
 .error-text {margin-bottom: 20px;}
 .errbtn {border: none;}
 @media screen and (max-width:600px){

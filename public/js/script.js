@@ -7,6 +7,7 @@ const navbar = document.querySelector( ".navbar" ),
      wallpaperOptions = document.querySelector("#wallpaper-opt"),
      sizeOptions = document.querySelector("#size-opt"),
      frmWallpaper = document.getElementById("wp-form"),
+     btnWPDownload = document.querySelector(".btn-wp-download"),
      allStar = document.querySelectorAll(".rating .star"),
      ratingValue = document.getElementById("rating"),
      ratingError = document.querySelector(".ratingError"),
@@ -26,13 +27,10 @@ navLinks.forEach(link=>link.addEventListener("click", ()=>closeMenu(toggler,navM
 document.getElementById("yearCount").innerHTML=new Date().getFullYear();
 const downloadBtns=document.querySelectorAll(".card-btn"),cards = document.querySelectorAll(".grid-item"),list = document.querySelectorAll(".list");
 cards.forEach(card=>{const files = card.dataset.filePath,i = card.dataset.index;getFileInfo(files,i);})
-list.forEach(el=>el.addEventListener("click", ()=>{
-     for(let i=0; i<list.length; i++) list[i].classList.remove("active");el.classList.add("active");const dataFilter = el.dataset.filter;
-     cards.forEach(card => {card.classList.remove("active");card.classList.add("hide");if(card.dataset.item==dataFilter||dataFilter=="all"){card.classList.remove("hide");card.classList.add("active");}});
-}));
+list.forEach(el=>el.addEventListener("click", ()=>{for(let i=0; i<list.length; i++) list[i].classList.remove("active");el.classList.add("active");const dataFilter = el.dataset.filter;cards.forEach(card => {card.classList.remove("active");card.classList.add("hide");if(card.dataset.item==dataFilter||dataFilter=="all"){card.classList.remove("hide");card.classList.add("active");}});}));
 downloadBtns.forEach(el => {const filePath = el.dataset.filePath;const image = el.querySelector("img");el.addEventListener("click", ()=>downloadFile(filePath, image))});
 wallpaperOptions.addEventListener("change",(e)=>{chosenImg = changeWallpaper(e.target.value);if(e.target.value) {isSizeActive = true;sizeOptions.removeAttribute("disabled")}if(e.target.value && chosenSize)changeSizeBasedOn(chosenSize,chosenImg-1)})
-sizeOptions.addEventListener("change", (e)=>{if(isSizeActive)changeSize(e,chosenImg-1);if(isSizeActive && e.target.value !== "") chosenSize = e.target.value;})
+sizeOptions.addEventListener("change", (e)=>{if(isSizeActive){changeSize(e,chosenImg-1);btnWPDownload.removeAttribute("disabled");}if(isSizeActive && e.target.value !== "") chosenSize = e.target.value;})
 frmWallpaper.addEventListener("submit",(e)=>{e.preventDefault();const filePath = `wallpapers/coding${chosenImg-1}/${frmWallpaper.optSize.value}.png`;downloadWallpaper(filePath);})
 allStar.forEach((elem, id)=>elem.addEventListener("click", ()=> {
      let click = 0;ratingValue.value = id+1;
@@ -47,8 +45,11 @@ contactForm.addEventListener("submit", (e)=> {
 frmSearch.addEventListener("submit", (e)=>{
      e.preventDefault();let searchInput = document.querySelector("#search-input").value;
      cards.forEach((el,i)=>{
-          if(el.querySelector(".card-title").innerText.toLowerCase().includes(searchInput.toLowerCase())){cards[i].classList.remove("hide");cards[i].classList.add("active");} 
-          else {cards[i].classList.remove("active");cards[i].classList.add("hide");}
+          if(el.querySelector(".card-title").innerText.toLowerCase().includes(searchInput.toLowerCase())){cards[i].classList.remove("hide");cards[i].classList.add("active");} else {cards[i].classList.remove("active");cards[i].classList.add("hide");}
      })
 })
 cancelSearchBtn.addEventListener("click", ()=>{document.querySelector("#search-input").value = "";cards.forEach((_,i)=>{cards[i].classList.remove("hide");cards[i].classList.add("active")})});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+     if(e.matches){document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");} 
+     else {document.body.classList.remove("dark");modeToggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");}
+});
