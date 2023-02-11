@@ -1,25 +1,21 @@
 import {ref, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
 import {storage} from "./firebase.js";
-function displayCards(cards,cardList){
-     cards.forEach((card,i)=>{
-          const el = document.createElement("div");
-          el.classList.add("grid-item");el.setAttribute("data-item", card.category);
-          el.setAttribute("data-index", i);el.setAttribute("data-file-path", card.filePath);
-          el.innerHTML = `
-          <div class="card" style="${card.style}">
-               <div class="card-content">
-                    <h2 class="card-title">${card.title}</h2>
-                    <p class="card-body">
-                         Size: <span id="size"></span><br>
-                         Date Modified: <span id="updated"></span>
-                    </p>
-                    <button class="card-btn" data-file-path="${card.filePath}"><img src="files/icons/download.svg" alt="download" width="30" height="30">Download</button>
-               </div>
+const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{
+     const el = document.createElement("div");
+     el.classList.add("grid-item");el.setAttribute("data-item", card.category);
+     el.setAttribute("data-index", i);el.setAttribute("data-file-path", card.filePath);
+     el.innerHTML = `<div class="card" style="${card.style}">
+          <div class="card-content">
+               <h2 class="card-title">${card.title}</h2>
+               <p class="card-body">
+                    Size: <span id="size"></span><br>
+                    Date Modified: <span id="updated"></span>
+               </p>
+               <button class="card-btn" data-file-path="${card.filePath}"><img src="files/icons/download.svg" alt="download" width="30" height="30">Download</button>
           </div>
-          `;
-          cardList.appendChild(el);
-     })
-}
+     </div>`;
+     cardList.appendChild(el);
+})
 function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
 function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";t.type="text/css";document.getElementsByTagName("head")[0].appendChild(t);}
 function lazyJS(e){const t=document.createElement("script");t.src=e;t.async=true;t.type="module";document.body.appendChild(t);}
