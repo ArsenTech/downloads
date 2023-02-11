@@ -3,13 +3,24 @@
 </p>
 <h3 align="center">Downloads Page of ArsenTech's Official Website</h3>
 <p align="center">
-     <a href="#">Report bug</a>
+     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=bug_report.md&title=">Report bug</a>
      &nbsp;&middot;&nbsp;
-     <a href="#">Request Feature</a>
+     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
 </p>
 <p align="center">
 <a href="https://github.com/ArsenTech/downloads/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/ArsenTech/downloads?color=%2322b455&style=for-the-badge"></a>
 </p>
+
+## Table of Contents
+- [About](#about)
+- [Features Included](#features-included)
+- [Bugs and Feature Requests](#bugs-and-feature-requests)
+- [Website Speed](#website-speed-tested)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Tech](#tech)
+- [FAQs](#faq)
+- [Support and Follow](#support-and-follow-arsentech)
 
 ## About:
 This Page Has Downloads of Softwares, Windows Versions, DOS and Much More. You can Download Files from my collection (that collection isn't massive)
