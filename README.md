@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/ArsenTech/arsentech.github.io/new-look/Files/Profile-Picture.webp" width="100">
+<img src="public/files/downloads-logo.png">
 </p>
 <h1 align="center">Downloads</h1>
 
