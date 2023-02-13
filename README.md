@@ -35,9 +35,30 @@ Downloads Page of ArsenTech's Website. If You want to Report Bug, or Request Fea
 - Google PageSpeed Insights Score: **99** on on 📱, **100** on 🖥
 - Pingdom Website Speed Test Score: **81**
 - GTMetrix Score: Performance: **99%**, Structure: **96%**
-## Roadmap:
-- 1.0: Initial Release (2022-2023)
-- 2.0: **New Look** (2023-now)
+## Roadmap
+This is an Entire Roadmap of a Downloads Page:
+### 1.0: Initial Release (2022-2023)
+- Initialized the Project
+- Added Downloads Section (With Filter Buttons)
+- Added Wallpaper Downloads Section (As a Tab)
+- Added Feedback and FAQs Section
+- Added Loader
+### 2.0: **New Look** (2023-now)
+- Changed Background to Image
+- Maxified HTML Code
+- Made Color Contrast Ratio Better
+- Fixed Some Spelling Errors
+- Changed Loader Animation
+- Converted Logo From PNG to SVG
+- Updated Navbar
+- Added Dark Mode Feature
+- Added Search bar
+- Made Download Button Animated
+- Replaced Wallpaper Downloads Section From Tabs to a Downloader
+- Converted Some Icons To SVG Files
+- Updated Apple Touch Icon and Added Android Icon
+- Added `manifest.json`
+- Minified Some JS Files
 ## Contributing
 Contributions are Always Welcome, but please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) for Contributing This Project :-)
 ## Tech
@@ -45,7 +66,7 @@ Contributions are Always Welcome, but please read both [Code of Conduct](https:/
 - **Tools:** Firebase
 ## FAQ
 #### What's This?
-Downloads collection from ArsenTech. This Contains Virus-Free Software selected carefully by ArsenTech. It Includes Windows, Software, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily. We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.
+Downloads collection from ArsenTech. This Contains Virus-Free Software selected carefully by ArsenTech.<br>It Includes Windows, Software, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily.<br> We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.
 #### I'm the Copyright owner of these file(s) and I Want to Take These File(s) down!
 You can send an email to arsentech5002@gmail.com. Then We'll look into your request and respond it as soon as possible :-)
 #### Are the software provided here cracked or modified in any form?

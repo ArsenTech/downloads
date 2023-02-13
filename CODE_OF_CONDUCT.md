@@ -83,7 +83,7 @@ behavior was inappropriate. A public apology may be requested.
 ### 2. Warning
 
 **Community Impact**: A violation through a single incident or series
-of actions.
+of actions, Code Disrespect.
 
 **Consequence**: A warning with consequences for continued behavior. No
 interaction with the people involved, including unsolicited interaction with
@@ -114,4 +114,6 @@ the community.
 
 ## Attribution
 
-If You Want to Fork, Give Credit to [ArsenTech](https://arsentech.github.io)
+If You Want to Fork, Give Credit to [ArsenTech](https://arsentech.github.io).
+
+### **It's Important to Respect My Code :-)**

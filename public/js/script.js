@@ -20,7 +20,8 @@ const navbar = document.querySelector( ".navbar" ),
 let chosenImg,chosenSize,isSizeActive = false;
 if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";}
 lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
-lazyCss("css/dark-mode.css");lazyJS("js/firebase.js");displayCards(downloads,downloadsContainer);
+lazyCss("css/dark-mode.css");lazyJS("js/firebase.js", "defer");
+displayCards(downloads,downloadsContainer);
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add("sticky"):navbar.classList.remove("sticky"));
 toggler.addEventListener("click",()=> toggleActive(toggler,navMenu));modeToggler.addEventListener("click", ()=>toggleMode(modeToggler));
 navLinks.forEach(link=>link.addEventListener("click", ()=>closeMenu(toggler,navMenu)));
