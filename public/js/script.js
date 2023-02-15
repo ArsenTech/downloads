@@ -1,26 +1,20 @@
 import {downloads} from "./data.js";
-import {displayCards,lazyJS,lazyCss,downloadFile,getFileInfo,changeWallpaper,changeSize,downloadWallpaper,changeSizeBasedOn,toggleActive,closeMenu,toggleMode} from "./functions.js";
+import {displayCards,lazyJS,lazyCss,downloadFile,getFileInfo,changeWallpaper,changeSize,downloadWallpaper,changeSizeBasedOn,toggleActive,closeMenu,toggleMode, removeMode} from "./functions.js";
 const navbar = document.querySelector( ".navbar" ),
-     toggler = document.querySelector( ".menu-toggler" ),
+     toggler = document.querySelector( ".menu-toggler" ),modeToggler = document.querySelector("#icon"),
      navMenu = document.querySelector( ".navbar-menu" ),
      downloadsContainer = document.getElementById("downloadsCards"),
      wallpaperOptions = document.querySelector("#wallpaper-opt"),
      sizeOptions = document.querySelector("#size-opt"),
-     frmWallpaper = document.getElementById("wp-form"),
-     btnWPDownload = document.querySelector(".btn-wp-download"),
+     frmWallpaper = document.getElementById("wp-form"),btnWPDownload = document.querySelector(".btn-wp-download"),
      allStar = document.querySelectorAll(".rating .star"),
-     ratingValue = document.getElementById("rating"),
-     ratingError = document.querySelector(".ratingError"),
+     ratingValue = document.getElementById("rating"),ratingError = document.querySelector(".ratingError"),
      contactForm = document.querySelector(".contact-form"),
-     getMode = localStorage.getItem("arsentech-theme"),
-     modeToggler = document.querySelector("#icon"),
-     navLinks = document.querySelectorAll("#navLinks a"),
-     frmSearch = document.querySelector(".search-container"),
-     cancelSearchBtn = document.querySelector("#cancel-search");
+     getMode = localStorage.getItem("arsentech-theme"),navLinks = document.querySelectorAll("#navLinks a"),
+     frmSearch = document.querySelector(".search-container"),cancelSearchBtn = document.querySelector("#cancel-search");
 let chosenImg,chosenSize,isSizeActive = false;
-if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";}
-lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
-lazyCss("css/dark-mode.css");lazyJS("js/firebase.js", "defer");displayCards(downloads,downloadsContainer);
+if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";lazyCss("css/dark-mode.css");}
+lazyJS("js/firebase.js", "defer");displayCards(downloads,downloadsContainer);
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add("sticky"):navbar.classList.remove("sticky"));
 toggler.addEventListener("click",()=> toggleActive(toggler,navMenu));modeToggler.addEventListener("click", ()=>toggleMode(modeToggler));
 navLinks.forEach(link=>link.addEventListener("click", ()=>closeMenu(toggler,navMenu)));
@@ -50,6 +44,7 @@ frmSearch.addEventListener("submit", (e)=>{
 })
 cancelSearchBtn.addEventListener("click", ()=>{document.querySelector("#search-input").value = "";cards.forEach((_,i)=>{cards[i].classList.remove("hide");cards[i].classList.add("active")})});
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-     if(e.matches){document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");} 
-     else {document.body.classList.remove("dark");modeToggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");}
+     if(e.matches){document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");} 
+     else {document.body.classList.remove("dark");modeToggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()}
 });
+lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");

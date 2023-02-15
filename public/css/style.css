@@ -4,7 +4,6 @@ html {scroll-behavior: smooth}
 ::-webkit-scrollbar {width: 25px;background: #333;}
 ::-webkit-scrollbar-track {border: 7px solid #353b48;box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,.5);}
 ::-webkit-scrollbar-thumb {background: linear-gradient(45deg,#22b455,#1dd1a1);}
-::selection {color: #204829;background-color: #92e5a1;}
 .loader-wrapper, .navbar{position: fixed;}
 .loader-wrapper{width: 100%;height: 100vh;background-color: #353b48;z-index: 99999;}
 .loader{width: 30px;height: 150px;background: linear-gradient(45deg, #22b455, #1dd1a1);border-radius: 50px;margin: 10px;animation: loader 0.8s ease infinite;}
@@ -17,7 +16,6 @@ html {scroll-behavior: smooth}
 .loader:nth-child(8){animation-delay: 0.7s;}
 @keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
 .loader-hidden {animation: fadeOut 1s;-webkit-animation: fadeOut 1s;animation-fill-mode: forwards;}
-@keyframes fadeOut {100% {opacity: 0;visibility: hidden;}}
 .loader-wrapper, #home .inner-width, .card-filter, .frmWallpaper, .wp-preview, .contact-form, .rating{display: flex;justify-content: center;align-items: center;}
 .navbar .inner-width, .wp-content, .accordion-link{display: flex;align-items: center;justify-content: space-between;}
 .card-btn, .search-container{display: flex; align-items: center;}
@@ -28,7 +26,6 @@ html {scroll-behavior: smooth}
 .menu-toggler {background: 0 0;width: 30px;border: none;cursor: pointer;outline: 0;z-index: 999;display: none;color: #fafafa;font-size: 25px;}
 .menu-toggler span {display: block;height: 3px;background-color: #fafafa;margin: 6px 0;transition: .3s ease;}
 .navbar-menu a {color: #fafafa;font-size: 15px;font-weight: 500;margin-left: 30px;transition: .3s ease;}
-.navbar-menu a:hover {color: #1dd1a1 !important;}
 #icon{width: 30px;transition:.3s ease;filter:invert(1);cursor: pointer;}
 #icon img{width: 100%;}
 .sticky {background: #f1f1f1;padding: 18px 0;}
@@ -45,7 +42,7 @@ html {scroll-behavior: smooth}
 #home .content .txt.second::after{content: "Windows Versions";animation: text 5s linear infinite;}
 @keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
 #home .button {display: inline-block;margin: 15px 0;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
-#home .button:hover {background-color: #204829;color: #fafafa;}
+
 section {padding: 100px 0;background: #fafafa;}
 .section-title {text-align: center;margin-bottom: 80px;font-size: 26px;padding-bottom: 20px;color: #222;}
 .section-title::before, .section-title::after, .card-title::after, .answer::before{content: "";position: absolute;}
@@ -64,7 +61,6 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
 .card-title {width: max-content;font-size: 20px;}
 .card-title::after {margin: 0;padding: 0;box-sizing: border-box;content: "";height: 4px;left: calc(1.3rem * -1);bottom: -2px;width: calc(100% + 1.6rem);background: var(--clr-accent-400);transform-origin: left;transition: transform .3s ease;}
 .card:hover .card-title::after,.card:focus-within .card-title::after {transform: scaleX(1);}
-.imgCenter {background-position: center;}
 .card-body {color: rgb(255,255,255,0.9);margin: 25px 0;}
 .card-btn {cursor: pointer;color: var(--clr-neutral-900);background-color: var(--clr-accent-400);padding:1em 1.5rem;border-radius: .5em;transition: .3s ease-in-out all;outline: none;border: none; font-size: 16.5px;}
 .card-btn:hover,.card-btn:focus {background: var(--clr-neutral-100);}
@@ -77,11 +73,9 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
 .frmWallpaper .btn-wp-download:disabled{opacity: .5;cursor: auto;}
 .frmWallpaper .btn-wp-download:hover:not(:disabled){color: #fafafa;background-color: #0d5a45;}
 .wp-preview img{width: 100%;height: 100%;margin: 16px 0;border-radius: 8px;}
-.wp-preview p{text-align: left;}
 .wp-preview p #fileSize{color: #21a582;}
-.formore{margin: 15px 0;color: #222;}
+.formore{margin: 15px 0;color: #222;text-align: center;}
 .formore a{color:#204829;transition:.3s linear;}
-.formore a:hover{color:#22b455}
 .accordion-item{background-color: #e0e0e0;border-radius: .4rem;margin-bottom: 1rem;padding: 1rem;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
 .accordion-link{font-size: 1.6rem;color: rgba(34,34,34,.8);background-color: #e0e0e0;width: 100%;padding: 1rem 0;transition: 450ms ease-in-out all;}
 .accordion-link img{filter:var(--green-img);width: 25px;}
