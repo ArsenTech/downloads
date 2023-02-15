@@ -11,7 +11,7 @@ const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{
                     Size: <span id="size"></span><br>
                     Date Modified: <span id="updated"></span>
                </p>
-               <button class="card-btn" data-file-path="${card.filePath}"><img src="files/icons/download.svg" alt="download" width="30" height="30">Download</button>
+               <button class="card-btn" data-file-path="${card.filePath}"><img src="files/icons/download.svg" alt="download" width="30" height="30" loading="lazy">Download</button>
           </div>
      </div>`;
      cardList.appendChild(el);
