@@ -32,9 +32,9 @@ This Page Has Downloads of Softwares, Windows Versions, DOS and Much More. You c
 If You want to Report Bug, or Request Feature, Write an Issue and I'll be in touch with you soon.
 Downloads Page of ArsenTech's Website. If You want to Report Bug, or Request Feature, Write an Issue and ArsenTech will be in touch with you soon.
 ## Website Speed (Tested)
-- Google PageSpeed Insights Score: **99** on on 📱, **100** on 🖥
-- Pingdom Website Speed Test Score: **81**
-- GTMetrix Score: Performance: **99%**, Structure: **96%**
+- Google PageSpeed Insights Score: **98** on 📱, **100** on 🖥
+- Pingdom Website Speed Test Score: **82**
+- GTMetrix Score: Performance: **98%**, Structure: **98%**
 ## Roadmap
 This is an Entire Roadmap of a Downloads Page:
 ### 1.0: Initial Release (2022-2023)
