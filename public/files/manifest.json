@@ -1,0 +1,22 @@
+{
+     "short_name": "ArsenTech's Downloads",
+     "name": "Downloads Page of an ArsenTech's Website",
+     "icons": [
+          {
+               "src": "../files/app-icon.png",
+               "sizes": "192x192",
+               "type": "image/png",
+               "purpose": "maskable any"
+          },
+          {
+               "src": "../files/app-icon-512.png",
+               "sizes": "512x512",
+               "type": "image/png"
+          }
+     ],
+     "start_url": "../index.html",
+     "background_color": "#204829",
+     "theme_color": "#22b455",
+     "display": "minimal-ui",
+     "description": "Downloads Page of an ArsenTech's Official Website"
+}

@@ -6,6 +6,7 @@ exclude:
   - LICENSE
   - README.md
   - CODE_OF_CONDUCT.md
+  - public/files/downloads-logo.png
   
 gems:
   - jekyll-sitemap

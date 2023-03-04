@@ -1,0 +1,46 @@
+:root{--light-green:invert(85%) sepia(16%) saturate(866%) hue-rotate(75deg) brightness(96%) contrast(91%);}
+.dark{color: #f1f1f1;}
+.dark .logo {background-image: url(../files/arsentech-dark.svg);background-size: contain;}
+.dark .menu-toggler span {background-color: #fafafa;}
+.dark .navbar-menu a {color: #fafafa;}
+.dark .navbar-menu a:hover {color: #1dd1a1 !important;}
+.dark #icon{filter: invert(1);}
+.dark .sticky {background: #353b48;}
+.dark .sticky .logo {background-image: url(../files/arsentech-dark.svg);}
+.dark .sticky .navbar-menu a {color: #f1f1f1;}
+.dark .sticky .menu-toggler span {background-color: #f1f1f1;}
+.dark .sticky .menu-toggler {color: #f1f1f1;}
+.dark section {background: #353b48;}
+.dark .section-title {color: #f1f1f1;}
+.dark .section-title::before {background: #f1f1f1;}
+.dark .section-title::after {background-color: #1dd1a1;border-color: #353b48;}
+.dark section.alt {background-color: #2f343f;}
+.dark section.alt .section-title::after{border-color: #2f343f;}
+.dark .card-filter .list{background: #1dd1a1;color: #353b48;}
+.dark .card-filter .list.active{background: #0d5a45;color: #f1f1f1;}
+.dark .contact-form input, .dark .contact-form textarea, .dark  #search-input {background-color: #f1f1f1;color: #2f343f;}
+.dark .contact-form input::placeholder,.dark .contact-form textarea::placeholder, .dark #search-input::placeholder{color: #666;}
+.dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}
+.dark .contact-form .btn:hover {background: #1dd1a1;color: #353b48;}
+.dark .accordion-item{background-color: #283042;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
+.dark .accordion-link{color: rgba(255,255,255,.8);background-color: #283042;}
+.dark .accordion-link img{filter:var(--light-green);}
+.dark .answer{background-color: #212838;}
+.dark .answer::before{background-color: #22b455;}
+.dark .answer p{color: rgba(255,255,255,.6);}
+.dark .frmWallpaper .selectBox{background: #1dd1a1;color: #2f343f;}
+.dark .frmWallpaper .selectBox optgroup,.frmWallpaper .selectBox option,.frmWallpaper .selectBox .defaultOpt:disabled{background-color: #2f343f;color: #fafafa;}
+.dark .frmWallpaper .btn-wp-download{border-color: #1dd1a1;color: #1dd1a1;}
+.dark .frmWallpaper .btn-wp-download:hover:not(:disabled){color: #2f343f;background-color: #1dd1a1;}
+.dark .wp-preview p #fileSize{color: #1dd1a1;}
+.dark .formore{color: #f1f1f1;}
+.dark .formore a:hover{color:#92e5a1;}
+.dark .search-container .search-btn{background: #1dd1a1;}
+.dark .search-container .search-btn img{filter: invert(0);}
+.dark .search-container .cancel-btn img{filter: invert(1);}
+.dark .search-container .cancel-btn{color: #f1f1f1;}
+@media screen and (max-width:980px){
+     .dark .navbar-menu{background-color:#2f343f;}
+     .dark .sticky .navbar-menu{background-color:#353b48;}
+     .dark .sticky .menu-toggler.span{background-color:#f1f1f1;}
+}
