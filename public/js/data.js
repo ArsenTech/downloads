@@ -15,8 +15,6 @@ export const downloads = [{style: "background: url(./files/card-img/windows/win3
      {style: "background: url(./files/card-img/softwares/Process-Hacker.webp) center; background-size: cover;",title: "Process Hacker",filePath: "softwares/Process-Hacker.zip",category: "softwares",},
      {style: "background: url(./files/card-img/softwares/Rufus.webp) center; background-size: cover;",title: "Rufus",filePath: "softwares/Rufus.zip",category: "softwares",},
      {style: "background: url(./files/card-img/softwares/UninstallTool.webp) center; background-size: cover;",title: "Uninstall Tool",filePath: "softwares/Uninstall-Tool.zip",category: "softwares",},
-     {style: "background: url(./files/card-img/softwares/vmware.webp) center; background-size: cover;",title: "VMWare VM",filePath: "softwares/VMware.zip",category: "softwares",},
-     {style: "background: url(./files/card-img/softwares/vegas14.webp) center; background-size: cover;",title: "Vegas Pro 14",filePath: "softwares/Vegas-Pro-14.zip",category: "softwares",},
      {style: "background: url(./files/card-img/ie/ie1.webp) center; background-size: cover;",title: "Internet Explorer v1",filePath: "softwares/internet-explorer/IE1.zip",category: "internet-explorer",},
      {style: "background: url(./files/card-img/ie/ie5.webp) center; background-size: cover;",title: "Internet Explorer v5",filePath: "softwares/internet-explorer/IE5.zip",category: "internet-explorer",},
      {style: "background: url(./files/card-img/ie/ie10.webp) center; background-size: cover;",title: "Internet Explorer v10",filePath: "softwares/internet-explorer/IE10.zip",category: "internet-explorer",},
