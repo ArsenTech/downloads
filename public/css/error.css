@@ -1,7 +1,7 @@
 * {margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;}
 body {font-family: Sora, Arial;}
 ::selection {color: #204829;background-color: #92e5a1;}
-#error {height: 100vh;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;}
+#error {height: 100vh;background:#204829;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;}
 .error-container {width: 100%;position: absolute;top: 50%;transform: translateY(-50%);text-align: center;color: #f5f5f5;}
 .error-number {font-size: 160px;margin: 0;font-weight: 900;letter-spacing: 20px;color: #f1f1f1;}
 .errbtn,.error-button {display: inline-block;margin: 15px 30px;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
