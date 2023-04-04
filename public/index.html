@@ -18,6 +18,24 @@
      #home .button:hover {background-color: #204829;color: #fafafa;}
      .formore a:hover{color:#22b455}
      </style>
+     <style>
+          /* Temporary Style. It Will Remove After Renovation */
+          .tempInfo{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               text-align: center;
+               padding: 20px 50px;
+          }
+          .tempInfo h2{
+               margin: 10px 0;
+          }
+          .tempInfo p{
+               width: 100%;
+               max-width: 500px;
+          }
+     </style>
      <title>Downloads | ArsenTech's Website</title>     
      <link rel="dns-prefetch preconnect" href="https://firebasestorage.googleapis.com/">
      <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com">
@@ -45,8 +63,9 @@
                     </button>
                     <div class="navbar-menu" id="navLinks">
                          <a href="#home">Home</a>
-                         <a href="#downloads">Files to Download</a>
-                         <a href="#wallpapers">Wallpapers</a>
+                         <!-- <a href="#downloads">Files to Download</a>
+                         <a href="#wallpapers">Wallpapers</a> -->
+                         <a href="#temp">Message From ArsenTech</a>
                          <a href="#feedback">Feedback</a>
                          <a href="#faq">FAQs</a>
                     </div>
@@ -57,7 +76,7 @@
           </nav>
      </header>
      <main id="site-main">
-          <section id="home">
+          <!-- <section id="home">
                <div class="inner-width">
                     <div class="content">
                          <h1><span class="txt first">Here You Can Download</span><br>
@@ -65,8 +84,17 @@
                          <a href="#downloads" class="button">Discover</a>
                     </div>
                </div>
+          </section> -->
+          <!-- Temporary Element. It Will Remove After Renovation -->
+          <section id="home" class="temporary">
+               <div class="inner-width">
+                    <div class="content">
+                         <h1 class="txt first"> This Page is Currently<br> Under Renovation</h1>
+                         <a href="#temp" class="button">Learn More</a>
+                    </div>
+               </div>
           </section>
-          <section id="downloads">
+          <!-- <section id="downloads">
                <div class="inner-width">
                     <h2 class="section-title">Downloads</h2>
                     <form class="search-container">
@@ -138,6 +166,15 @@
                          </div>
                     </div>
                </div>
+          </section> -->
+          <!-- Temporary Element. It Will Remove After Renovation -->
+          <section class="tempInfo" id="temp">
+               <h2>This Page is Currently Under Renovation</h2>
+               <p>On My Downloads Page Project, Firebase Said "100% of your quota has been used". I Will Reduce Some Files' Size on My Project's Storage and Move Some Files to Another Project and Host as a Server-side Code. So My Project's Storage Will Store Less than 5GB of Storage (According to Firebase's Spark Plan) to Download Some Files (e.g. Windows ISO Files, Software, Wallpapers).<br><br>Don't Worry, I Didn't Delete These. I Put These Into a Comment. So If Renovation Ended Successfully, I Will Put This Back. I'm Working on the Storage of the Project. So The Renovation Of The Downloads Page Will End Soon<br>
+               <br>
+               I Hope It's Understandable And Have a Nice Day!<br><br>
+          </p>
+          <p style="text-align: right;">Sincerely: ArsenTech</p>
           </section>
           <section id="feedback">
                <div class="inner-width">
