@@ -1,6 +1,7 @@
 export const downloads = [{style: "background: url(./files/card-img/windows/win3.1.webp) center; background-size: cover;",title: "Windows 3.1",filePath: "windows/Win3.1.ISO",category: "windows",},
      {style: "background: url(./files/card-img/windows/win95.webp) center; background-size: cover;",title: "Windows 95",filePath: "windows/Win95.iso",category: "windows",},
      {style: "background: url(./files/card-img/windows/win98.webp) center; background-size: cover;",title: "Windows 98",filePath: "windows/Win98.iso",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win2000.webp) center; background-size: cover;",title: "Windows 2000",filePath: "windows/Win95.iso",category: "windows",},
      {style: "background: url(./files/card-img/windows/winme.webp) center; background-size: cover;",title: "Windows ME",filePath: "windows/WinME.iso",category: "windows",},
      {style: "background: url(./files/card-img/windows/winxp.webp) center; background-size: cover;",title: "Windows XP",filePath: "windows/WinXP.iso",category: "windows",},
      {style: "background: url(./files/card-img/softwares/7zip.webp) center; background-size: cover;",title: "7zip",filePath: "softwares/7zip.zip",category: "softwares",},
@@ -21,3 +22,10 @@ export const downloads = [{style: "background: url(./files/card-img/windows/win3
      {style: "background: url(./files/card-img/updates/win7.webp) center; background-size: cover;",title: "Windows 7 Updates",filePath: "updates/Win7Jan2020.7z",category: "updates",},
      {style: "background: url(./files/card-img/updates/win2000.webp) center; background-size: cover;",title: "Windows 2000 Updates",filePath: "updates/Windows 2000 Service Pack 4.7z",category: "updates",},
      {style: "background: url(./files/card-img/updates/winxp.webp) center; background-size: cover;",title: "Windows XP Updates",filePath: "updates/windows-xp-sp2.exe",category: "updates",},];
+export const otherDownloads = [
+     {style: "background: url(./files/card-img/windows/win7.webp) center; background-size: cover;",title: "Windows 7",filePath: "",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win8.webp) center; background-size: cover;",title: "Windows 8",filePath: "",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win10.webp) center; background-size: cover;",title: "Windows 10",filePath: "",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win11.webp) center; background-size: cover;",title: "Windows 11",filePath: "",category: "windows",},
+     {style: "background: url(./files/card-img/windows/winvista.webp) center; background-size: cover;",title: "Windows Vista",filePath: "",category: "windows",},
+]
