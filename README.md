@@ -24,8 +24,6 @@
 
 ## About:
 This Page Has Downloads of Softwares, Windows Versions, DOS and Much More. You can Download Files from my collection (that collection isn't massive).
-
-**Right Now The Renovation of a Downloads Page Is Started**
 ## Features Included
 - Dark Mode
 - Search Bar
