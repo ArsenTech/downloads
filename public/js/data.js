@@ -24,9 +24,8 @@ export const downloads = [{style: "background: url(./files/card-img/windows/win3
      {style: "background: url(./files/card-img/updates/win2000.webp) center; background-size: cover;",title: "Windows 2000 Updates",filePath: "updates/Windows 2000 Service Pack 4.7z",category: "updates",},
      {style: "background: url(./files/card-img/updates/winxp.webp) center; background-size: cover;",title: "Windows XP Updates",filePath: "updates/windows-xp-sp2.exe",category: "updates",},];
 export const otherDownloads = [
-     {style: "background: url(./files/card-img/windows/win7.webp) center; background-size: cover;",title: "Windows 7",filePath: "",category: "windows",},
-     {style: "background: url(./files/card-img/windows/win8.webp) center; background-size: cover;",title: "Windows 8",filePath: "",category: "windows",},
-     {style: "background: url(./files/card-img/windows/win10.webp) center; background-size: cover;",title: "Windows 10",filePath: "",category: "windows",},
-     {style: "background: url(./files/card-img/windows/win11.webp) center; background-size: cover;",title: "Windows 11",filePath: "",category: "windows",},
-     {style: "background: url(./files/card-img/windows/winvista.webp) center; background-size: cover;",title: "Windows Vista",filePath: "",category: "windows",},
-]
+     {style: "background: url(./files/card-img/windows/win7.webp) center; background-size: cover;",title: "Windows 7",filePath: "https://firebasestorage.googleapis.com/v0/b/win7-arsentech.appspot.com/o/Win7.zip?alt=media&token=38275c4f-349c-41d2-936b-0d6960d32f51",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win8.webp) center; background-size: cover;",title: "Windows 8",filePath: "https://firebasestorage.googleapis.com/v0/b/win8-arsentech.appspot.com/o/Win8.zip?alt=media&token=5504d0d8-bb23-48ab-9c60-ec429a7f247f",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win10.webp) center; background-size: cover;",title: "Windows 10",filePath: "https://firebasestorage.googleapis.com/v0/b/win10-arsentech.appspot.com/o/Win10.zip?alt=media&token=dd33d9ba-4a7e-4daa-b7e9-0cf92aa041fd",category: "windows",},
+     {style: "background: url(./files/card-img/windows/win11.webp) center; background-size: cover;",title: "Windows 11",filePath: "https://firebasestorage.googleapis.com/v0/b/win11-arsentech.appspot.com/o/Win11.zip?alt=media&token=b5a23957-b36d-42c5-96b4-3361b1a29b9d",category: "windows",},
+     {style: "background: url(./files/card-img/windows/winvista.webp) center; background-size: cover;",title: "Windows Vista",filePath: "https://firebasestorage.googleapis.com/v0/b/winvista-arsentech.appspot.com/o/WinVista.zip?alt=media&token=7b93031b-b50d-48d6-8d19-6a705a4e2221",category: "windows",},]
