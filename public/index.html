@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="description" content="Downloads Page of an ArsenTech's Official Website">
-     <meta name="author" content="ArsenTech">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="theme-color" content="#22b455">
+     <meta charset="UTF-8"/>
+     <meta name="description" content="Downloads Page of an ArsenTech's Official Website"/>
+     <meta name="author" content="ArsenTech"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="theme-color" content="#22b455"/>
+     <meta name="keywords" content="arsentech, downloads, download windows, download software, download msdos, windows download, msdos download, software download, free software download, freeware download, windows download, windows downloads, software downloads, ms dos downloads, free downloads, arsentech github, arsentech youtube, wallpaper downloads, wallpaper, pc"/>
      <link rel="apple-touch-icon" href="files/app-icon.png">
      <link rel="icon" sizes="192x192" href="files/app-icon.png">
      <link rel="icon" sizes="16x16" href="files/favicon.ico?">
@@ -13,7 +14,9 @@
      <link rel="stylesheet" media="screen" href="css/style.css">
      <style>
      ::selection {color: #204829;background-color: #92e5a1;}
+     @keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
      @keyframes fadeOut {100% {opacity: 0;visibility: hidden;}}
+     @keyframes star {0%{opacity: 0;transform: scale(1);}50%{opacity: 1;transform: scale(1.2);}100%{opacity: 1;transform: scale(1);}}
      .navbar-menu a:hover {color: #1dd1a1 !important;}
      #home .button:hover {background-color: #204829;color: #fafafa;}
      .formore a:hover{color:#22b455}
@@ -24,16 +27,7 @@
      <link rel="dns-prefetch preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-     <div class="loader-wrapper">
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-     </div>
+     <div class="loader-wrapper"><div class="loader"></div><div class="loader"></div><div class="loader"></div><div class="loader"></div><div class="loader"></div><div class="loader"></div><div class="loader"></div><div class="loader"></div></div>
      <header id="site-header">
           <nav class="navbar">
                <div class="inner-width">
@@ -50,9 +44,7 @@
                          <a href="#feedback">Feedback</a>
                          <a href="#faq">FAQs</a>
                     </div>
-                    <span id="icon">
-                         <img src="files/icons/light.svg" width="30" height="30" alt="mode" loading="lazy">
-                     </span>
+                    <span id="icon"><img src="files/icons/light.svg" width="30" height="30" alt="mode" loading="lazy"></span>
                </div>
           </nav>
      </header>
@@ -161,30 +153,7 @@
           <section id="faq" class="alt">
                <div class="inner-width">
                     <h2 class="section-title">FAQs</h2>
-                    <div class="faq">
-                         <div class="accordion">
-                              <div class="accordion-item" id="q1">
-                                   <a class="accordion-link" href="#q1">What's This? <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-                                   <div class="answer"><p>Downloads collection from ArsenTech. This Contains Virus-Free Software selected carefully by ArsenTech. It Includes Windows, Software, Drivers and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily. We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece a software that you can't easily find or want to go through the hassle.</p></div>
-                              </div>
-                              <div class="accordion-item" id="q2">
-                                   <a class="accordion-link" href="#q2">I'm the Copyright owner of these file(s) and I Want to Take These File(s) down! <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-                                   <div class="answer"><p>You can send an email to arsentech5002@gmail.com. Then We'll look into your request and respond it as soon as possible :-)</p></div>
-                              </div>
-                              <div class="accordion-item" id="q3">
-                                   <a class="accordion-link" href="#q3">Are the software provided here cracked or modified in any form? <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-                                   <div class="answer"><p>No. We Won't provide cracks, the user must activate it with their own provided licenses. They're Original Copies of the software.</p></div>
-                              </div>
-                              <div class="accordion-item" id="q4">
-                                   <a class="accordion-link" href="#q4">Downloads are too slow. What's the problem? <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-                                   <div class="answer"><p>It Depends on your ISP, such as location, plan, and other limitations. Or Your Internet connection is Slow</p></div>
-                              </div>
-                              <div class="accordion-item" id="q5">
-                                   <a class="accordion-link" href="#q5">Who made the Wallpapers? <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-                                   <div class="answer"><p>These Desktop Wallpapers are made by ArsenTech</p></div>
-                              </div>
-                         </div>
-                    </div>
+                    <div class="faq"><div class="accordion"></div></div>
                </div>
           </section>
      </main>

@@ -1,4 +1,4 @@
-:root{--clr-neutral-900: hsl(207,19%,9%);--clr-neutral-100: hsl(0,0%,100%);--clr-accent-400: hsl(141, 68%, 42%);--green-img: invert(58%)sepia(49%)saturate(3211%)hue-rotate(99deg)brightness(96%)contrast(73%);--yellow:invert(72%)sepia(62%)saturate(649%)hue-rotate(348deg)brightness(101%)contrast(101%);}
+:root{--clr-neutral-900:#13171b;--clr-neutral-100:#fff;--clr-accent-400:#22b455;--green-img:invert(58%)sepia(49%)saturate(3211%)hue-rotate(99deg)brightness(96%)contrast(73%);--yellow:invert(72%)sepia(62%)saturate(649%)hue-rotate(348deg)brightness(101%)contrast(101%);}
 * {margin: 0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;font-family: Sora,Arial;text-decoration: none;}
 html {scroll-behavior: smooth}
 ::-webkit-scrollbar {width: 25px;background: #333;}
@@ -7,14 +7,7 @@ html {scroll-behavior: smooth}
 .loader-wrapper, .navbar{position: fixed;}
 .loader-wrapper{width: 100%;height: 100vh;background-color: #353b48;z-index: 99999;}
 .loader{width: 30px;height: 150px;background: linear-gradient(45deg, #22b455, #1dd1a1);border-radius: 50px;margin: 10px;animation: loader 0.8s ease infinite;}
-.loader:nth-child(2){animation-delay: 0.1s;}
-.loader:nth-child(3){animation-delay: 0.2s;}
-.loader:nth-child(4){animation-delay: 0.3s;}
-.loader:nth-child(5){animation-delay: 0.4s;}
-.loader:nth-child(6){animation-delay: 0.5s;}
-.loader:nth-child(7){animation-delay: 0.6s;}
-.loader:nth-child(8){animation-delay: 0.7s;}
-@keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
+.loader:nth-child(2){animation-delay: 0.1s;}.loader:nth-child(3){animation-delay: 0.2s;}.loader:nth-child(4){animation-delay: 0.3s;}.loader:nth-child(5){animation-delay: 0.4s;}.loader:nth-child(6){animation-delay: 0.5s;}.loader:nth-child(7){animation-delay: 0.6s;}.loader:nth-child(8){animation-delay: 0.7s;}
 .loader-hidden {animation: fadeOut 1s;-webkit-animation: fadeOut 1s;animation-fill-mode: forwards;}
 .loader-wrapper, #home .inner-width, .card-filter, .frmWallpaper, .wp-preview, .contact-form, .rating{display: flex;justify-content: center;align-items: center;}
 .navbar .inner-width, .wp-content, .accordion-link{display: flex;align-items: center;justify-content: space-between;}
@@ -30,9 +23,8 @@ html {scroll-behavior: smooth}
 #icon img{width: 100%;}
 .sticky {background: #f1f1f1;padding: 18px 0;}
 .sticky .logo {background-image: url(../files/arsentech-light.svg);}
-.sticky .navbar-menu a {color: #222;}
+.sticky .navbar-menu a, .sticky .menu-toggler {color: #222;}
 .sticky .menu-toggler span {background-color: #222;}
-.sticky .menu-toggler {color: #222;}
 .sticky #icon{filter:invert(0);}
 #home {height: 100vh;min-height: 500px;background:#204829;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.jpg) no-repeat;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;transition: 1s all;}
 #home .inner-width {height: 100%;text-align: center;}
@@ -42,7 +34,6 @@ html {scroll-behavior: smooth}
 #home .content .txt.second::after{content: "Windows Versions";animation: text 5s linear infinite;}
 @keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
 #home .button {display: inline-block;margin: 15px 0;color: #204829;font-size: 15px;font-weight: 500;width: 180px;border: 1px solid #204829;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
-
 section {padding: 100px 0;background: #fafafa;}
 .section-title {text-align: center;margin-bottom: 80px;font-size: 26px;padding-bottom: 20px;color: #222;}
 .section-title::before, .section-title::after, .card-title::after, .answer::before{content: "";position: absolute;}
@@ -92,7 +83,6 @@ section.alt .section-title::after {border: 4px solid #f1f1f1;}
 .half-container{display: flex;width: 100%;}
 .rating{grid-gap: .5rem;margin-bottom: 2rem;}
 .rating .star.active{opacity: 0;animation: star .5s calc(var(--i) * .1s) ease-in-out forwards;}
-@keyframes star {0%{opacity: 0;transform: scale(1);}50%{opacity: 1;transform: scale(1.2);}100%{opacity: 1;transform: scale(1);}}
 .rating .star{cursor: pointer;}
 .rating .star:hover{transform: scale(1.1);}
 .rating .star img{width: 30px;filter:var(--yellow);}

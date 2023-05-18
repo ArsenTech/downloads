@@ -1,5 +1,5 @@
 import {ref, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";import {storage} from "./firebase.js";
-import {downloads, otherDownloads} from "./data.js";
+import {answers, downloads, otherDownloads} from "./data.js";
 const downloadsContainer = document.getElementById("downloadsCards");
 const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{const el = document.createElement("div");
      el.classList.add("grid-item");el.setAttribute("data-item", card.category);
@@ -27,6 +27,15 @@ const displayOther = (cards,cardList) =>cards.forEach((card,i)=>{const el = docu
           </div>
      </div>`;cardList.appendChild(el);
 });
+const addFAQs = ()=>answers.map((answer,i)=>{
+     const el = document.createElement("div");
+     el.className = "accordion-item";
+     el.id = `q${i+1}`;
+     el.innerHTML = `
+     <a class="accordion-link" href="#q${i+1}">${answer.q} <img class="add-icon" src="files/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="files/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
+     <div class="answer"><p>${answer.a}</p></div>`;
+     document.querySelector(".accordion").append(el)
+})
 const removeMode = () => document.querySelector("link[href='css/dark-mode.css']").remove();
 function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
 function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";t.type="text/css";document.getElementsByTagName("head")[0].appendChild(t);}
@@ -43,8 +52,9 @@ function toggleActive(toggler,menu){toggler.classList.toggle("active"); menu.cla
 function closeMenu(toggler,menu){toggler.classList.remove("active"); menu.classList.remove("active");}
 function toggleMode(toggler){document.body.classList.toggle("dark");if(!document.body.classList.contains("dark")){toggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()} else {toggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");}}
 function init(){
-     lazyCss("css/dark-mode.css");lazyJS("js/firebase.js", "defer");
-     displayCards(downloads,downloadsContainer);displayOther(otherDownloads,downloadsContainer)
+     lazyCss("css/dark-mode.css");
+     displayCards(downloads,downloadsContainer);displayOther(otherDownloads,downloadsContainer);
+     addFAQs();lazyJS("js/firebase.js", "defer");
      lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 }
 export {init,lazyCss,downloadFile,downloadWallpaper,getFileInfo,getWallpaperInfo,changeSize,changeWallpaper,changeSizeBasedOn,toggleActive,closeMenu,toggleMode,removeMode,getFileInfoURL}
