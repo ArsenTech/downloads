@@ -38,8 +38,8 @@ const addFAQs = ()=>answers.map((answer,i)=>{
 })
 const removeMode = () => document.querySelector("link[href='css/dark-mode.css']").remove();
 function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
-function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";t.type="text/css";document.getElementsByTagName("head")[0].appendChild(t);}
-function lazyJS(e,m="async"){const t=document.createElement("script");t.src=e;if(m==="async") t.async=true;else t.defer = true;t.type="module";document.body.appendChild(t);}
+function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(t);}
+function lazyJS(e){const t=document.createElement("script");t.src=e;t.type="module";document.body.appendChild(t);}
 function downloadFile(file,icon){icon.src = 'files/icons/downloading.svg';getDownloadURL(ref(storage,file)).then(url=>{const link=document.createElement("a");link.href=url;link.download="";link.click();icon.src = 'files/icons/download-done.svg';setTimeout(()=>icon.src='files/icons/download.svg',2000);}).catch((err)=>console.error(err));}
 const downloadWallpaper=(file)=>getDownloadURL(ref(storage,file)).then(url=>window.open(url)).catch((err) => console.error(err));
 function getFileInfo(file,i){const fileRef=ref(storage,file);getMetadata(fileRef).then(d=>{const sizeDisplay=document.querySelectorAll("#size"),dateDisplay=document.querySelectorAll("#updated");sizeDisplay[i].innerHTML=formatBytes(d.size);dateDisplay[i].innerHTML=d.updated.slice(0,10);}).catch((err)=>console.error(err));}
@@ -54,7 +54,7 @@ function toggleMode(toggler){document.body.classList.toggle("dark");if(!document
 function init(){
      lazyCss("css/dark-mode.css");
      displayCards(downloads,downloadsContainer);displayOther(otherDownloads,downloadsContainer);
-     addFAQs();lazyJS("js/firebase.js", "defer");
+     addFAQs();lazyJS("js/firebase.js");
      lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 }
 export {init,lazyCss,downloadFile,downloadWallpaper,getFileInfo,getWallpaperInfo,changeSize,changeWallpaper,changeSizeBasedOn,toggleActive,closeMenu,toggleMode,removeMode,getFileInfoURL}

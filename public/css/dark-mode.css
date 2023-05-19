@@ -1,8 +1,8 @@
 :root{--light-green:invert(85%) sepia(16%) saturate(866%) hue-rotate(75deg) brightness(96%) contrast(91%);}
 .dark{color: #f1f1f1;}
 .dark .logo {background-image: url(../files/arsentech-dark.svg);background-size: contain;}
-.dark .menu-toggler span {background-color: #fafafa;}
-.dark .navbar-menu a {color: #fafafa;}
+.dark .menu-toggler span {background-color: #fff;}
+.dark .navbar-menu a {color: #fff;}
 .dark .navbar-menu a:hover {color: #1dd1a1 !important;}
 .dark #icon{filter: invert(1);}
 .dark .sticky {background: #353b48;}
@@ -29,7 +29,7 @@
 .dark .answer::before{background-color: #22b455;}
 .dark .answer p{color: rgba(255,255,255,.6);}
 .dark .frmWallpaper .selectBox{background: #1dd1a1;color: #2f343f;}
-.dark .frmWallpaper .selectBox optgroup,.frmWallpaper .selectBox option,.frmWallpaper .selectBox .defaultOpt:disabled{background-color: #2f343f;color: #fafafa;}
+.dark .frmWallpaper .selectBox optgroup,.frmWallpaper .selectBox option,.frmWallpaper .selectBox .defaultOpt:disabled{background-color: #2f343f;color: #fff;}
 .dark .frmWallpaper .btn-wp-download{border-color: #1dd1a1;color: #1dd1a1;}
 .dark .frmWallpaper .btn-wp-download:hover:not(:disabled){color: #2f343f;background-color: #1dd1a1;}
 .dark .wp-preview p #fileSize{color: #1dd1a1;}
