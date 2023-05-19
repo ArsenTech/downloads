@@ -79,7 +79,7 @@
                     <h2 class="section-title">Wallpapers</h2>
                     <div class="wp-content">
                          <form class="frmWallpaper" id="wp-form">
-                              <select name="optWallpaper" class="selectBox" id="wallpaper-opt">
+                              <select name="optWallpaper" class="selectBox" id="wallpaper-opt" aria-label="wallpaper">
                                    <option disabled selected class="defaultOpt">-- Choose a Wallpaper --</option>
                                    <option value="1">Wallpaper #1</option>
                                    <option value="2">Wallpaper #2</option>
@@ -92,7 +92,7 @@
                                    <option value="9">Wallpaper #9</option>
                                    <option value="10">Wallpaper #10</option>
                               </select>
-                              <select name="optSize" class="selectBox" id="size-opt" disabled>
+                              <select name="optSize" class="selectBox" id="size-opt" disabled aria-label="size">
                                    <option disabled selected class="defaultOpt">-- Choose a Size --</option>
                                    <optgroup label="Desktop">
                                         <option value="3440x1440">3440 x 1440</option>
@@ -137,8 +137,11 @@
                               <span class="star" style="--i: 4"><img src="files/icons/star.svg" alt="" width="30" height="30" loading="lazy"></span>
                          </div>
                          <p class="ratingError"></p>
-                         <div class="half-container"><input type="text" name="name" class="nameZone" placeholder="Your Full Name" required><input type="email" name="_replyto" class="emailZone" placeholder="Your Email (Optional)"></div>
-                         <textarea name="message" class="messageZone" placeholder="Your Opinion" required></textarea>
+                         <div class="half-container">
+                              <input type="text" name="name" aria-label="name" class="nameZone" placeholder="Your Full Name" required>
+                              <input type="email" name="_replyto" aria-label="email" class="emailZone" placeholder="Your Email (Optional)">
+                         </div>
+                         <textarea name="message" aria-label="message" class="messageZone" placeholder="Your Opinion" required></textarea>
                          <input type="submit" name="btn" value="Send Feedback" class="btn">
                     </form>
                </div>
