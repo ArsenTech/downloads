@@ -4,7 +4,6 @@
 .dark .menu-toggler span {background-color: #fff;}
 .dark .navbar-menu a, .dark .sticky .menu-toggler, .dark .section-title  {color: #fff;}
 .dark .navbar-menu a:hover {color: #1dd1a1 !important;}
-.dark #icon{filter: invert(1);}
 .dark .sticky {background: #353b48;}
 .dark .sticky .logo {background-image: url(../files/arsentech-dark.svg);}
 .dark .sticky .navbar-menu a {color: #f1f1f1;}
@@ -35,8 +34,9 @@
 .dark .formore a:hover{color:#92e5a1 !important;}
 .dark .formore a{color: #1dd1a1;}
 .dark .search-container .search-btn{background: #1dd1a1;}
+.dark .search-container .search-btn:hover, .dark .card-filter .list:hover{background: #92e5a1;}
 .dark .search-container .search-btn img{filter: invert(0);}
-.dark .search-container .cancel-btn img{filter: invert(1);}
+.dark .search-container .cancel-btn img, .dark #icon{filter: invert(1);}
 .dark .search-container .cancel-btn{color: #f1f1f1;}
 @media screen and (max-width:980px){
      .dark .navbar-menu{background-color:#2f343f;}
