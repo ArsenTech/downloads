@@ -2,16 +2,14 @@
 .dark{color: #f1f1f1;}
 .dark .logo {background-image: url(../files/arsentech-dark.svg);background-size: contain;}
 .dark .menu-toggler span {background-color: #fff;}
-.dark .navbar-menu a {color: #fff;}
+.dark .navbar-menu a, .dark .sticky .menu-toggler, .dark .section-title  {color: #fff;}
 .dark .navbar-menu a:hover {color: #1dd1a1 !important;}
 .dark #icon{filter: invert(1);}
 .dark .sticky {background: #353b48;}
 .dark .sticky .logo {background-image: url(../files/arsentech-dark.svg);}
 .dark .sticky .navbar-menu a {color: #f1f1f1;}
 .dark .sticky .menu-toggler span {background-color: #f1f1f1;}
-.dark .sticky .menu-toggler {color: #f1f1f1;}
 .dark section {background: #353b48;}
-.dark .section-title {color: #f1f1f1;}
 .dark .section-title::before {background: #f1f1f1;}
 .dark .section-title::after {background-color: #1dd1a1;border-color: #353b48;}
 .dark section.alt {background-color: #2f343f;}
@@ -29,7 +27,7 @@
 .dark .answer::before{background-color: #22b455;}
 .dark .answer p{color: rgba(255,255,255,.6);}
 .dark .frmWallpaper .selectBox{background: #1dd1a1;color: #2f343f;}
-.dark .frmWallpaper .selectBox optgroup,.frmWallpaper .selectBox option,.frmWallpaper .selectBox .defaultOpt:disabled{background-color: #2f343f;color: #fff;}
+.dark .frmWallpaper .selectBox optgroup,.dark .frmWallpaper .selectBox option,.dark .frmWallpaper .selectBox .defaultOpt:disabled{background-color: #2f343f;color: #fff;}
 .dark .frmWallpaper .btn-wp-download{border-color: #1dd1a1;color: #1dd1a1;}
 .dark .frmWallpaper .btn-wp-download:hover:not(:disabled){color: #2f343f;background-color: #1dd1a1;}
 .dark .wp-preview p #fileSize{color: #1dd1a1;}
