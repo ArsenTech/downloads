@@ -1,5 +1,5 @@
 :root{--light-green:invert(85%) sepia(16%) saturate(866%) hue-rotate(75deg) brightness(96%) contrast(91%);}
-.dark{color: #f1f1f1;}
+.dark{color: #f1f1f1;background: #353b48;}
 .dark .logo {background-image: url(../files/arsentech-dark.svg);background-size: contain;}
 .dark .menu-toggler span {background-color: #fff;}
 .dark .navbar-menu a, .dark .sticky .menu-toggler, .dark .section-title  {color: #fff;}
@@ -13,8 +13,8 @@
 .dark .section-title::after {background-color: #1dd1a1;border-color: #353b48;}
 .dark section.alt {background-color: #2f343f;}
 .dark section.alt .section-title::after{border-color: #2f343f;}
-.dark .card-filter .list{background: #1dd1a1;color: #353b48;}
-.dark .card-filter .list.active{background: #0d5a45;color: #f1f1f1;}
+.dark .card-filter .list{background: #1dd1a1;color: #222;}
+.dark .card-filter .list.active{background: #53ffd1;color: #222;}
 .dark .contact-form input, .dark .contact-form textarea, .dark  #search-input {background-color: #f1f1f1;color: #2f343f;}
 .dark .contact-form input::placeholder,.dark .contact-form textarea::placeholder, .dark #search-input::placeholder{color: #666;}
 .dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}

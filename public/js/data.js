@@ -35,4 +35,5 @@ export const answers = [
      {q:"Are the software provided here cracked or modified in any form?",a:"No. We Won't provide cracks, the user must activate it with their own provided licenses. They're Original Copies of the software."},
      {q:"Downloads are too slow. What's the problem?",a:"It Depends on your ISP, such as location, plan, and other limitations. Or Your Internet connection is Slow"},
      {q:"Who made the Wallpapers?",a:"These Coding Related Desktop Wallpapers are made by ArsenTech"},
-     {q:"Do You Provide Malware Downloads?",a:"No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don't want to Share Some Malwares to Someone"}]
+     {q:"Do You Provide Malware Downloads?",a:"No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don't want to Share Some Malwares to Someone Just For Their Safety"}
+]

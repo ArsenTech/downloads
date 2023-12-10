@@ -61,6 +61,7 @@ This is an Entire Roadmap of a Downloads Page:
 - Minified Some JS Files
 - Changed Caret Color
 - Added Skip to Downloads Feature
+- New "Discover" Button Colors
 ## Contributing
 Contributions are Always Welcome, but please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) for Contributing This Project :-)
 ## Tech
@@ -78,6 +79,8 @@ No. We Won't provide cracks, the user must activate it with their own provided l
 It Depends on your ISP, such as location, plan, and other limitations. Or Your Internet connection is Slow
 #### Who made the Wallpapers?
 These Desktop Wallpapers are made by ArsenTech
+### Do You Provide Malware Downloads
+No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don't want to Share Some Malwares to Someone Just For Their Safety
 
 ## Support And Follow ArsenTech
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000"/></a>
