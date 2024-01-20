@@ -6,7 +6,7 @@ const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{const el = docu
      el.className = hasDropDown ? "grid-item dropdown" : "grid-item";
      el.setAttribute("data-item", card.category);el.setAttribute("data-index", i);
      if(card.filePath) el.setAttribute("data-file-path", card.filePath);
-     const downloadBtn = hasDropDown ? `<select name="dropdown" class="card-btn selection">
+     const downloadBtn = hasDropDown ? `<select name="dropdown" class="card-btn selection" aria-label="${card.title}">
           <option disabled selected class="defaultOpt">Version / Type</option>
           ${card.files.map((file=>`<option value="${file.file}" id="${file.id}">${file.name}</option>`)).join('')}
      </select><button class="card-btn icon" disabled aria-label="Download"><img src="files/icons/download.svg" alt="" width="30" height="30" loading="lazy"></button>` : `<button class="card-btn"${card.filePath ? ` data-file-path="${card.filePath}"` : ""}><img src="files/icons/download.svg" alt="" width="30" height="30" loading="lazy">Download</button>`;
