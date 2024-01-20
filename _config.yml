@@ -7,6 +7,8 @@ exclude:
   - README.md
   - CODE_OF_CONDUCT.md
   - public/files/downloads-logo.png
+  - .vscode/*
+  - .github/*
   
 gems:
   - jekyll-sitemap
