@@ -10,9 +10,6 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 
-# Firebase config
-firebase-init.js
-
 # Runtime data
 pids
 *.pid
@@ -59,7 +56,7 @@ node_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+.env*
 
 # Others
 _site/
