@@ -13,25 +13,11 @@ export const downloads = [{style: "background: url(./files/card-img/ms/win3.1.we
      {style: "background: url(./files/card-img/softwares/UninstallTool.webp) center; background-size: cover;",title: "Uninstall Tool",filePath: "softwares/Uninstall-Tool.zip",category: "softwares",},
      {style: "background: url(./files/card-img/softwares/tc.webp) center; background-size: cover;",title: "Total Commander",filePath: "softwares/Total Commander.zip",category: "softwares",},
      {style: "background: url(./files/card-img/softwares/wds.webp) center; background-size: cover;",title: "WinDirStat",filePath: "softwares/WinDirStat.zip",category: "softwares",},
-     {style: "background: url(./files/card-img/softwares/ie.webp) center; background-size: cover;",title: "Internet Explorer",category: "softwares",files: [
-          {name: "Version 1", file: "softwares/internet-explorer/IE1.zip"},
-          {name: "Version 5", file: "softwares/internet-explorer/IE5.zip"},
-          {name: "Version 10", file: "softwares/internet-explorer/IE10.zip"}
-     ]},
-     {style: "background: url(./files/card-img/ms/ms-dos.webp) center; background-size: cover;", title: 'MS-DOS', category: 'microsoft', files : [
-          {name: 'Version 1.25', file: 'ms-dos/MS-DOS_1.25.zip'},
-          {name: 'Version 4.01', file: 'ms-dos/MS-DOS_4.01.zip'},
-          {name: 'Version 5', file: 'ms-dos/MS-DOS 5.00a.zip'},
-          {name: 'Version 6.22', file: 'ms-dos/MS-DOS 6.22.zip'},
-          {name: 'Version 7.10', file: 'ms-dos/MS-DOS_7.10.zip'},
-     ]},
+     {style: "background: url(./files/card-img/softwares/ie.webp) center; background-size: cover;",title: "Internet Explorer",category: "softwares",files: [{name: "Version 1", file: "softwares/internet-explorer/IE1.zip"},{name: "Version 5", file: "softwares/internet-explorer/IE5.zip"},{name: "Version 10", file: "softwares/internet-explorer/IE10.zip"}]},
+     {style: "background: url(./files/card-img/ms/ms-dos.webp) center; background-size: cover;", title: 'MS-DOS', category: 'microsoft', files : [{name: 'Version 1.25', file: 'ms-dos/MS-DOS_1.25.zip'},{name: 'Version 4.01', file: 'ms-dos/MS-DOS_4.01.zip'},{name: 'Version 5', file: 'ms-dos/MS-DOS 5.00a.zip'},{name: 'Version 6.22', file: 'ms-dos/MS-DOS 6.22.zip'},{name: 'Version 7.10', file: 'ms-dos/MS-DOS_7.10.zip'},]},
      {style: "background: url(./files/card-img/updates/win2000.webp) center; background-size: cover;",title: "Windows 2000 Updates",filePath: "updates/Windows 2000 Service Pack 4.7z",category: "updates"},
      {style: "background: url(./files/card-img/updates/winxp.webp) center; background-size: cover;",title: "Windows XP Updates",filePath: "updates/windows-xp-sp2.exe",category: "updates"},
-     {style: "background: url(./files/card-img/softwares/dotnet.webp) center; background-size: cover;",title: ".NET (Old Versions)",category: "softwares",files: [
-          {name: 'Version 2', file: 'softwares/dotnet/dotnet-2.zip'},
-          {name: 'Version 3.5', file: 'softwares/dotnet/dotnet-3.5.zip'},
-          {name: 'Version 4', file: 'softwares/dotnet/dotnet-4.zip'},
-     ]},
+     {style: "background: url(./files/card-img/softwares/dotnet.webp) center; background-size: cover;",title: ".NET (Old Versions)",category: "softwares",files: [{name: 'Version 2', file: 'softwares/dotnet/dotnet-2.zip'},{name: 'Version 3.5', file: 'softwares/dotnet/dotnet-3.5.zip'},{name: 'Version 4', file: 'softwares/dotnet/dotnet-4.zip'},]},
      {style: "background: url(./files/card-img/softwares/inkball.webp) center; background-size: cover;",title: "Windows Inkball Game",filePath: "softwares/Windows-Inkball.zip",category: "softwares"},
      {style: "background: url(./files/card-img/softwares/movie-maker.webp) center; background-size: cover;",title: "Windows Movie Maker",filePath: "softwares/Windows-Movie-Maker.zip",category: "softwares"},
      {style: "background: url(./files/card-img/softwares/pinball.webp) center; background-size: cover;",title: "Windows Pinball Game",filePath: "softwares/Windows-Pinball-Game.zip",category: "softwares"},];
