@@ -1,5 +1,5 @@
 <p align="center">
-<img src="public/files/downloads-logo.png">
+<img src="files/downloads-logo.png">
 </p>
 <h3 align="center">Downloads Page of ArsenTech's Official Website</h3>
 <p align="center">
