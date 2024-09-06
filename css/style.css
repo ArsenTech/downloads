@@ -23,7 +23,8 @@ body{background: #f1f1f1; color: #202020;}
 #icon{width: 30px;transition:.3s ease;filter:invert(1);cursor: pointer;}
 #icon img{width: 100%;}
 .sticky {background: #f1f1f1;padding: 18px 0;}
-.sticky .logo {background-image: url(../files/arsentech-light.svg);}
+.sticky .logo {background-image: url(../files/arsentech-light.svg);transition:.3s;}
+.sticky .logo:hover{background-image: url(../files/arsentech-colorful.svg);}
 .sticky .navbar-menu a, .sticky .menu-toggler {color: #222;}
 .sticky .menu-toggler span {background-color: #222;}
 .sticky #icon{filter:invert(0);}

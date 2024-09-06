@@ -63,6 +63,7 @@ This is an Entire Roadmap of a Downloads Page:
 - Added Skip to Downloads Feature
 - New "Discover" Button Colors
 - Merged Separate Version Downloads To One Using Dropdown Selector
+- Colorful Logo on Mouse Over
 ## Contributing
 Contributions are Always Welcome, but please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) for Contributing This Project :-)
 ## Tech
