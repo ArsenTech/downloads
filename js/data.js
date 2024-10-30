@@ -34,3 +34,20 @@ export const answers = [
      {q:"Who made the Wallpapers?",a:"These Coding Related Desktop Wallpapers are made by ArsenTech"},
      {q:"Do You Provide Malware Downloads?",a:"No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don't want to Share Some Malwares to Someone Just For Their Safety"}
 ]
+export const screenResolutions={Desktop:[{value:"3440x1440",text:"3440 x 1440"},{value:"2560x1440",text:"2560 x 1440"},{value:"1920x1200",text:"1920 x 1200"},{value:"1920x1080",text:"1920 x 1080"},{value:"1600x1200",text:"1600 x 1200"},{value:"1440x900",text:"1440 x 900"},{value:"1366x768",text:"1366 x 768"},{value:"1280x800",text:"1280 x 800"},{value:"1280x720",text:"1280 x 720"},{value:"1152x864",text:"1152 x 864"},{value:"1024x768",text:"1024 x 768"},{value:"800x600",text:"800 x 600"}],Mobile:[{value:"android",text:"800 x 1200"},{value:"phone",text:"1080 x 1920"},{value:"iphone",text:"1125 x 2436"}]}; 
+export const wallpapers = {
+     Javascript: [
+       { value: "1", text: "Wallpaper #1" },
+       { value: "2", text: "Wallpaper #2" },
+       { value: "3", text: "Wallpaper #3" },
+       { value: "4", text: "Wallpaper #4" },
+       { value: "5", text: "Wallpaper #5" }
+     ],
+     Python: [
+       { value: "6", text: "Wallpaper #6" },
+       { value: "7", text: "Wallpaper #7" },
+       { value: "8", text: "Wallpaper #8" },
+       { value: "9", text: "Wallpaper #9" },
+       { value: "10", text: "Wallpaper #10" }
+     ]
+};

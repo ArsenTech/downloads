@@ -1,5 +1,5 @@
 import {ref, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";import {storage} from "./firebase.js";
-import {answers, downloads, otherDownloads} from "./data.js";
+import {answers, downloads, otherDownloads, screenResolutions, wallpapers} from "./data.js";
 const downloadsContainer = document.getElementById("downloadsCards");
 const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{const el = document.createElement("div");
      const hasDropDown = card.files && !!card.files.length;
@@ -41,6 +41,25 @@ const addFAQs = () => answers.forEach((answer,i)=>{
      <div class="answer"><p>${answer.a}</p></div>`;
      document.querySelector(".accordion").append(el)
 })
+const addSelectOptions = (select,data,name) => {
+     const defaultOption = document.createElement("option");
+     defaultOption.disabled = true;
+     defaultOption.selected = true;
+     defaultOption.className = "defaultOpt";
+     defaultOption.textContent = `-- Choose a ${name} --`
+     select.appendChild(defaultOption);
+     for(const groupName in data){
+          const optgroup = document.createElement("optgroup");
+          optgroup.label = groupName;
+          data[groupName].forEach(opt=>{
+               const option = document.createElement("option");
+               option.value = opt.value;
+               option.textContent = opt.text;
+               optgroup.appendChild(option)
+          })
+          select.appendChild(optgroup)
+     }
+}
 export const removeMode = () => document.querySelector("link[href='css/dark-mode.css']").remove();
 function formatBytes(t,B=2){if(!+t)return"0 Bytes";const o=B<0?0:B,a=Math.floor(Math.log(t)/Math.log(1024));return`${parseFloat((t/Math.pow(1024,a)).toFixed(o))} ${["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][a]}`}
 export function lazyCss(e) {const t=document.createElement("link");t.href=e,t.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(t);}
@@ -61,4 +80,6 @@ export function init(){
      displayOther(otherDownloads,downloadsContainer);displayCards(downloads,downloadsContainer);
      addFAQs();lazyJS("js/firebase.js");
      lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
+     addSelectOptions(document.getElementById("wallpaper-opt"),wallpapers,"Wallpaper");
+     addSelectOptions(document.getElementById("size-opt"),screenResolutions,"Size");
 }
