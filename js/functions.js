@@ -75,6 +75,12 @@ export function changeSizeBasedOn(size, img){const filePath = `wallpapers/coding
 export function toggleActive(toggler,menu){toggler.classList.toggle("active"); menu.classList.toggle("active");}
 export function closeMenu(toggler,menu){toggler.classList.remove("active"); menu.classList.remove("active");}
 export function toggleMode(toggler){document.body.classList.toggle("dark");if(!document.body.classList.contains("dark")){toggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()} else {toggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");}}
+function isChristmas() {
+     const today = new Date();
+     const month = today.getMonth() + 1;
+     const day = today.getDate();
+     return (month === 12 && day >= 1) || (month === 1 && day <= 8);
+}
 export function init(){
      lazyCss("css/dark-mode.css");
      displayOther(otherDownloads,downloadsContainer);displayCards(downloads,downloadsContainer);
@@ -82,4 +88,5 @@ export function init(){
      lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
      addSelectOptions(document.getElementById("wallpaper-opt"),wallpapers,"Wallpaper");
      addSelectOptions(document.getElementById("size-opt"),screenResolutions,"Size");
+     document.body.classList[isChristmas() ? "add" : "remove"]("christmas")
 }

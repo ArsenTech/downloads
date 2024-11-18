@@ -28,13 +28,12 @@ body{background: #f1f1f1; color: #202020;}
 .sticky .navbar-menu a, .sticky .menu-toggler {color: #222;}
 .sticky .menu-toggler span {background-color: #222;}
 .sticky #icon{filter:invert(0);}
-#home {height: 100vh;min-height: 500px;background:#204829;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.jpg) no-repeat;background: linear-gradient(#20482945,#1dd1a188), url(../files/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;transition: 1s all;}
+#home {height: 100vh;min-height: 500px;background:#204829;background: linear-gradient(#20482945,#1dd1a188), url(../files/backgrounds/bg.jpg) no-repeat;background: linear-gradient(#20482945,#1dd1a188), url(../files/backgrounds/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;transition: 1s all;}
 #home .inner-width {height: 100%;text-align: center;}
 #home .content{display: inline-flex;flex-direction: column;align-items: center;justify-content: center;}
 #home .content .txt{color: #25ecb7;font-size: 50px;font-weight: 600;}
 #home .content .txt.first{color: #fff;}
 #home .content .txt.second::after{content: "Windows Versions";animation: text 5s linear infinite;}
-@keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
 #home .button {display: inline-block;margin: 15px 0;color: #fff;font-size: 16px;font-weight: 500;width: 180px;border: 1px solid #fff;padding: 15px 0;border-radius: 6px;transition: .3s ease-in-out;}
 section {padding: 100px 0;background: #fff;}
 .section-title {text-align: center;margin-bottom: 80px;font-size: 26px;padding-bottom: 20px;color: #222;}
@@ -101,7 +100,7 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .contact-form .btn {width: 180px;background-color: transparent;color: #204829;font-size: 16px;border: 2px solid #204829;padding: 0;margin-left: auto;transition: .3s ease-in-out;cursor: pointer;}
 .contact-form .btn:hover ,.contact-form .btn:focus-within{background: #204829;color: #fff;}
 .ratingError{color: red;font-size: 16px;font-weight: 600;margin-bottom: 2rem;}
-#site-footer {width: 100%;background: #204829;background: linear-gradient(#20482945,#20482945), url(../files/bg.jpg) no-repeat;background: linear-gradient(#20482945,#20482945), url(../files/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;color: #fff;padding: 80px 0;text-align: center;}
+#site-footer {width: 100%;background: #204829;background: linear-gradient(#20482945,#20482945), url(../files/backgrounds/bg.jpg) no-repeat;background: linear-gradient(#20482945,#20482945), url(../files/backgrounds/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;color: #fff;padding: 80px 0;text-align: center;}
 .copyright{margin-bottom:20px;font-size:16px;}
 .copyright a {text-decoration: underline;font-size: 16px;color: #E8FDF7;font-weight: 500;transition: .3s linear;}
 .copyright a:hover,.copyright a:focus-within{color: #59facf;}
@@ -116,6 +115,11 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .search-container .search-btn:hover img,.search-container .search-btn:focus img{filter: invert(0);}
 .search-container .search-btn img{filter: invert(1);}.search-container .cancel-btn{right: -45px;background: none;}
 .search-container .cancel-btn img,.search-container .search-btn img{width: 25px;}
+.christmas :where(#home,#site-footer){background:#204829!important;background:linear-gradient(#20482945,#20482945),url(../files/backgrounds/bg-christmas.jpg) no-repeat!important;background:linear-gradient(#20482945,#20482945),url(../files/backgrounds/bg-christmas.webp) no-repeat center!important;background-attachment:fixed!important;background-size:cover!important}
+@keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
+@keyframes fadeOut {100% {opacity: 0;visibility: hidden;}}
+@keyframes star {0%{opacity: 0;transform: scale(1);}50%{opacity: 1;transform: scale(1.2);}100%{opacity: 1;transform: scale(1);}}
+@keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
 @media screen and (max-width:1440px){.card-container{grid-template-columns: repeat(3,auto);}}
 @media screen and (max-width:1024px) {.card-container {grid-template-columns: repeat(2,auto);grid-gap: 3rem;}}
 @media screen and (max-width:980px){
@@ -151,6 +155,6 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 }
 @media (prefers-reduced-motion: reduce) {*,*::after,*::before {transition: none !important;scroll-behavior: auto !important;transition-delay: 0 !important;}}
 .no-js #site-header,.no-js #site-main,.no-js #site-footer,.no-js .loader-wrapper{display: none;}
-.no-js{min-height: 100vh;text-align: center;background:#204829;background: linear-gradient(#22B45545,#1dd1a188), url(../files/bg.jpg) no-repeat;background: linear-gradient(#22B45545,#1dd1a188), url(../files/bg.webp) no-repeat; background-size: cover;}
+.no-js{min-height: 100vh;text-align: center;background:#204829;background: linear-gradient(#22B45545,#1dd1a188), url(../files/backgrounds/bg.jpg) no-repeat;background: linear-gradient(#22B45545,#1dd1a188), url(../files/backgrounds/bg.webp) no-repeat; background-size: cover;}
 .no-js h2{color: #dc3545;margin: 10px;font-size: 30px;}
 noscript .err{width: 100%;position: absolute;top: 50%;background: #92e5a1;padding: 15px 0;}
