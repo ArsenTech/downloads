@@ -92,3 +92,4 @@ No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don'
 > GitHub [@ArsenTech](https://github.com/ArsenTech) &nbsp;&middot;&nbsp;
 > [ArsenTech's Website](https://arsentech.github.io) &nbsp;&middot;&nbsp;
 > YouTube [@ArsenTech](https://youtube.com/@ArsenTech)
+> Patreon [ArsenTech](https://www.patreon.com/ArsenTech)
