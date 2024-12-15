@@ -85,11 +85,14 @@ These Desktop Wallpapers are made by ArsenTech
 No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC. I Don't want to Share Some Malwares to Someone Just For Their Safety
 
 ## Support And Follow ArsenTech
-<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000"/></a>
-<a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange"></a>
-<a href="https://codepen.io/ArsenJS" target="_blank"><img src="https://img.shields.io/badge/-ArsenJS-222222?style=for-the-badge&logo=codepen&logoColor=white"></a>
-<a href="https://www.deviantart.com/arsen2005" target="_blank"><img src="https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46"></a>
+[![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
+[![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
+[![Codepen](https://img.shields.io/badge/-ArsenJS-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenJS)
+[![DeviantArt](https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46")](https://www.deviantart.com/arsen2005)
+[![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
+[![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
+
 > GitHub [@ArsenTech](https://github.com/ArsenTech) &nbsp;&middot;&nbsp;
-> [ArsenTech's Website](https://arsentech.github.io) &nbsp;&middot;&nbsp;
 > YouTube [@ArsenTech](https://youtube.com/@ArsenTech)
 > Patreon [ArsenTech](https://www.patreon.com/ArsenTech)
+> [ArsenTech's Website](https://arsentech.github.io) &nbsp;&middot;&nbsp;
