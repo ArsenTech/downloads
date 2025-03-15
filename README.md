@@ -3,13 +3,19 @@ Welcome to **ArsenTech's File Collection for Downloads Page**! Here, you can exp
 
 ## Disclaimer
 By downloading files from this repository, you agree to the following terms:
-
 1. **Legality**: It's your responsibility to make sure that the files you download are in line with your local laws, regulations, and any relevant software licenses. We don’t make any promises about the legality of using the software provided here in your area.
 2. **Virus-Free Claims**: We do our best to offer virus-free software. Still, we recommend that you run your own security checks on any files you download. While we do scan for known threats, we can’t be held liable for any damage that might occur from using the software or files from this repository.
 3. **No Liability**: ArsenTech won’t take responsibility for any damages or issues that arise from using these files. Use them at your own risk. This includes but isn’t limited to, damage to your computer, loss of data, or interruptions to your services.
 4. **Copyright**: If you own the copyright to any file hosted here and want it removed, please reach out to us at arsentech5002@gmail.com. We’ll review your request quickly and take down the file if needed.
 5. **Software Integrity**: We don’t offer cracked or modified software. All software available here is either open-source or legitimate copies, and users must provide their licenses when required.
 6. **Updates & Availability**: The files available in this repository may change over time. We might remove, update, or add new files whenever we see fit. We aren’t responsible for keeping these files available or providing support for them.
+
+## Table of Contents
+- [About](#about-this-collection)
+- [File Formats](#file-formats)
+- [Why Github](#why-github)
+- [FAQs](#faq)
+- [Support and Follow](#support-and-follow-arsentech)
 
 ## About This Collection
 This repository is packed with a diverse range of files, neatly sorted by type and category. You’ll find software, updates, and legacy tools tailored for various platforms. Best of all, everything is available for free download and organized for your convenience.
