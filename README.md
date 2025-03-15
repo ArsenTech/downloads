@@ -18,6 +18,11 @@ With Firebase recently moving to a paid storage model, I’ve taken the step to 
 
 So go ahead, dive in, and grab the files that fit your needs!
 
+## File Formats
+Files in this collection are available in **Zip** and **7z** formats. 
+- **Zip files** are compatible with most operating systems and software.
+- **7z files** offer better compression and are typically smaller but require compatible software like [7-Zip](https://www.7-zip.org/) for extraction.
+
 ## Why GitHub?
 I used to host my files on Firebase, which was great because it was free. However, Firebase Storage has now switched to a paid plan. To keep these resources available to you at no charge, I've moved everything over to GitHub.
 
