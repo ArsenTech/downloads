@@ -72,7 +72,7 @@ It Depends on your ISP, such as location, plan, and other limitations. Or Your I
 #### Do You Provide Malware Downloads
 No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC and It is Unethical. I don't want to Share Some Malware with Someone Just For Their Safety.
 #### Why Did You Remove Windows Vista - 11 Versions?
-Due to space limitations, I’ve removed the Windows Vista - 11 versions from this collection. Instead, I’ve linked to the official sources for these versions to ensure that you’re getting the most authentic and up-to-date files directly from the provider.
+Due to space limitations, I’ve removed the Windows Vista - 11 versions from this collection. Instead, I’ve linked to the official sources for these versions to ensure that you’re getting the most authentic and up-to-date files directly from the provider. Some versions are linked from the Internet Archive. While we strive to provide reliable sources, please verify file integrity before use.
 
 ### Additional Information:
 A few older operating systems such as Windows 95, 98, 2000, ME, and XP can be directly downloaded from this repository, but the newer ones are pointed toward official sources. See the "[Download Information](#download-information)" section above for a list in detail.
