@@ -14,6 +14,7 @@ By downloading files from this repository, you agree to the following terms:
 - [About](#about-this-collection)
 - [File Formats](#file-formats)
 - [Why Github](#why-github)
+- [Download Information](#download-information)
 - [FAQs](#faq)
 - [Support and Follow](#support-and-follow-arsentech)
 
@@ -34,6 +35,31 @@ I used to host my files on Firebase, which was great because it was free. Howeve
 
 GitHub is a solid choice for free hosting of public repositories, and I've made sure the files are neatly organized for easy downloading. Enjoy!
 
+### Download Information
+Some Windows versions are hosted here for convenience, while others are linked to official sources since they are too big or due to licensing restrictions. This is the split:
+
+#### **Direct Downloads (Hosted in Repository)**
+- **Windows 95**
+- **Windows 98**
+- **Windows 2000**
+- **Windows ME**
+- **Windows XP**
+
+These legacy systems are provided directly for download here. You can download them directly without being redirected.
+#### **Official Sources**
+- **Windows Vista** (Internet Archive)
+- **Windows 7**
+- **Windows 8.1**
+- **Windows 10**
+- **Windows 11**
+
+Due to their huge sizes and official licensing schemes, those versions are linked to the official download pages of each of them. If you click the download link, it will navigate you to the official website of those versions.
+### Why This Approach?
+- **Space Requirement**: Some operating systems like Windows Vista and above take lots of space, and hosting them directly on the repository would infringe on GitHub file size policies.
+- **Official Sources Only**: To ascertain compatibility and also so you can always get the latest release, we provide direct links to official sources for newly added operating systems. This also installs you with the safest, genuine version of the OS.
+
+We advise installing these older operating systems with caution since they are no longer supported by Microsoft and can put one at risk of security vulnerabilities. It is always best to test them first in a safe environment, such as a virtual machine.
+
 ## FAQ
 #### What's This?
 Downloads collection from ArsenTech. This Contains Virus-Free Software selected carefully by ArsenTech.<br>It Includes Windows, Software, Drivers, and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily.<br> We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece software that you can't easily find or want to go through the hassle.
@@ -45,6 +71,11 @@ No. We Won't provide cracks, the user must activate it with their own provided l
 It Depends on your ISP, such as location, plan, and other limitations. Or Your Internet connection is Slow
 #### Do You Provide Malware Downloads
 No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC and It is Unethical. I don't want to Share Some Malware with Someone Just For Their Safety.
+#### Why Did You Remove Windows Vista - 11 Versions?
+Due to space limitations, I've left out the Windows Vista - 11 versions from this collection. Instead, I've provided links to the official Microsoft download pages so that you're downloading authentic and updated files directly from the horse's mouth.
+
+### Additional Information:
+A few older operating systems such as Windows 95, 98, 2000, ME, and XP can be directly downloaded from this repository, but the newer ones are pointed toward official sources. See the "[Download Information](#download-information)" section above for a list in detail.
 
 ## Support And Follow ArsenTech
 [![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
