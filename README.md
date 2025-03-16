@@ -4,7 +4,7 @@ Welcome to **ArsenTech's File Collection for Downloads Page**! Here, you can exp
 ## Disclaimer
 By downloading files from this repository, you agree to the following terms:
 1. **Legality**: It's your responsibility to make sure that the files you download are in line with your local laws, regulations, and any relevant software licenses. We don’t make any promises about the legality of using the software provided here in your area.
-2. **Virus-Free Claims**: We do our best to offer virus-free software. Still, we recommend that you run your own security checks on any files you download. While we do scan for known threats, we can’t be held liable for any damage that might occur from using the software or files from this repository.
+2. **Virus-Free Claims**: We do our best to offer virus-free software. Still, we recommend that you run your security checks on any files you download. While we do scan for known threats, we can’t be held liable for any damage that might occur from using the software or files from this repository.
 3. **No Liability**: ArsenTech won’t take responsibility for any damages or issues that arise from using these files. Use them at your own risk. This includes but isn’t limited to, damage to your computer, loss of data, or interruptions to your services.
 4. **Copyright**: If you own the copyright to any file hosted here and want it removed, please reach out to us at arsentech5002@gmail.com. We’ll review your request quickly and take down the file if needed.
 5. **Software Integrity**: We don’t offer cracked or modified software. All software available here is either open-source or legitimate copies, and users must provide their licenses when required.
@@ -72,7 +72,7 @@ It Depends on your ISP, such as location, plan, and other limitations. Or Your I
 #### Do You Provide Malware Downloads
 No. I Won't Provide Malware Downloads Because It Can Infect Someone's PC and It is Unethical. I don't want to Share Some Malware with Someone Just For Their Safety.
 #### Why Did You Remove Windows Vista - 11 Versions?
-Due to space limitations, I've left out the Windows Vista - 11 versions from this collection. Instead, I've provided links to the official Microsoft download pages so that you're downloading authentic and updated files directly from the horse's mouth.
+Due to space limitations, I’ve removed the Windows Vista - 11 versions from this collection. Instead, I’ve linked to the official sources for these versions to ensure that you’re getting the most authentic and up-to-date files directly from the provider.
 
 ### Additional Information:
 A few older operating systems such as Windows 95, 98, 2000, ME, and XP can be directly downloaded from this repository, but the newer ones are pointed toward official sources. See the "[Download Information](#download-information)" section above for a list in detail.
