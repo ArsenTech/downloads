@@ -35,7 +35,7 @@ I used to host my files on Firebase, which was great because it was free. Howeve
 
 GitHub is a solid choice for free hosting of public repositories, and I've made sure the files are neatly organized for easy downloading. Enjoy!
 
-### Download Information
+## Download Information
 Some Windows versions are hosted here for convenience, while others are linked to official sources since they are too big or due to licensing restrictions. This is the split:
 
 #### **Direct Downloads (Hosted in Repository)**
