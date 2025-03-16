@@ -48,8 +48,8 @@ Some Windows versions are hosted here for convenience, while others are linked t
 These legacy systems are provided directly for download here. You can download them directly without being redirected.
 #### **Official Sources**
 - **Windows Vista** (Internet Archive)
-- **Windows 7**
-- **Windows 8.1**
+- **Windows 7** (Internet Archive)
+- **Windows 8.1** (Internet Archive)
 - **Windows 10**
 - **Windows 11**
 
