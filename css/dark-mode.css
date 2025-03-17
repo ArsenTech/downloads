@@ -16,6 +16,7 @@
 .dark section.alt .section-title::after{border-color: #2f343f;}
 .dark .card-filter .list{background: #1dd1a1;color: #222;}
 .dark .card-filter .list.active{background: #53ffd1;color: #222;}
+.dark .legends img{filter: invert(1);}
 .dark .contact-form input, .dark .contact-form textarea, .dark  #search-input {background-color: #f1f1f1;color: #2f343f;}
 .dark .contact-form input::placeholder,.dark .contact-form textarea::placeholder, .dark #search-input::placeholder{color: #666;}
 .dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}

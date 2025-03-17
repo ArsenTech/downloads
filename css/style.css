@@ -48,10 +48,14 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .card-filter .list:hover,.card-filter .list:focus{background: #92e5a1;color: #222;}
 .card-filter .list.active{background: #1dd1a1;color: #222;}
 .grid-item.hide{display: none;}
+.legends{display:flex;justify-content:center;align-items:center;flex-direction:column;gap:8px;margin-bottom: 24px;}
+.legends .item{display:flex;align-items:center;gap:10px}
+.legends img{width:24px;height:24px}
+.legends p{font-size:18px}
 .card-container {display: grid;line-height: 1.6;grid-gap: 3rem;grid-template-columns: repeat(4,auto);justify-content: center;align-content: center;}
 .card {width: 280px;color: var(--clr-neutral-100);background-size: cover;padding: 10rem 0 0;max-width: 35ch;border-radius: 1rem;overflow: hidden;transition: transform .3s ease-in-out;}
 .card:hover,.card:focus-within {transform: scale(1.05);}
-.card-content {padding: 1.3rem;background: #222222da;background: linear-gradient(transparent,rgba(0,0,0,0.65) 10.5%,#000);}
+.card-content {padding: 1.2rem;background: #222222da;background: linear-gradient(transparent,rgba(0,0,0,0.65) 10.5%,#000);}
 .card-content .buttons{display: flex; align-items: center;}
 .card-title {width: max-content;font-size: 20px;}
 .card-title::after {margin: 0;padding: 0;box-sizing: border-box;content: "";height: 4px;left: calc(1.3rem * -1);bottom: -2px;width: calc(100% + 1.6rem);background: var(--clr-accent-400);transform-origin: left;transition: transform .3s ease;}
