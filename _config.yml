@@ -11,4 +11,5 @@ exclude:
   - .github/*
   
 gems:
+  - jekyll-sitemap
   - jekyll-seo-tag
