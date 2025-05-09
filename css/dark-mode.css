@@ -35,6 +35,8 @@
 .dark .formore {color: #f1f1f1;}
 .dark .formore a:hover, .dark .formore a:focus{color:#92e5a1 !important;}
 .dark .formore a{color: #1dd1a1;}
+.dark .warning{background: #353b48;}
+.dark .preview-info img{filter: invert(1);}
 .dark .search-container .search-btn{background: #1dd1a1;}
 .dark .search-container .search-btn:hover, .dark .card-filter .list:hover,.dark .search-container .search-btn:focus, .dark .card-filter .list:focus{background: #92e5a1!important;}
 .dark .search-container .search-btn img{filter: invert(0);}

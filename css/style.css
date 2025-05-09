@@ -78,9 +78,12 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .frmWallpaper .btn-wp-download:hover:not(:disabled),.frmWallpaper .btn-wp-download:focus:not(:disabled){color: #fff;background-color: #0d5a45;}
 .wp-preview img{width: 100%;height: 100%;margin: 16px 0;border-radius: 8px;}
 .wp-preview p #fileSize{color: #21a582;}
-.formore{margin: 15px 0;color: #222;text-align: center;}
+.formore{margin: 15px 0;color: #222;}
 .formore a{color:#204829;transition:.3s linear;}
-.warning{display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 12px;}
+.preview-info{display: flex;justify-content: space-between;align-items: center;width: 100%;position: relative;}
+.preview-info img{width: 45px;height: 45px;}
+.warning{display: none;position: absolute;background: #fafafa;padding: 15px;right: 22px;bottom: 70px;justify-content: center;align-items: center;flex-direction: column;border-radius: 10px 10px 0 10px;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);gap: 12px;}
+.preview-info:not(.preview-info a):hover .warning{display: flex;}
 .accordion-item{background-color: #e0e0e0;border-radius: .4rem;margin-bottom: 1rem;padding: 1rem;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
 .accordion-link{font-size: 1.6rem;color: #2E2E2E;background-color: #e0e0e0;width: 100%;padding: 1rem 0;transition: 450ms ease-in-out all;}
 .accordion-link img{filter:var(--green-img);width: 25px;}
