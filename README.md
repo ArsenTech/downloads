@@ -1,7 +1,7 @@
 <p align="center">
 <img src=".github/downloads-logo.png">
 </p>
-<h3 align="center">Downloads Page of ArsenTech's Official Website</h3>
+<h1 align="center">Downloads Page of ArsenTech's Official Website</h1>
 <p align="center">
      <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=bug_report.md&title=">Report bug</a>
      &nbsp;&middot;&nbsp;
