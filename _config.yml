@@ -5,10 +5,9 @@ compress_html:
     
 exclude:
   - CONTRIBUTING.md
-  - LICENSE
+  - LICENSE.md
   - README.md
   - CODE_OF_CONDUCT.md
-  - files/downloads-logo.png
   - .vscode/*
   - .github/*
   
