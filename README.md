@@ -18,7 +18,7 @@
 - [Features Included](#features-included)
 - [Bugs and Feature Requests](#bugs-and-feature-requests)
 - [Website Speed](#website-speed-tested)
-- [Roadmap](#roadmap)
+- [Versioning](#versioning)
 - [Contributing](#contributing)
 - [Tech](#tech)
 - [FAQs](#faq)
@@ -41,7 +41,7 @@ If You want to Report Bug, or Request Feature, Write an Issue and I'll be in tou
 - GTMetrix Score: Performance: **99%**, Structure: **98%**
 
 ## Versioning
-This website follows [Semantic Versioning](https://semver.org/). You can view the full [Changelog](https://github.com/ArsenTech/arsentech.github.io/blob/main/CHANGELOG.md) for details on each website version.
+This website follows [Semantic Versioning](https://semver.org/). You can view the full [Changelog](https://github.com/ArsenTech/downloads/blob/main/CHANGELOG.md) for details on each website version.
 
 ## Contributing
 Contributions are Always Welcome! Please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) before contributing.
