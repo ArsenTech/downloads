@@ -40,40 +40,8 @@ If You want to Report Bug, or Request Feature, Write an Issue and I'll be in tou
 - Pingdom Website Speed Test Score: **97**
 - GTMetrix Score: Performance: **99%**, Structure: **98%**
 
-## Roadmap
-This is an Entire Roadmap of a Downloads Page:
-
-### 1.0: Initial Release (2022-2023)
-- Initialized the Project
-- Added Downloads Section (With Filter Buttons)
-- Added Wallpaper Downloads Section (As a Tab)
-- Added Feedback and FAQs Section
-- Added Loader
-
-### 2.0: **New Look** (2023-now)
-- Changed Background to Image
-- Maxified HTML Code
-- Made Color Contrast Ratio Better
-- Fixed Some Spelling Errors
-- Changed Loader Animation
-- Converted Logo From PNG to SVG
-- Updated Navbar
-- Added Dark Mode Feature
-- Added Search bar
-- Made Download Button Animated
-- Replaced Wallpaper Downloads Section From Tabs to a Downloader
-- Converted Some Icons To SVG Files
-- Updated Apple Touch Icon and Added Android Icon
-- Added `manifest.json`
-- Minified Some JS Files
-- Changed Caret Color
-- Added Skip to Downloads Feature
-- New "Discover" Button Colors
-- Merged Separate Version Downloads To One Using Dropdown Selector
-- Colorful Logo on Mouse Over
-- Added External Download Buttons And Migrated Some Files From Firebase To Github.
-- Added legend for download section (External and Direct Downloads)
-- [Replaced file details information with file description](#why-dont-you-display-file-sizes-and-dates-for-the-downloads-anymore)
+## Versioning
+This website follows [Semantic Versioning](https://semver.org/). You can view the full [Changelog](https://github.com/ArsenTech/arsentech.github.io/blob/main/CHANGELOG.md) for details on each website version.
 
 ## Contributing
 Contributions are Always Welcome! Please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) before contributing.
