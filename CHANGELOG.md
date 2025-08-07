@@ -19,7 +19,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [2.0.1] - 2023-12-10
 ### Features
-- Added iOS Support to Backgrounds, and Keywords
+- Added iOS Support to Backgrounds and Keywords
 - Added Skip to Content Feature
 - Added Focus on Hover Selectors
 ### Improvements
@@ -33,7 +33,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Fixed DeviantArt Link Bug ([PR #2](https://github.com/ArsenTech/downloads/pull/2))
 - Other fixes
 
-## [2.0.0] - 2023-03-04
+## [2.0.0] - 2023-03-04 (New Look)
 ### Features
 - Added Dark Mode support
 - Search Bar
