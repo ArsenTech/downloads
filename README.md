@@ -1,55 +1,65 @@
 <p align="center">
 <img src=".github/downloads-logo.png">
 </p>
-<h1 align="center">Downloads Page of ArsenTech's Official Website</h1>
-<p align="center">
-     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=bug_report.md&title=">Report bug</a>
-     &nbsp;&middot;&nbsp;
-     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
-</p>
 <p align="center">
 <a href="https://github.com/ArsenTech/downloads/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/ArsenTech/downloads?color=%2322b455&style=for-the-badge"></a>
 <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/ArsenTech/downloads?style=for-the-badge">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ArsenTech/downloads?style=for-the-badge">
 </p>
+<h1 align="center">Downloads Page of ArsenTech's Official Website</h1>
+<p align="center">
+     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+     &nbsp;&middot;&nbsp;
+     <a href="https://github.com/ArsenTech/downloads/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+</p>
+<details>
+     <summary>Table of Contents</summary>
+     <ol>
+          <li>
+               <a href="#about">About</a>
+               <ul>
+                    <li><a href="#features-included">Features Included</a></li>
+                    <li><a href="#website-speed">Website Speed</a></li>
+               </ul>
+          </li>
+          <li><a href="#built-with">Built with</a></li>
+          <li><a href="#versioning">Versioning</a></li>
+          <li>
+               <a href="#contributing">Contributing</a>
+               <ul>
+                    <li><a href="#top-contributors">Top Contributors</a></li>
+               </ul>
+          </li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#star-history">Star History</a></li>
+     </ol>
+</details>
 
-## Table of Contents
-- [About](#about)
-- [Features Included](#features-included)
-- [Bugs and Feature Requests](#bugs-and-feature-requests)
-- [Website Speed](#website-speed-tested)
-- [Versioning](#versioning)
-- [Contributing](#contributing)
-- [Tech](#tech)
-- [FAQs](#faq)
-- [Support and Follow](#support-and-follow-arsentech)
-
-## About:
+## About
 This Page Has Downloads of Softwares, Windows Versions, DOS and Much More. You can Download Files from my collection (that collection isn't massive).
-
-## Features Included
+### Features Included
 - Dark Mode
 - Search Bar
 - New Downloader for Wallpapers
+- External Download Links
+- Animated Download Button
+### Website Speed
+- **Google PageSpeed Insights Score**: 100 on Mobile, **100** on PC
+- **Pingdom Website Speed Test Score**: 97
+- **GTMetrix Score**: Performance - 99%, Structure - 98%
 
-## Bugs and Feature Requests
-If You want to Report Bug, or Request Feature, Write an Issue and I'll be in touch with you soon.
-
-## Website Speed (Tested)
-- Google PageSpeed Insights Score: **100** on 📱, **100** on 🖥
-- Pingdom Website Speed Test Score: **97**
-- GTMetrix Score: Performance: **99%**, Structure: **98%**
+## Built with
+- [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Versioning
 This website follows [Semantic Versioning](https://semver.org/). You can view the full [Changelog](https://github.com/ArsenTech/downloads/blob/main/CHANGELOG.md) for details on each website version.
 
 ## Contributing
 Contributions are Always Welcome! Please read both [Code of Conduct](https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md) before contributing.
-
-## Tech
-- **UI/UX:** HTML, CSS
-- **Language Used In Website:** Javascript
-- **Icons:** Downloaded From Iconify
+### Top Contributors
+[![Top Contributors](https://contrib.rocks/image?repo=ArsenTech/downloads)](https://github.com/ArsenTech/downloads/graphs/contributors)
 
 ## FAQ
 #### What's This?
@@ -75,6 +85,8 @@ Due to space limitations, I’ve removed the Windows Vista - 11 versions from th
 
 #### Why don't you display file sizes and dates for the downloads anymore?
 Due to changes in storage methods (from Firebase to GitHub) and Github API limitations, I am unable to display the file sizes and creation dates on the website. However, you can see the file size by downloading the file to your device. Once downloaded, the file size is readily available through your computer's file explorer. If you require the file size of any specific file, don't hesitate to contact me, and I will be happy to share it!
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=ArsenTech/downloads&type=Date)](https://www.star-history.com/#ArsenTech/downloads&Date)
 
 ## Support And Follow ArsenTech
 [![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
