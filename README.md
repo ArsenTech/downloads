@@ -20,7 +20,7 @@ This repository is packed with stunning coding-themed wallpapers that are just r
 ## Download  
 Just take a look through the repository and grab any wallpaper that catches your eye. If you prefer, you can also clone the entire repository to get all the wallpapers in one go!
 ```bash
-git clone -b wallpapers --single-branch  https://github.com/ArsenTech/downloads.git
+git clone -b wallpapers --single-branch https://github.com/ArsenTech/downloads.git
 ```
 
 ## FAQ
