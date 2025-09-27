@@ -3,6 +3,11 @@ All notable changes of the downloads page of ArsenTech's Website will be documen
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [2.0.3] - 2025-09-27
+### Changed
+<!-- - Moved Downloads Files from `ArsenTech/downloads-files` to `ArsenTech/downloads` -->
+- Moved Wallpapers from `ArsenTech/wallpapers` to `ArsenTech/downloads`
+
 ## [2.0.2] - 2025-05-09
 ### Added
 - Multi-version downloads

@@ -21,7 +21,7 @@ list.forEach(el=>el.addEventListener("click", ()=>{for(let i=0; i<list.length; i
 downloadBtns.forEach((e=>{let t,a;const s=e.parentElement.querySelector(".icon");if(e.classList.contains("selection")){const n=s.querySelector("img");e.addEventListener("change",(e=>{t=e.target.value,a=e.target?.closest("[data-type]").dataset.type,s.disabled=!1,s.setAttribute("data-file-path",e.target.value)})),s.addEventListener("click",(()=>downloadFile(t,n,a)))}else{const s=e.querySelector("img");a=e.dataset.type,t=e.dataset.filePath,e.classList.contains("icon")||e.addEventListener("click",(()=>downloadFile(t,s,a)))}}));
 wallpaperOptions.addEventListener("change",(e=>{chosenImg=changeWallpaper(e.target.value),e.target.value&&(isSizeActive=!0,sizeOptions.removeAttribute("disabled")),e.target.value&&chosenSize&&changeSize(chosenSize,chosenImg)}));
 sizeOptions.addEventListener("change",(e=>{isSizeActive&&(changeSize(e.target.value,chosenImg),btnWPDownload.removeAttribute("disabled")),isSizeActive&&""!==e.target.value&&(chosenSize=e.target.value)}));
-frmWallpaper.addEventListener("submit",e=>{e.preventDefault();const pathName = `https://raw.githubusercontent.com/ArsenTech/wallpapers/refs/heads/main/coding${chosenImg}/${frmWallpaper.optSize.value.replace("x", " x ")}.png`;window.open(pathName);})
+frmWallpaper.addEventListener("submit",e=>{e.preventDefault();const pathName = `https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/wallpapers/coding${chosenImg}/${frmWallpaper.optSize.value.replace("x", " x ")}.png`;window.open(pathName);})
 allStar.forEach((elem, id)=>elem.addEventListener("click", ()=> {
   let click = 0;ratingValue.value = id+1;
   allStar.forEach(el => {el.querySelector("img").src="files/icons/star.svg";el.classList.remove("active");});
