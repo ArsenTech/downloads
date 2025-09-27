@@ -3,7 +3,8 @@ Welcome to **ArsenTech's Coding Wallpapers** – a fantastic collection crafted 
 
 ## About This Collection
 This repository is packed with stunning coding-themed wallpapers that are just right for creating a stylish developer workspace. No matter if you love JavaScript, C#, Python, or any language, there's a wallpaper here that will match your vibe perfectly!
-> ⚠️ These wallpapers use satire and code snippets to highlight best development practices. No real company is targeted — the goal is to inspire better software decisions, not provoke drama.
+> [!WARNING]
+> These wallpapers use satire and code snippets to highlight best development practices. No real company is targeted — the goal is to inspire better software decisions, not provoke drama.
 
 ## Features
 - **Original Creations** – Every wallpaper is crafted by ArsenTech.
@@ -19,7 +20,7 @@ This repository is packed with stunning coding-themed wallpapers that are just r
 ## Download  
 Just take a look through the repository and grab any wallpaper that catches your eye. If you prefer, you can also clone the entire repository to get all the wallpapers in one go!
 ```bash
-git clone https://github.com/ArsenTech/wallpapers.git
+git clone -b wallpapers --single-branch  https://github.com/ArsenTech/downloads.git
 ```
 
 ## FAQ
@@ -35,15 +36,30 @@ Possibly! If you have a specific idea in mind, don’t hesitate to share it thro
 ## Support & Feedback
 If you love these wallpapers, why not give the repository a star and follow ArsenTech? It helps out!
 
-[![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-[![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
-[![Codepen](https://img.shields.io/badge/-ArsenJS-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenJS)
-[![DeviantArt](https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46")](https://www.deviantart.com/arsen2005)
-[![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
-[![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
+[![YouTube][yt-shield]][yt-url]
+[![Patreon][patreon-shield]][patreon-url]
+[![Codepen][codepen-shield]][codepen-url]
+[![DeviantArt][deviantart-shield]][deviantart-url]
+[![Odysee][odysee-shield]][odysee-url]
+[![Scratch][scratch-shield]][scratch-url]
 
-> GitHub [@ArsenTech](https://github.com/ArsenTech) &nbsp;&middot;&nbsp;
-> YouTube [@ArsenTech](https://youtube.com/@ArsenTech) &nbsp;&middot;&nbsp;
-> Patreon [ArsenTech](https://www.patreon.com/ArsenTech) &nbsp;&middot;&nbsp;
-> More Wallpapers at [DeviantArt](https://www.deviantart.com/arsen200) &nbsp;&middot;&nbsp;
-> [ArsenTech's Website](https://arsentech.github.io)
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+<!-- External Links -->
+[yt-shield]: https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-shield]:https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white
+[patreon-url]:https://www.patreon.com/ArsenTech
+[codepen-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white
+[codepen-url]: https://codepen.io/ArsenTech
+[deviantart-shield]: https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46
+[deviantart-url]: https://www.deviantart.com/arsen2005
+[odysee-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626
+[odysee-url]: https://odysee.com/@ArsenTech
+[scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
+[scratch-url]: https://scratch.mit.edu/users/ArsenTech/
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io
