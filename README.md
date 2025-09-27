@@ -92,6 +92,9 @@ Due to changes in storage methods (from Firebase to GitHub) and Github API limit
 ## Star History
 [![Star History Chart][star-history-chart]][star-history-url]
 
+## License
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
 ## Support And Follow
 [![YouTube][yt-shield]][yt-url]
 [![Patreon][patreon-shield]][patreon-url]
