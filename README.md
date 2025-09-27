@@ -77,16 +77,31 @@ Due to space limitations, I’ve removed the Windows Vista - 11 versions from th
 ### Additional Information:
 A few older operating systems such as Windows 95, 98, 2000, ME, and XP can be directly downloaded from this repository, but the newer ones are pointed toward official sources. See the "[Download Information](#download-information)" section above for a list in detail.
 
-## Support And Follow ArsenTech
-[![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-[![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
-[![Codepen](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenTech)
-[![DeviantArt](https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46")](https://www.deviantart.com/arsen2005)
-[![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
-[![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
+## Support And Follow
+[![YouTube][yt-shield]][yt-url]
+[![Patreon][patreon-shield]][patreon-url]
+[![Codepen][codepen-shield]][codepen-url]
+[![DeviantArt][deviantart-shield]][deviantart-url]
+[![Odysee][odysee-shield]][odysee-url]
+[![Scratch][scratch-shield]][scratch-url]
 
-> GitHub [@ArsenTech](https://github.com/ArsenTech) &nbsp;&middot;&nbsp;
-> YouTube [@ArsenTech](https://youtube.com/@ArsenTech) &nbsp;&middot;&nbsp;
-> Patreon [ArsenTech](https://www.patreon.com/ArsenTech) &nbsp;&middot;&nbsp;
-> [ArsenTech's Website](https://arsentech.github.io) &nbsp;&middot;&nbsp;
-> [Downloads Page](https://arsentech.github.io/downloads)
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+<!-- External Links -->
+[yt-shield]: https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-shield]:https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white
+[patreon-url]:https://www.patreon.com/ArsenTech
+[codepen-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white
+[codepen-url]: https://codepen.io/ArsenTech
+[deviantart-shield]: https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46
+[deviantart-url]: https://www.deviantart.com/arsen2005
+[odysee-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626
+[odysee-url]: https://odysee.com/@ArsenTech
+[scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
+[scratch-url]: https://scratch.mit.edu/users/ArsenTech/
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io
