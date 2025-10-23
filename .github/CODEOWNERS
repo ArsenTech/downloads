@@ -1,0 +1,11 @@
+# Common Repo Files
+README.md           @ArsenTech
+LICENSE.md          @ArsenTech
+CONTRIBUTING.md     @ArsenTech
+CODE_OF_CONDUCT.md  @ArsenTech
+CHANGELOG.md        @ArsenTech
+.gitignore          @ArsenTech
+_config.yml         @ArsenTech
+
+# All GitHub workflow files
+.github/**          @ArsenTech
