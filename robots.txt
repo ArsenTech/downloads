@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arsentech.github.io/downloads/sitemap.xml
+Sitemap: https://arsentech.github.io/sitemap.xml
