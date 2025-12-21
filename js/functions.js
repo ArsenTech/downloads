@@ -1,6 +1,6 @@
 const downloadsContainer = document.getElementById("downloadsCards");
 const addDownloads = async() => {
-     const res = await fetch("/data/downloads.json")
+     const res = await fetch("/downloads/data/downloads.json")
      const downloadsCards = await res.json();
      downloadsCards.forEach((card,i)=>{const el = document.createElement("div");
           const hasDropDown = card.files && !!card.files.length;
@@ -22,7 +22,7 @@ const addDownloads = async() => {
      });
 }
 const addFAQs = async () => {
-     const res = await fetch("/data/answers.json")
+     const res = await fetch("/downloads/data/answers.json")
      const answers = await res.json();
      answers.forEach((answer,i)=>{
           const el = document.createElement("div");
@@ -34,7 +34,7 @@ const addFAQs = async () => {
      })
 }
 const addSelectOptions = async(select,jsonName,name) => {
-     const res = await fetch(`/data/${jsonName}.json`)
+     const res = await fetch(`/downloads/data/${jsonName}.json`)
      const data = await res.json(), defaultOption = document.createElement("option");
      defaultOption.disabled = true;
      defaultOption.selected = true;
