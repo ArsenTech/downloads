@@ -11,7 +11,7 @@ const navbar = document.querySelector(".navbar"),
      getMode = localStorage.getItem("arsentech-theme"),navLinks = document.querySelectorAll("#navLinks a"),
      frmSearch = document.querySelector(".search-container"),cancelSearchBtn = document.querySelector("#cancel-search");
 let chosenImg,chosenSize,isSizeActive = false;
-if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";}init();
+if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "images/icons/dark.svg";}init();
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add("sticky"):navbar.classList.remove("sticky"));
 toggler.addEventListener("click",()=> toggleActive(toggler,navMenu));modeToggler.addEventListener("click", ()=>toggleMode(modeToggler));
 navLinks.forEach(link=>link.addEventListener("click", ()=>closeMenu(toggler,navMenu)));
@@ -24,8 +24,8 @@ sizeOptions.addEventListener("change",(e=>{isSizeActive&&(changeSize(e.target.va
 frmWallpaper.addEventListener("submit",e=>{e.preventDefault();const pathName = `https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/wallpapers/coding${chosenImg}/${frmWallpaper.optSize.value.replace("x", " x ")}.png`;window.open(pathName);})
 allStar.forEach((elem, id)=>elem.addEventListener("click", ()=> {
   let click = 0;ratingValue.value = id+1;
-  allStar.forEach(el => {el.querySelector("img").src="files/icons/star.svg";el.classList.remove("active");});
-  for (let i = 0; i < allStar.length; i++) {if(i <= id){allStar[i].querySelector("img").src="files/icons/star-fill.svg";allStar[i].classList.add("active");} else {allStar[i].style.setProperty("--i", click);click++;}}
+  allStar.forEach(el => {el.querySelector("img").src="images/icons/star.svg";el.classList.remove("active");});
+  for (let i = 0; i < allStar.length; i++) {if(i <= id){allStar[i].querySelector("img").src="images/icons/star-fill.svg";allStar[i].classList.add("active");} else {allStar[i].style.setProperty("--i", click);click++;}}
 }));
 contactForm.addEventListener("submit", e=> {
   e.preventDefault();let isValid = false;
@@ -40,6 +40,6 @@ frmSearch.addEventListener("submit", e=>{
 })
 cancelSearchBtn.addEventListener("click", ()=>{document.querySelector("#search-input").value = "";cards.forEach((_,i)=>{cards[i].classList.remove("hide");cards[i].classList.add("active")})});
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-  if(e.matches){document.body.classList.add("dark");modeToggler.querySelector("img").src = "files/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");} 
-  else {document.body.classList.remove("dark");modeToggler.querySelector("img").src = "files/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()}
+  if(e.matches){document.body.classList.add("dark");modeToggler.querySelector("img").src = "images/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");} 
+  else {document.body.classList.remove("dark");modeToggler.querySelector("img").src = "images/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()}
 });

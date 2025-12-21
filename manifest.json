@@ -3,7 +3,7 @@
      "name": "Downloads Page of an ArsenTech's Website",
      "icons": [
           {
-               "src": "../files/app-icon.png",
+               "src": "../images/app-icon.png",
                "sizes": "192x192",
                "type": "image/png",
                "purpose": "maskable any"
