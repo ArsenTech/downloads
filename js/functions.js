@@ -1,35 +1,45 @@
 const downloadsContainer = document.getElementById("downloadsCards");
-const displayCards = (cards,cardList) =>cards.forEach((card,i)=>{const el = document.createElement("div");
-     const hasDropDown = card.files && !!card.files.length;
-     el.className = hasDropDown ? "grid-item dropdown" : "grid-item";
-     el.setAttribute("data-item", card.category);
-     el.setAttribute("data-type",card.type)
-     const downloadBtn = hasDropDown ? `<select name="dropdown" class="card-btn selection" aria-label="${card.title}">
-          <option disabled selected class="defaultOpt">Version / Type</option>
-          ${card.files.map((file=>`<option value="${file.pathName}${file.isRelease ? "-release" : ""}">${file.name}</option>`)).join('')}
-     </select><button class="card-btn icon" disabled aria-label="Download"><img src="images/icons/download.svg" alt="" width="30" height="30" loading="lazy"></button>` : card.type==="external" ? `<a href="${card.pathName}" class="card-btn"><img src="images/icons/launch.svg" alt="" width="30" height="30" loading="lazy">Download</a>` : `<button class="card-btn"${card.pathName ? ` data-file-path="${card.pathName}${card.isRelease ? "-release" : ""}"` : ""} data-type="${card.type}"><img src="images/icons/download.svg" alt="" width="30" height="30" loading="lazy">Download</button>`;
-     el.innerHTML = `<div class="card" style="${card.style}">
-          <div class="card-content">
-               <h2 class="card-title">${card.title}</h2>
-               <p class="card-body">${card.description}</p>
-               <div class="buttons">${downloadBtn}</div>
-          </div>
-     </div>`;cardList.appendChild(el);
-});
-const addFAQs = () => answers.forEach((answer,i)=>{
-     const el = document.createElement("div");
-     el.className = "accordion-item";
-     el.id = `q${i+1}`;el.innerHTML = `
-     <a class="accordion-link" href="#q${i+1}">${answer.q} <img class="add-icon" src="images/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="images/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
-     <div class="answer"><p>${answer.a}</p></div>`;
-     document.querySelector(".accordion").append(el)
-})
-const addSelectOptions = (select,data,name) => {
-     const defaultOption = document.createElement("option");
+const addDownloads = async() => {
+     const res = await fetch("/data/downloads.json")
+     const downloadsCards = await res.json();
+     downloadsCards.forEach((card,i)=>{const el = document.createElement("div");
+          const hasDropDown = card.files && !!card.files.length;
+          el.className = hasDropDown ? "grid-item dropdown" : "grid-item";
+          el.setAttribute("data-item", card.category);
+          el.setAttribute("data-type",card.type)
+          const downloadBtn = hasDropDown ? `<select name="dropdown" class="card-btn selection" aria-label="${card.title}">
+               <option disabled selected class="defaultOpt">Version / Type</option>
+               ${card.files.map((file=>`<option value="${file.pathName}${file.isRelease ? "-release" : ""}">${file.name}</option>`)).join('')}
+          </select><button class="card-btn icon" disabled aria-label="Download"><img src="images/icons/download.svg" alt="" width="30" height="30" loading="lazy"></button>` : card.type==="external" ? `<a href="${card.pathName}" class="card-btn"><img src="images/icons/launch.svg" alt="" width="30" height="30" loading="lazy">Download</a>` : `<button class="card-btn"${card.pathName ? ` data-file-path="${card.pathName}${card.isRelease ? "-release" : ""}"` : ""} data-type="${card.type}"><img src="images/icons/download.svg" alt="" width="30" height="30" loading="lazy">Download</button>`;
+          el.innerHTML = `<div class="card" style="${card.style}">
+               <div class="card-content">
+                    <h2 class="card-title">${card.title}</h2>
+                    <p class="card-body">${card.description}</p>
+                    <div class="buttons">${downloadBtn}</div>
+               </div>
+          </div>`;
+          downloadsContainer.appendChild(el);
+     });
+}
+const addFAQs = async () => {
+     const res = await fetch("/data/answers.json")
+     const answers = await res.json();
+     answers.forEach((answer,i)=>{
+          const el = document.createElement("div");
+          el.className = "accordion-item";
+          el.id = `q${i+1}`;el.innerHTML = `
+          <a class="accordion-link" href="#q${i+1}">${answer.q} <img class="add-icon" src="images/icons/add.svg" width="25" height="25" alt="add" loading="lazy"><img class="remove-icon" src="images/icons/minus.svg" width="25" height="25" alt="remove" loading="lazy"></a>
+          <div class="answer"><p>${answer.a}</p></div>`;
+          document.querySelector(".accordion").append(el)
+     })
+}
+const addSelectOptions = async(select,jsonName,name) => {
+     const res = await fetch(`/data/${jsonName}.json`)
+     const data = await res.json(), defaultOption = document.createElement("option");
      defaultOption.disabled = true;
      defaultOption.selected = true;
      defaultOption.className = "defaultOpt";
-     defaultOption.textContent = `-- Choose a ${name} --`
+     defaultOption.textContent = `Choose a ${name}`
      select.appendChild(defaultOption);
      for(const groupName in data){
           const optgroup = document.createElement("optgroup");
@@ -53,16 +63,13 @@ function toggleActive(toggler,menu){toggler.classList.toggle("active"); menu.cla
 function closeMenu(toggler,menu){toggler.classList.remove("active"); menu.classList.remove("active");}
 function toggleMode(toggler){document.body.classList.toggle("dark");if(!document.body.classList.contains("dark")){toggler.querySelector("img").src = "images/icons/light.svg";localStorage.setItem("arsentech-theme", "light");removeMode()} else {toggler.querySelector("img").src = "images/icons/dark.svg";localStorage.setItem("arsentech-theme", "dark");lazyCss("css/dark-mode.css");}}
 function isChristmas() {
-     const today = new Date();
-     const month = today.getMonth() + 1;
-     const day = today.getDate();
+     const today = new Date(), month = today.getMonth() + 1, day = today.getDate();
      return (month === 12 && day >= 1) || (month === 1 && day <= 8);
 }
 function init(){
-     lazyCss("css/dark-mode.css");
-     displayCards(downloads,downloadsContainer);addFAQs();
+     lazyCss("css/dark-mode.css");addDownloads();addFAQs();
      lazyCss("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
-     addSelectOptions(document.getElementById("wallpaper-opt"),wallpapers,"Wallpaper");
-     addSelectOptions(document.getElementById("size-opt"),screenResolutions,"Size");
-     document.body.classList[isChristmas() ? "add" : "remove"]("christmas")
+     addSelectOptions(document.getElementById("wallpaper-opt"),"wallpapers","Wallpaper");
+     addSelectOptions(document.getElementById("size-opt"),"resolutions","Size");
+     document.body.classList.toggle("christmas",isChristmas())
 }

@@ -1,0 +1,56 @@
+{
+     "Javascript": [
+          {
+               "value": "1",
+               "text": "Wallpaper #1"
+          },
+          {
+               "value": "2",
+               "text": "Wallpaper #2"
+          },
+          {
+               "value": "3",
+               "text": "Wallpaper #3"
+          },
+          {
+               "value": "4",
+               "text": "Wallpaper #4"
+          },
+          {
+               "value": "5",
+               "text": "Wallpaper #5"
+          }
+     ],
+     "Python": [
+          {
+               "value": "6",
+               "text": "Wallpaper #6"
+          },
+          {
+               "value": "7",
+               "text": "Wallpaper #7"
+          },
+          {
+               "value": "8",
+               "text": "Wallpaper #8"
+          },
+          {
+               "value": "9",
+               "text": "Wallpaper #9"
+          },
+          {
+               "value": "10",
+               "text": "Wallpaper #10"
+          }
+     ],
+     "C#": [
+          {
+               "value": "11",
+               "text": "Wallpaper #11"
+          },
+          {
+               "value": "12",
+               "text": "Wallpaper #12"
+          }
+     ]
+}

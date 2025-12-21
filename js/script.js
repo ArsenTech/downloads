@@ -1,15 +1,15 @@
 const navbar = document.querySelector(".navbar"),
-     toggler = document.querySelector(".menu-toggler"),
-     modeToggler = document.querySelector("#icon"),
-     navMenu = document.querySelector( ".navbar-menu" ),
-     wallpaperOptions = document.querySelector("#wallpaper-opt"),
-     sizeOptions = document.querySelector("#size-opt"),
-     frmWallpaper = document.getElementById("wp-form"),btnWPDownload = document.querySelector(".btn-wp-download"),
-     allStar = document.querySelectorAll(".rating .star"),
-     ratingValue = document.getElementById("rating"),ratingError = document.querySelector(".ratingError"),
-     contactForm = document.querySelector(".contact-form"),
-     getMode = localStorage.getItem("arsentech-theme"),navLinks = document.querySelectorAll("#navLinks a"),
-     frmSearch = document.querySelector(".search-container"),cancelSearchBtn = document.querySelector("#cancel-search");
+  toggler = document.querySelector(".menu-toggler"),
+  modeToggler = document.querySelector("#icon"),
+  navMenu = document.querySelector( ".navbar-menu" ),
+  wallpaperOptions = document.querySelector("#wallpaper-opt"),
+  sizeOptions = document.querySelector("#size-opt"),
+  frmWallpaper = document.getElementById("wp-form"),btnWPDownload = document.querySelector(".btn-wp-download"),
+  allStar = document.querySelectorAll(".rating .star"),
+  ratingValue = document.getElementById("rating"),ratingError = document.querySelector(".ratingError"),
+  contactForm = document.querySelector(".contact-form"),
+  getMode = localStorage.getItem("arsentech-theme"),navLinks = document.querySelectorAll("#navLinks a"),
+  frmSearch = document.querySelector(".search-container"),cancelSearchBtn = document.querySelector("#cancel-search");
 let chosenImg,chosenSize,isSizeActive = false;
 if(getMode && getMode === "dark") {document.body.classList.add("dark");modeToggler.querySelector("img").src = "images/icons/dark.svg";}init();
 window.addEventListener("scroll", ()=>window.scrollY>20?navbar.classList.add("sticky"):navbar.classList.remove("sticky"));
