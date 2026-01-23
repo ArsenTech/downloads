@@ -2,7 +2,7 @@ const downloadsContainer = document.getElementById("downloadsCards");
 const addDownloads = async() => {
      const res = await fetch("/downloads/data/downloads.json")
      const downloadsCards = await res.json();
-     downloadsCards.forEach((card,i)=>{const el = document.createElement("div");
+     downloadsCards.forEach(card=>{const el = document.createElement("div");
           const hasDropDown = card.files && !!card.files.length;
           el.className = hasDropDown ? "grid-item dropdown" : "grid-item";
           el.setAttribute("data-item", card.category);

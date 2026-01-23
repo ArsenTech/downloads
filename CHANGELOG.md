@@ -3,6 +3,13 @@ All notable changes of the downloads page of ArsenTech's Website will be documen
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## 2.0.5 - 2026-01-23
+### Fixed
+- Downloads Filter Bugs
+- Search Bug
+- Clear Search Bug
+- Grammar inside the Wallpaper Warning box
+
 ## 2.0.4 - 2025-12-21
 ### Changed
 - Optimized some parts of JS Code
