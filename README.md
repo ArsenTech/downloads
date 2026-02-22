@@ -106,8 +106,8 @@ Distributed under the MIT License. See [LICENSE.md][license-url] for more inform
 [license-url]: https://github.com/ArsenTech/downloads/blob/main/LICENSE.md
 [created-at-shield]: https://img.shields.io/github/created-at/ArsenTech/downloads?style=for-the-badge
 [repo-size-shield]: https://img.shields.io/github/repo-size/ArsenTech/downloads?style=for-the-badge
-[code-of-conduct-url]: https://github.com/ArsenTech/downloads/blob/main/CODE_OF_CONDUCT.md
-[contributing-url]: https://github.com/ArsenTech/downloads/blob/main/CONTRIBUTING.md
+[code-of-conduct-url]: https://github.com/ArsenTech/downloads/blob/main/docs/CODE_OF_CONDUCT.md
+[contributing-url]: https://github.com/ArsenTech/downloads/blob/main/docs/CONTRIBUTING.md
 [changelog-url]: https://github.com/ArsenTech/downloads/blob/main/CHANGELOG.md
 [website-url]: https://arsentech.github.io
 

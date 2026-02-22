@@ -57,3 +57,13 @@ You can still check file size after downloading. If you need this info before do
 ---
 ### Navigation
 - [← Back to README](../README.md)
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[github-url]: https://github.com/ArsenTech
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[website-url]: https://arsentech.github.io
