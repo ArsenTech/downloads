@@ -1,4 +1,4 @@
-# FAQ
+# Frequently Asked Questions
 ## What's This?
 Downloads collection from ArsenTech. This Contains Virus-Free Software selected carefully by ArsenTech.<br>It includes Windows, Software, Drivers, and so on. We're not a replacement for other websites that offer downloads, but we like to provide a nice way to provide you the files easily.<br> We promise that we won't put any advertisements or charge any, free to download for anyone looking for anyone who wants to easily download a piece software that you can't easily find or want to go through the hassle.
 
