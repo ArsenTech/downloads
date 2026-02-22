@@ -66,8 +66,10 @@ Contributions are Always Welcome! Please read both [Code of Conduct][code-of-con
 ### Top Contributors
 [![Top Contributors][top-contributors]][contributors-url]
 
-## FAQ
+## FAQs
+
 See detailed FAQs here:
+
 ➡️ [FAQs](./docs/FAQ.md)
 
 ## Star History
