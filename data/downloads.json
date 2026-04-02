@@ -95,9 +95,9 @@
      {
           "style": "background:url(./images/card-img/softwares/7zip.webp) center; background-size:cover;",
           "title": "7zip",
-          "pathName": "software/7zip.zip",
+          "pathName": "https://github.com/ip7z/7zip/releases/tag/26.00",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "High compression file archiver, open-source."
      },
      {
