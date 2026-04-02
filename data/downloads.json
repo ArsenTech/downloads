@@ -159,9 +159,9 @@
      {
           "style": "background:url(./images/card-img/softwares/wds.webp) center; background-size:cover;",
           "title": "WinDirStat",
-          "pathName": "software/WinDirStat.zip",
+          "pathName": "https://github.com/windirstat/windirstat/releases/tag/release/v2.5.0",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "Visual disk usage analyzer tool."
      },
      {
