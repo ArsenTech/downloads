@@ -11,6 +11,7 @@ This version is focused on updating Download links to avoid Tampering risks
 - **Rufus** - External download from a GitHub release
 - **AutoClicker** - External download from a SourceForge page
 - **WinDirStat** - External download from a GitHub release
+- **Total Commander** - External download from an Official Site
 
 ## 2.0.5 - 2026-01-23
 ### Fixed
