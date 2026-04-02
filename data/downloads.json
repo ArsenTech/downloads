@@ -143,9 +143,9 @@
      {
           "style": "background:url(./images/card-img/softwares/tc.webp) center; background-size:cover;",
           "title": "Total Commander",
-          "pathName": "software/Total Commander.zip",
+          "pathName": "https://www.ghisler.com/download.htm",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "File manager with dual-pane navigation."
      },
      {
