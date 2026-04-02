@@ -103,9 +103,9 @@
      {
           "style": "background:url(./images/card-img/softwares/AutoClicker.webp) center; background-size:cover;",
           "title": "AutoClicker",
-          "pathName": "software/AutoClicker.zip",
+          "pathName": "https://sourceforge.net/projects/orphamielautoclicker/files/AutoClickers.exe/download",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "Automatically click the mouse at set intervals."
      },
      {
