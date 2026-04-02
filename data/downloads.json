@@ -135,9 +135,9 @@
      {
           "style": "background:url(./images/card-img/softwares/Rufus.webp) center; background-size:cover;",
           "title": "Rufus",
-          "pathName": "software/Rufus.zip",
+          "pathName": "https://github.com/pbatard/rufus/releases/tag/v4.13",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "Create bootable USB drives easily."
      },
      {
