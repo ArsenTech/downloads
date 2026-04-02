@@ -7,9 +7,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Highlights
 This version is focused on updating Download links to avoid Tampering risks
 ### Replaced
-- **7zip** - Replaced with an external download to a GitHub release
-- **Rufus** - Replaced with an external download to a GitHub release
-- **AutoClicker** - Replaced with an external download to a SourceForge page
+- **7zip** - External download from a GitHub release
+- **Rufus** - External download from a GitHub release
+- **AutoClicker** - External download from a SourceForge page
+- **WinDirStat** - External download from a GitHub release
 
 ## 2.0.5 - 2026-01-23
 ### Fixed
