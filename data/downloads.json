@@ -95,7 +95,7 @@
      {
           "style": "background:url(./images/card-img/softwares/7zip.webp) center; background-size:cover;",
           "title": "7zip",
-          "pathName": "https://github.com/ip7z/7zip/releases/tag/26.00",
+          "pathName": "https://github.com/ip7z/7zip/releases/latest",
           "category": "softwares",
           "type": "external",
           "description": "High compression file archiver, open-source."
@@ -135,7 +135,7 @@
      {
           "style": "background:url(./images/card-img/softwares/Rufus.webp) center; background-size:cover;",
           "title": "Rufus",
-          "pathName": "https://github.com/pbatard/rufus/releases/tag/v4.13",
+          "pathName": "https://github.com/pbatard/rufus/releases/latest",
           "category": "softwares",
           "type": "external",
           "description": "Create bootable USB drives easily."
@@ -159,7 +159,7 @@
      {
           "style": "background:url(./images/card-img/softwares/wds.webp) center; background-size:cover;",
           "title": "WinDirStat",
-          "pathName": "https://github.com/windirstat/windirstat/releases/tag/release/v2.5.0",
+          "pathName": "https://github.com/windirstat/windirstat/releases/latest",
           "category": "softwares",
           "type": "external",
           "description": "Visual disk usage analyzer tool."
