@@ -1,17 +1,18 @@
 # Change Log
-All notable changes of the downloads page of ArsenTech's Website will be documented here.
+All notable changes to the downloads page of ArsenTech's Website will be documented here.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 ## 2.0.6 - Unreleased
 ### Highlights
-This version is focused on updating Download links to avoid Tampering risks
+This version is focused on updating Download links to avoid tampering risks and using the outdated version of the canonical apps
 ### Replaced
 - **7zip** - External download from a GitHub release
 - **Rufus** - External download from a GitHub release
 - **AutoClicker** - External download from a SourceForge page
 - **WinDirStat** - External download from a GitHub release
 - **Total Commander** - External download from an Official Site
+- **Uninstall Tool** - External download from an Official Site
 
 ## 2.0.5 - 2026-01-23
 ### Fixed
