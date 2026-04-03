@@ -151,9 +151,9 @@
      {
           "style": "background:url(./images/card-img/softwares/UninstallTool.webp) center; background-size:cover;",
           "title": "Uninstall Tool",
-          "pathName": "software/Uninstall-Tool.zip",
+          "pathName": "https://crystalidea.com/uninstall-tool/download",
           "category": "softwares",
-          "type": "direct",
+          "type": "external",
           "description": "Efficiently manage and uninstall programs."
      },
      {
