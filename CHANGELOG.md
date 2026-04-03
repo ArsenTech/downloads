@@ -3,10 +3,10 @@ All notable changes to the downloads page of ArsenTech's Website will be documen
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
-## 2.0.6 - Unreleased
+## 2.0.6 - 2026-04-03
 ### Highlights
-This version is focused on updating Download links to avoid tampering risks and using the outdated version of the canonical apps
-### Replaced
+This version focuses on updating Download links to avoid tampering risks and on using outdated versions of the canonical apps. Some legacy download files are untouched
+### Replaced Links
 - **7zip** - External download from a GitHub release
 - **Rufus** - External download from a GitHub release
 - **AutoClicker** - External download from a SourceForge page
@@ -23,7 +23,7 @@ This version is focused on updating Download links to avoid tampering risks and 
 
 ## 2.0.4 - 2025-12-21
 ### Changed
-- Optimized some parts of JS Code
+- Optimized some parts of the JS Code
 - Converted Data into a static JSON file
 
 ## 2.0.3 - 2025-10-13
