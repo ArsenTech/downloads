@@ -3,6 +3,7 @@ All notable changes to the downloads page of ArsenTech's Website will be documen
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+
 ## 2.0.6 - 2026-04-03
 ### Highlights
 This version focuses on updating Download links to avoid tampering risks and on using outdated versions of the canonical apps. Some legacy download files are untouched
@@ -14,6 +15,8 @@ This version focuses on updating Download links to avoid tampering risks and on 
 - **Total Commander** - External download from an Official Site
 - **Uninstall Tool** - External download from an Official Site
 
+---
+
 ## 2.0.5 - 2026-01-23
 ### Fixed
 - Downloads Filter Bugs
@@ -21,15 +24,21 @@ This version focuses on updating Download links to avoid tampering risks and on 
 - Clear Search Bug
 - Grammar inside the Wallpaper Warning box
 
+---
+
 ## 2.0.4 - 2025-12-21
 ### Changed
 - Optimized some parts of the JS Code
 - Converted Data into a static JSON file
 
+---
+
 ## 2.0.3 - 2025-10-13
 ### Changed
 - Moved Downloads Files from `ArsenTech/downloads-files` to `ArsenTech/downloads`
 - Moved Wallpapers from `ArsenTech/wallpapers` to `ArsenTech/downloads`
+
+---
 
 ## 2.0.2 - 2025-05-09
 ### Added
@@ -43,6 +52,8 @@ This version focuses on updating Download links to avoid tampering risks and on 
 - Colorful Logo on Mouse Over
 - Button UI improvements
 - [Replaced file details information with file description](https://github.com/ArsenTech/downloads/blob/main/README.md#why-dont-you-display-file-sizes-and-dates-for-the-downloads-anymore)
+
+---
 
 ## 2.0.1 - 2023-12-10
 ### Added
@@ -59,6 +70,8 @@ This version focuses on updating Download links to avoid tampering risks and on 
 - Fixed Footer Background Bug
 - Fixed DeviantArt Link Bug ([PR #2](https://github.com/ArsenTech/downloads/pull/2))
 - Other fixes
+
+---
 
 ## 2.0.0 - 2023-03-04 (New Look)
 ### Added
@@ -78,6 +91,8 @@ This version focuses on updating Download links to avoid tampering risks and on 
 - Converted Some Icons To SVG Files
 - Other improvements and bug fixes
 
+---
+
 ## 1.0.1 - 2022-12-04
 ### Added
 - 5 more wallpapers
@@ -85,6 +100,8 @@ This version focuses on updating Download links to avoid tampering risks and on 
 ### Changed
 - Minified Media Queries in CSS
 - Implemented Lazy Loading
+
+---
 
 ## 1.0.0 - 2022-11-05
 ### Initialized
