@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## 2.0.7 - 2026-10-21
+### Changed
+- Changed the site background to an Aero version
+- Changed the placeholder image to an aero version
+
 ## 2.0.6 - 2026-04-03
 ### Highlights
 This version focuses on updating Download links to avoid tampering risks and on using outdated versions of the canonical apps. Some legacy download files are untouched
