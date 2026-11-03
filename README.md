@@ -50,9 +50,9 @@ This Page Has Downloads of software, Windows Versions, DOS, and Much More. You c
 - External Download Links
 - Animated Download Button
 ### Website Speed
-- **Google PageSpeed Insights Score**: 94 on Mobile, 100 on Desktop
+- **Google PageSpeed Insights Score**: 98 on Mobile, 100 on Desktop
 - **Pingdom Website Speed Test Score**: 95
-- **GTMetrix Score**: Performance - 100%, Structure - 97%
+- **GTMetrix Score**: Performance - 99%, Structure - 99%
 ### Built with
 - [![HTML][html-shield]][html-url]
 - [![CSS][css-shield]][css-url]
