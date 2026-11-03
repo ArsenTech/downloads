@@ -10,7 +10,7 @@ body{background: #f1f1f1; color: #202020;}
 .skip-link-container{position: absolute;width: 100%;top: 18px;z-index: 9999;}
 .skip-link-container .skip-link{background: #92e5a1;padding: 8px;color: #204829;position: absolute;transition: transform 0.3s;transform: translateY(-100%);}
 .skip-link-container .skip-link:focus {transform: translateY(0);}
-.loader-wrapper, #home .inner-width, .card-filter, .frmWallpaper, .wp-preview, .contact-form, .rating,.skip-link-container{display: flex;justify-content: center;align-items: center;}
+.loader-wrapper, #home .inner-width, .card-filter, .frmWallpaper, .wp-preview, .skip-link-container{display: flex;justify-content: center;align-items: center;}
 .navbar .inner-width, .wp-content, .accordion-link{display: flex;align-items: center;justify-content: space-between;}
 .card-btn, .search-container{display: flex; align-items: center;}
 .navbar {background: 0 0;width: 100%;padding: 30px 0;top: 0;z-index: 999;transition: .3s ease-in-out;}
@@ -94,20 +94,8 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .accordion-item:target .answer{max-height: 20rem;}
 .accordion-item:target .accordion-link .add-icon{display: none;}
 .accordion-item:target .accordion-link .remove-icon{display: block;}
-.contact-form input,.contact-form textarea,#search-input {width: 100%;height: 50px;margin: 10px 5px;background-color: #353b48;border: none;outline: 0;padding: 20px;border-radius: 4px;color: #fff;caret-color: #1dd1a1;}
-.contact-form input::placeholder,.contact-form textarea::placeholder, #search-input::placeholder{color: #aaa;}
-.contact-form{flex-wrap: wrap;flex-direction: column;}
-.half-container{display: flex;width: 100%;}
-.rating{grid-gap: .5rem;margin-bottom: 2rem;}
-.rating .star.active{opacity: 0;animation: star .5s calc(var(--i) * .1s) ease-in-out forwards;}
-.rating .star{cursor: pointer;}
-.rating .star:hover{transform: scale(1.1);}
-.rating .star img{width: 30px;filter:var(--yellow);}
-.emailZone,.nameZone {max-width: calc(50% - 10px)}
-.messageZone {min-height: 200px;resize: vertical;}
-.contact-form .btn {width: 180px;background-color: transparent;color: #204829;font-size: 16px;border: 2px solid #204829;padding: 0;margin-left: auto;transition: .3s ease-in-out;cursor: pointer;}
-.contact-form .btn:hover ,.contact-form .btn:focus-within{background: #204829;color: #fff;}
-.ratingError{color: red;font-size: 16px;font-weight: 600;margin-bottom: 2rem;}
+#search-input {width: 100%;height: 50px;margin: 10px 5px;background-color: #353b48;border: none;outline: 0;padding: 20px;border-radius: 4px;color: #fff;caret-color: #1dd1a1;}
+#search-input::placeholder{color: #aaa;}
 #site-footer {width: 100%;background: #204829;background: linear-gradient(#20482945,#20482945), url(../images/backgrounds/bg.jpg) no-repeat;background: linear-gradient(#20482945,#20482945), url(../images/backgrounds/bg.webp) no-repeat center;background-attachment: fixed;background-size: cover;color: #fff;padding: 80px 0;text-align: center;}
 .copyright{margin-bottom:20px;font-size:16px;}
 .copyright a {text-decoration: underline;font-size: 16px;color: #E8FDF7;font-weight: 500;transition: .3s linear;}
@@ -126,7 +114,6 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
 .christmas :where(#home,#site-footer){background:#204829!important;background:linear-gradient(#20482945,#20482945),url(../images/backgrounds/bg-christmas.jpg) no-repeat!important;background:linear-gradient(#20482945,#20482945),url(../images/backgrounds/bg-christmas.webp) no-repeat center!important;background-attachment:fixed!important;background-size:cover!important}
 @keyframes loader {0%, 100%{transform: rotateX(0);}50%{transform: rotateX(90deg);}}
 @keyframes fadeOut {100% {opacity: 0;visibility: hidden;}}
-@keyframes star {0%{opacity: 0;transform: scale(1);}50%{opacity: 1;transform: scale(1.2);}100%{opacity: 1;transform: scale(1);}}
 @keyframes text {25% {content: "Software"}50% {content: "Tools"}75% {content: "More Stuff"}}
 @media screen and (max-width:1440px){.card-container{grid-template-columns: repeat(3,auto);}}
 @media screen and (max-width:1024px) {.card-container {grid-template-columns: repeat(2,auto);grid-gap: 3rem;}}
@@ -147,8 +134,6 @@ section.alt {background-color: #f1f1f1;}section.alt .section-title::after {borde
      .accordion-link{font-size:1.4rem;}
      .answer p{font-size:.85rem;padding:.5rem 2rem;}
      .accordion-item:target .answer{max-height:fit-content;}
-     .half-container{flex-direction:column;}
-     .emailZone,.nameZone{max-width:100%}
      .search-container #search-input{width: calc(100% - 25px);}
      .search-container .search-btn{right: 25px;}
      .search-container .cancel-btn{right: -18px;}

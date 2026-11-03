@@ -17,10 +17,8 @@
 .dark .card-filter .list{background: #1dd1a1;color: #222;}
 .dark .card-filter .list.active{background: #53ffd1;color: #222;}
 .dark .legends img{filter: invert(1);}
-.dark .contact-form input, .dark .contact-form textarea, .dark  #search-input {background-color: #f1f1f1;color: #2f343f;}
-.dark .contact-form input::placeholder,.dark .contact-form textarea::placeholder, .dark #search-input::placeholder{color: #666;}
-.dark .contact-form .btn {border-color: rgb(29, 209, 161); background-color: #353b48;color: #1dd1a1;}
-.dark .contact-form .btn:hover, .dark .contact-form .btn:focus {background: #1dd1a1!important;color: #353b48!important;}
+.dark #search-input {background-color: #f1f1f1;color: #2f343f;}
+.dark #search-input::placeholder{color: #666;}
 .dark .accordion-item{background-color: #283042;box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);}
 .dark .accordion-link{color: rgba(255,255,255,.8);background-color: #283042;}
 .dark .accordion-link img{filter:var(--light-green);}

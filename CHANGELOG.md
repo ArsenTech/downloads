@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## 2.0.8 - 2026-11-03
+### Removed
+- The feedback form due to a year of inactivity.
+### Changed
+- Consolidated feedback functionality into the Contact section in the main page.
+
 ## 2.0.7 - 2026-10-21
 ### Changed
 - Changed the site background to an Aero version

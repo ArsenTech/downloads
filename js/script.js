@@ -5,9 +5,6 @@ const navbar = document.querySelector(".navbar"),
   wallpaperOptions = document.querySelector("#wallpaper-opt"),
   sizeOptions = document.querySelector("#size-opt"),
   frmWallpaper = document.getElementById("wp-form"),btnWPDownload = document.querySelector(".btn-wp-download"),
-  allStar = document.querySelectorAll(".rating .star"),
-  ratingValue = document.getElementById("rating"),ratingError = document.querySelector(".ratingError"),
-  contactForm = document.querySelector(".contact-form"),
   getMode = localStorage.getItem("arsentech-theme"),navLinks = document.querySelectorAll("#navLinks a"),
   frmSearch = document.querySelector(".search-container"),cancelSearchBtn = document.querySelector("#cancel-search");
 let chosenImg,chosenSize,isSizeActive = false;
@@ -31,16 +28,6 @@ downloadBtns.forEach((e=>{let t,a;const s=e.parentElement.querySelector(".icon")
 wallpaperOptions.addEventListener("change",(e=>{chosenImg=changeWallpaper(e.target.value),e.target.value&&(isSizeActive=!0,sizeOptions.removeAttribute("disabled")),e.target.value&&chosenSize&&changeSize(chosenSize,chosenImg)}));
 sizeOptions.addEventListener("change",(e=>{isSizeActive&&(changeSize(e.target.value,chosenImg),btnWPDownload.removeAttribute("disabled")),isSizeActive&&""!==e.target.value&&(chosenSize=e.target.value)}));
 frmWallpaper.addEventListener("submit",e=>{e.preventDefault();const pathName = `https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/wallpapers/coding${chosenImg}/${frmWallpaper.optSize.value.replace("x", " x ")}.png`;window.open(pathName);})
-allStar.forEach((elem, id)=>elem.addEventListener("click", ()=> {
-  let click = 0;ratingValue.value = id+1;
-  allStar.forEach(el => {el.querySelector("img").src="images/icons/star.svg";el.classList.remove("active");});
-  for (let i = 0; i < allStar.length; i++) {if(i <= id){allStar[i].querySelector("img").src="images/icons/star-fill.svg";allStar[i].classList.add("active");} else {allStar[i].style.setProperty("--i", click);click++;}}
-}));
-contactForm.addEventListener("submit", e=> {
-  e.preventDefault();let isValid = false;
-  if(ratingValue.value == 0){ratingError.innerHTML = "Required";isValid = false;}else{ratingError.innerHTML = "";isValid = true;}
-  if(isValid){contactForm.action = "https://formspree.io/f/mvodlpyz";contactForm.submit();e.target.reset()}
-});
 frmSearch.addEventListener("submit", e=>{
   e.preventDefault();let searchInput = document.querySelector("#search-input").value;
   const cards = document.querySelectorAll(".card-container .grid-item");
