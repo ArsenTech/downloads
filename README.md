@@ -109,7 +109,7 @@ Distributed under the MIT License. See [LICENSE.md][license-url] for more inform
 [code-of-conduct-url]: https://github.com/ArsenTech/downloads/blob/main/docs/CODE_OF_CONDUCT.md
 [contributing-url]: https://github.com/ArsenTech/downloads/blob/main/docs/CONTRIBUTING.md
 [changelog-url]: https://github.com/ArsenTech/downloads/blob/main/CHANGELOG.md
-[website-url]: https://arsentech.github.io
+[website-url]: https://arsentech-yt.vercel.app
 
 <!-- Languages -->
 [html-shield]:https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white

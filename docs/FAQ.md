@@ -11,7 +11,7 @@ No advertisements are used, and all downloads are free.
 ---
 ## I'm a copyright owner and want files removed
 Please contact me here:  
-➡️ https://arsentech.github.io/#contact  
+➡️ https://arsentech-yt.vercel.app/#contact  
 
 Your request will be reviewed as soon as possible.
 
@@ -66,4 +66,4 @@ You can still check file size after downloading. If you need this info before do
 [github-url]: https://github.com/ArsenTech
 [yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
 [patreon-url]:https://www.patreon.com/ArsenTech
-[website-url]: https://arsentech.github.io
+[website-url]: https://arsentech-yt.vercel.app
