@@ -107,4 +107,4 @@ A few older operating systems such as Windows 95, 98, 2000, ME, and XP can be di
 [scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
 [scratch-url]: https://scratch.mit.edu/users/ArsenTech/
 [github-url]: https://github.com/ArsenTech
-[website-url]: https://arsentech.github.io
+[website-url]: https://arsentech-yt.vercel.app
