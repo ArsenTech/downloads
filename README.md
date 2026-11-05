@@ -1,6 +1,9 @@
 # ArsenTech's File Collection
 Welcome to **ArsenTech's File Collection for Downloads Page**! Here, you can explore a variety of files, software, updates, and utilities that are available for download. We've moved everything over to GitHub because Firebase has switched to a paid storage plan.
 
+> [!NOTE]
+> For the web contents, visit https://arsentech-yt.vercel.app/downloads
+
 ## Disclaimer
 By downloading files from this repository, you agree to the following terms:
 1. **Legality**: It's your responsibility to make sure that the files you download are in line with your local laws, regulations, and any relevant software licenses. We don’t make any promises about the legality of using the software provided here in your area.
